@@ -52,28 +52,10 @@ export function LocaleProvider({
     // Deferred setState (react-hooks/set-state-in-effect): run in a frame callback.
     const id = window.requestAnimationFrame(() => {
       const pathname = window.location.pathname;
-      if (/^\/ar\/projects\/[^/]+\/?$/.test(pathname)) {
-        setLocaleState("ar");
-        localStorage.setItem(STORAGE_KEY, "ar");
-        return;
-      }
-      if (/^\/projects\/[^/]+\/?$/.test(pathname)) {
-        setLocaleState("en");
-        localStorage.setItem(STORAGE_KEY, "en");
-        return;
-      }
-      if (/^\/ar\/services(?:\/|$)/.test(pathname) || /^\/ar\/contact\/?$/.test(pathname)) {
-        setLocaleState("ar");
-        localStorage.setItem(STORAGE_KEY, "ar");
-        return;
-      }
-      if (/^\/services(?:\/|$)/.test(pathname) || /^\/contact\/?$/.test(pathname)) {
-        setLocaleState("en");
-        localStorage.setItem(STORAGE_KEY, "en");
-        return;
-      }
-      const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
-      if (stored === "en" || stored === "ar") setLocaleState(stored);
+      const routeLocale: Locale =
+        pathname === "/ar" || pathname.startsWith("/ar/") ? "ar" : "en";
+      setLocaleState(routeLocale);
+      localStorage.setItem(STORAGE_KEY, routeLocale);
     });
     return () => window.cancelAnimationFrame(id);
   }, []);

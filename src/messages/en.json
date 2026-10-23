@@ -55,6 +55,13 @@
     "subtitle": "A selection of software builds, with scope and technologies grounded in their source.",
     "dragHint": "Scroll horizontally"
   },
+  "blogHighlights": {
+    "kicker": "From the EHATA journal",
+    "title": "Ideas for better digital decisions",
+    "subtitle": "A few practical guides to help you plan your next business system or digital product.",
+    "viewAll": "Explore all articles",
+    "readingTime": "{minutes} min read"
+  },
   "courses": {
     "kicker": "EHATA Academy",
     "title": "Learn to build, not just to code",

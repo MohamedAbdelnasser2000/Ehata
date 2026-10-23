@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { IntroStatsSection } from "@/components/sections/intro-stats-section";
 import { ServicesPreviewSection } from "@/components/sections/services-preview-section";
 import { FeaturedProjectsSection } from "@/components/sections/featured-projects-section";
+import { BlogHighlightsSection } from "@/components/sections/blog-highlights-section";
 import { CoursesHighlightSection } from "@/components/sections/courses-highlight-section";
 import { TechMarqueeSection } from "@/components/sections/tech-marquee-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
@@ -26,6 +27,7 @@ export default function HomePage() {
       <IntroStatsSection />
       <ServicesPreviewSection />
       <FeaturedProjectsSection />
+      <BlogHighlightsSection />
       <CoursesHighlightSection />
       <TechMarqueeSection />
       <TestimonialsSection />
