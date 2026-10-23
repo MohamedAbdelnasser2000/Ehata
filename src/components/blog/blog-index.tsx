@@ -1,10 +1,14 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpLeft, BookOpen, Clock3 } from "lucide-react";
+import { ArrowLeft, ArrowUpLeft, BookOpen, Clock3, ArrowUpRight } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 import { pick } from "@/lib/i18n";
 import { BLOG_POSTS } from "@/data/blog";
 import { getBlogPostPath } from "@/lib/blog-routes";
 import { Section } from "@/components/ui/section";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+import { SpotlightCard } from "@/components/ui/spotlight-card";
+import { ShimmerBadge } from "@/components/ui/shimmer-badge";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 const COPY = {
   en: {
@@ -51,7 +55,10 @@ export function BlogIndex({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <Section className="!pb-12 !pt-32 md:!pt-40">
+      {/* ── Hero ──────────────────────────────────────── */}
+      <Section className="relative !pb-12 !pt-32 md:!pt-40">
+        <AuroraBackground glowOpacity={0.35} />
+
         <nav aria-label={copy.blog} className="mb-8 text-sm text-muted">
           <Link href="/" className="transition-colors hover:text-blue">
             {copy.home}
@@ -63,10 +70,11 @@ export function BlogIndex({ locale }: { locale: Locale }) {
         </nav>
 
         <header className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 inline-flex items-center gap-2 text-sm font-semibold text-blue">
-            <span className="h-px w-8 bg-blue" aria-hidden="true" />
-            {copy.kicker}
-          </p>
+          <div className="mb-6 flex justify-center">
+            <ShimmerBadge dotColor="blue" showDot>
+              {copy.kicker}
+            </ShimmerBadge>
+          </div>
           <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             {copy.title}
           </h1>
@@ -76,69 +84,95 @@ export function BlogIndex({ locale }: { locale: Locale }) {
         </header>
       </Section>
 
+      {/* ── Article Grid ──────────────────────────────── */}
       <Section className="!py-8 md:!py-12">
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {BLOG_POSTS.map((post) => (
-            <article
+            <SpotlightCard
               key={post.slug}
-              className="group flex h-full flex-col rounded-3xl border border-line bg-surface p-6 transition-colors hover:border-blue/40 sm:p-7"
+              tilt
+              maxTilt={4}
+              className="flex h-full flex-col rounded-2xl border-line/80 bg-surface/85 backdrop-blur-sm"
             >
-              <div className="mb-7 flex items-center justify-between gap-3">
-                <span className="rounded-full bg-blue/10 px-3 py-1.5 text-xs font-semibold text-blue">
-                  {pick(locale, post.category)}
-                </span>
-                <BookOpen className="h-5 w-5 text-muted/70" aria-hidden="true" />
-              </div>
+              <div className="flex h-full flex-col p-6 sm:p-7">
+                <div className="mb-7 flex items-center justify-between gap-3">
+                  <span className="rounded-full bg-blue/10 px-3 py-1.5 text-xs font-semibold text-blue">
+                    {pick(locale, post.category)}
+                  </span>
+                  <BookOpen className="h-5 w-5 text-muted/70" aria-hidden="true" />
+                </div>
 
-              <h2 className="text-xl font-bold leading-snug text-foreground">
+                <h2 className="text-xl font-bold leading-snug text-foreground">
+                  <Link
+                    href={getBlogPostPath(post.slug, locale)}
+                    className="rounded-sm outline-none transition-colors hover:text-blue focus-visible:ring-2 focus-visible:ring-blue"
+                  >
+                    {pick(locale, post.title)}
+                  </Link>
+                </h2>
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-muted">
+                  {pick(locale, post.excerpt)}
+                </p>
+
+                <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line/60 pt-4 text-xs text-muted">
+                  <time dateTime={post.publishedAt}>
+                    {formatDate(post.publishedAt, locale)}
+                  </time>
+                  <span className="inline-flex items-center gap-1.5">
+                    <Clock3 className="h-3.5 w-3.5" aria-hidden="true" />
+                    {copy.readingTime.replace(
+                      "{minutes}",
+                      String(post.readingMinutes),
+                    )}
+                  </span>
+                </div>
+
                 <Link
                   href={getBlogPostPath(post.slug, locale)}
-                  className="rounded-sm outline-none transition-colors hover:text-blue focus-visible:ring-2 focus-visible:ring-blue"
+                  className="group/link mt-5 inline-flex min-h-11 items-center gap-2 self-start rounded-full text-sm font-semibold text-blue outline-none transition-colors hover:text-navy focus-visible:ring-2 focus-visible:ring-blue"
                 >
-                  {pick(locale, post.title)}
-                </Link>
-              </h2>
-              <p className="mt-3 flex-1 text-[15px] leading-relaxed text-muted">
-                {pick(locale, post.excerpt)}
-              </p>
-
-              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line pt-4 text-xs text-muted">
-                <time dateTime={post.publishedAt}>
-                  {formatDate(post.publishedAt, locale)}
-                </time>
-                <span className="inline-flex items-center gap-1.5">
-                  <Clock3 className="h-3.5 w-3.5" aria-hidden="true" />
-                  {copy.readingTime.replace(
-                    "{minutes}",
-                    String(post.readingMinutes),
+                  {copy.read}
+                  {locale === "ar" ? (
+                    <ArrowUpLeft
+                      className="h-4 w-4 transition-transform group-hover/link:-translate-x-0.5"
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <ArrowUpRight
+                      className="h-4 w-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                      aria-hidden="true"
+                    />
                   )}
-                </span>
+                </Link>
               </div>
-              <Link
-                href={getBlogPostPath(post.slug, locale)}
-                className="mt-5 inline-flex min-h-11 items-center gap-2 self-start rounded-full text-sm font-semibold text-blue outline-none transition-colors hover:text-navy focus-visible:ring-2 focus-visible:ring-blue"
-              >
-                {copy.read}
-                {locale === "ar" ? (
-                  <ArrowUpLeft className="h-4 w-4" aria-hidden="true" />
-                ) : (
-                  <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden="true" />
-                )}
-              </Link>
-            </article>
+            </SpotlightCard>
           ))}
         </div>
       </Section>
 
-      <Section className="!pt-10 !pb-24 md:!pb-32">
-        <div className="rounded-3xl bg-navy px-6 py-10 text-center text-white sm:px-10 sm:py-12">
-          <h2 className="text-2xl font-bold sm:text-3xl">{copy.ctaTitle}</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base">
+      {/* ── CTA ───────────────────────────────────────── */}
+      <Section className="!pb-24 !pt-10 md:!pb-32">
+        <div className="relative overflow-hidden rounded-3xl bg-navy px-6 py-12 text-center text-white sm:px-12 sm:py-16">
+          {/* Cinematic ambient glow inside CTA */}
+          <div
+            className="pointer-events-none absolute inset-0 -z-10"
+            aria-hidden
+            style={{
+              background:
+                "radial-gradient(ellipse 70% 60% at 50% 20%, rgba(0,87,231,0.30), transparent 70%), radial-gradient(ellipse 50% 45% at 80% 80%, rgba(46,155,255,0.18), transparent 65%)",
+            }}
+          />
+          <BorderBeam duration={10} colorFrom="rgba(46,155,255,0.8)" colorTo="rgba(0,87,231,0.6)" />
+
+          <h2 className="bg-gradient-to-br from-white via-white/95 to-white/70 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
+            {copy.ctaTitle}
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base">
             {copy.ctaDescription}
           </p>
           <Link
             href={locale === "ar" ? "/ar/contact/" : "/contact/"}
-            className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-navy transition-colors hover:bg-blue hover:text-white"
+            className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-semibold text-navy transition-all hover:bg-blue hover:text-white hover:shadow-[0_0_24px_rgba(0,87,231,0.5)]"
           >
             {copy.cta}
           </Link>

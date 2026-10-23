@@ -1,9 +1,24 @@
 import type { LocalizedText } from "@/lib/i18n";
+import { ADDITIONAL_BLOG_POSTS } from "@/data/blog-additional";
 
 export interface BlogSection {
   heading: LocalizedText;
   paragraphs: LocalizedText[];
   bullets?: LocalizedText[];
+  comparison?: {
+    headers: LocalizedText[];
+    rows: LocalizedText[][];
+  };
+}
+
+export interface BlogFaq {
+  question: LocalizedText;
+  answer: LocalizedText;
+}
+
+export interface BlogSource {
+  label: LocalizedText;
+  url: string;
 }
 
 export interface BlogPost {
@@ -15,9 +30,12 @@ export interface BlogPost {
   readingMinutes: number;
   serviceId: string;
   sections: BlogSection[];
+  faqs?: BlogFaq[];
+  sources?: BlogSource[];
+  relatedProjectId?: string;
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+const FOUNDATIONAL_BLOG_POSTS: BlogPost[] = [
   {
     slug: "choosing-erp-for-your-business",
     category: { en: "Business systems", ar: "أنظمة الأعمال" },
@@ -140,6 +158,38 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        question: {
+          en: "What should a company define before choosing an ERP?",
+          ar: "ما الذي ينبغي للشركة تحديده قبل اختيار ERP؟",
+        },
+        answer: {
+          en: "Map the workflows, roles, data, approvals, integrations, exceptions, reports, and launch priorities the system must support, then test them with realistic scenarios.",
+          ar: "ارسم الإجراءات والأدوار والبيانات والموافقات والتكاملات والاستثناءات والتقارير وأولويات الإطلاق التي يجب أن يدعمها النظام، ثم اختبرها بسيناريوهات واقعية.",
+        },
+      },
+      {
+        question: {
+          en: "Should we implement every ERP module at once?",
+          ar: "هل ينبغي تنفيذ كل وحدات ERP دفعة واحدة؟",
+        },
+        answer: {
+          en: "Not necessarily. Prioritize connected workflows with the clearest business need and phase later modules when dependencies, ownership, and acceptance criteria are understood.",
+          ar: "ليس بالضرورة. أعطِ الأولوية للإجراءات المترابطة ذات الحاجة الواضحة، ونفّذ الوحدات اللاحقة على مراحل بعد فهم الاعتماديات والمسؤوليات ومعايير القبول.",
+        },
+      },
+      {
+        question: {
+          en: "How should an ERP system be evaluated?",
+          ar: "كيف ينبغي تقييم نظام ERP؟",
+        },
+        answer: {
+          en: "Test your end-to-end work using representative roles and data, including exceptions, integrations, permissions, migration, reporting, and handover—not only a standard product demo.",
+          ar: "اختبر إجراءاتك من البداية للنهاية بأدوار وبيانات ممثلة، بما يشمل الاستثناءات والتكاملات والصلاحيات والترحيل والتقارير والتسليم، لا العرض القياسي فقط.",
+        },
+      },
+    ],
   },
   {
     slug: "warehouse-and-delivery-operations",
@@ -233,6 +283,38 @@ export const BLOG_POSTS: BlogPost[] = [
             ar: "اختر مؤشرات تدفع إلى إجراء واضح، مثل الطلبات المنتظرة للتجهيز والطرود ذات المشكلات المفتوحة وتسويات المخزون حسب السبب والتحصيلات غير المطابقة. عرّف كل مؤشر كي تحسبه الفرق بالطريقة نفسها.",
           },
         ],
+      },
+    ],
+    faqs: [
+      {
+        question: {
+          en: "How do warehouse and delivery teams keep order status consistent?",
+          ar: "كيف يحافظ المخزن وفريق التوصيل على اتساق حالة الطلب؟",
+        },
+        answer: {
+          en: "Agree on shared status definitions, assign an owner to each transition, and record the hand-off, delivery outcome, exception, and return as traceable events.",
+          ar: "اتفقوا على تعريفات موحدة للحالات، وحددوا مسؤولًا عن كل انتقال، وسجلوا التسليم ونتيجة التوصيل والاستثناء والمرتجع كأحداث قابلة للتتبع.",
+        },
+      },
+      {
+        question: {
+          en: "What should be tracked when a parcel is handed to a courier?",
+          ar: "ما الذي ينبغي تسجيله عند تسليم الطرد للمندوب؟",
+        },
+        answer: {
+          en: "Record the parcel reference, custody change, time, parties involved, and any process-specific quantity or condition needed to investigate later discrepancies.",
+          ar: "سجّل مرجع الطرد وانتقال العهدة والوقت والأطراف وأي كمية أو حالة تتطلبها إجراءاتك للتحقق من الفروقات لاحقًا.",
+        },
+      },
+      {
+        question: {
+          en: "How can cash-on-delivery collections be reconciled?",
+          ar: "كيف يمكن مطابقة تحصيلات الدفع عند الاستلام؟",
+        },
+        answer: {
+          en: "Link the expected amount, collected amount, delivery result, and settlement record; assign a reviewer and keep an auditable correction process.",
+          ar: "اربط المبلغ المتوقع بالمبلغ المحصل ونتيجة التوصيل وسجل التسوية، وعيّن مراجعًا واحتفظ بإجراءات تصحيح قابلة للتدقيق.",
+        },
       },
     ],
   },
@@ -330,7 +412,44 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    faqs: [
+      {
+        question: {
+          en: "What should be planned before building a business mobile app?",
+          ar: "ما الذي يجب التخطيط له قبل بناء تطبيق أعمال؟",
+        },
+        answer: {
+          en: "Define users and core journeys, platform requirements, data and APIs, offline behavior, permissions, testing, release ownership, and the scope of the first version.",
+          ar: "حدّد المستخدمين والرحلات الأساسية ومتطلبات المنصات والبيانات وواجهات الربط والعمل دون اتصال والصلاحيات والاختبارات ومسؤولية النشر ونطاق الإصدار الأول.",
+        },
+      },
+      {
+        question: {
+          en: "Should a business app work offline?",
+          ar: "هل يجب أن يعمل تطبيق الأعمال دون اتصال؟",
+        },
+        answer: {
+          en: "Only if users need to complete specific tasks without a connection. Define which actions can be queued, how conflicts are resolved, and what users can see until data is synchronized.",
+          ar: "فقط إذا احتاج المستخدمون إلى إنجاز مهام محددة دون اتصال. حدّد الإجراءات التي يمكن تأجيلها وطريقة حل التعارض وما يراه المستخدم حتى مزامنة البيانات.",
+        },
+      },
+      {
+        question: {
+          en: "How can a mobile app protect business data?",
+          ar: "كيف يحمي تطبيق الموبايل بيانات الشركة؟",
+        },
+        answer: {
+          en: "Use appropriate authentication and authorization, protect data in transit and on the device, limit collected data, and enforce important permissions and business rules on trusted backend systems.",
+          ar: "استخدم المصادقة والصلاحيات المناسبة، واحمِ البيانات أثناء النقل وعلى الجهاز، وقلل البيانات المجمعة، وطبّق الصلاحيات وقواعد العمل المهمة في الأنظمة الخلفية الموثوقة.",
+        },
+      },
+    ],
   },
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  ...FOUNDATIONAL_BLOG_POSTS,
+  ...ADDITIONAL_BLOG_POSTS,
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
