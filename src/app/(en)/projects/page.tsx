@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Projects",
   description:
     "Case studies from EHATA – Digital Solutions: SaaS platforms, web apps, mobile products, ERP systems and training platforms.",
+  alternates: { canonical: "/projects/" },
   openGraph: {
     title: "Projects | EHATA – Digital Solutions",
     description:

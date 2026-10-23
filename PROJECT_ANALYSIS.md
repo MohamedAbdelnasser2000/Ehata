@@ -36,8 +36,8 @@
 | نمط النشر | **`output: "export"`** → موقع ملفات ثابتة في `out/`، **بلا سيرفر، بلا Backend، بلا قاعدة بيانات** |
 | اللغات | `en` (افتراضي) و`ar` (RTL) — التبديل على العميل فقط، محفوظ في `localStorage` |
 | الثيم | فاتح/داكن عبر كلاس `.dark` على `<html>`، محفوظ في `localStorage` |
-| عدد الصفحات المصدّرة | 17 (مسارات `app/` + 5 صفحات كورسات SSG + `404`) |
-| نظام التحكم بالإصدارات | **لا يوجد مستودع git** (`git status` → `fatal: not a git repository`). لا تتوقع `git diff`؛ قارن يدويًا أو أنشئ مستودع إن سمح المالك |
+| عدد المسارات المصدّرة | 76 حسب آخر بناء موثّق؛ افحص مخرجات البناء بعد تغييرات المسارات |
+| نظام التحكم بالإصدارات | مستودع Git مربوط بـ `origin/main` على GitHub |
 | اختبارات | **لا يوجد إطار اختبار** في المشروع. التحقق = lint + build + فحص يدوي في المتصفح |
 
 **بنية المشروع بحجمها الفعلي:** 74 ملف مصدري تحت `src/`، إجمالي ~8,467 سطر، وأكبر ملف هو `src/data/courses.ts` بـ 1,603 سطر (بيانات الكورسات الخمسة).
@@ -53,7 +53,7 @@
 3. **ممنوع تعديل `Navbar`** (`src/components/layout/navbar.tsx`) **أو الأقسام الأخرى** عند إضافة ميزة جديدة. (لهذا السبب تحديدًا `/academy` ليست في القائمة العلوية — انظر §15.2.)
 4. **الحفاظ على RTL والخطوط الحالية والوضع الداكن.** أي مكوّن جديد يجب أن يعمل في الحالتين `dir="rtl"` و`dir="ltr"` وفي `.dark`.
 5. **رقم واتساب واحد في ملف إعداد** وليس مكررًا في المكوّنات → `src/data/site.ts:40` (`WHATSAPP_NUMBER`).
-6. **الأرقام الحالية ملك المالك ولا تُستبدل بأخرى:** واتساب العائم `+201001917782`، وصفحة الاتصال `+20 11 05180133` و`+201001917782` (هاتف وواتساب)، السوشيال = Facebook وInstagram فقط (تم حذف X وYouTube وGitHub بتعليمات صريحة).
+6. **الأرقام الحالية ملك المالك ولا تُستبدل بأخرى:** واتساب العائم `+201001917782`، وصفحة الاتصال `+20 11 05180133` و`+201001917782` (هاتف وواتساب). لا تعرض حسابات اجتماعية حتى تُعتمد روابطها الرسمية.
 7. **المؤشر (cursor) العائم المضيء تم حذفه بتعليمات صريحة** — الموقع يستخدم مؤشر النظام. لا تُعِده. (`src/lib/hooks.ts:78` لا يزال يصدّر `useFinePointer` كبقية غير مستخدمة — انظر §15.5.)
 8. **لا تُشغّل `npx tsc --noEmit`** — المالك رفضه صراحة. فحص الأنواع يتم داخل `npm run build` أصلًا («Running TypeScript … Finished TypeScript in 27.9s»).
 9. **التصميم الحالي للكروت هو المرجع:** عند إضافة كورسات أو أقسام، أعد استخدام نفس شكل البطاقة (شارة المستوى، الأيقونة أعلى يمين في RTL، العنوان، الوصف، ثلاث نقاط، سطر المدة/المواعيد/المستوى، رابط «تفاصيل الدورة») بنفس المسافات والظلال وhover.
@@ -443,7 +443,7 @@ type CourseLevel = "beginner" | "intermediate" | "advanced";
 ## 10. الصفحات والأقسام (Inventory)
 
 ### 10.1 `/` — الرئيسية
-`src/app/page.tsx` بلا `metadata` محلية (ترث إعدادات `layout.tsx`)، ويستدعي أقسام الرئيسية بالترتيب المبيّن في §5.5. قسم الشهادات لا يظهر ما دامت قائمة الشهادات الموثقة فارغة.
+`src/app/(en)/page.tsx` يضيف canonical للجذر ويستدعي أقسام الرئيسية بالترتيب المبيّن في §5.5. قسم الشهادات لا يظهر ما دامت قائمة الشهادات الموثقة فارغة.
 
 | قسم | ملف | بياناته | أهم سلوك |
 |---|---|---|---|
@@ -452,7 +452,7 @@ type CourseLevel = "beginner" | "intermediate" | "advanced";
 | `ServicesPreviewSection` | `sections/services-preview-section.tsx` | `data/services.ts` (6 خدمات) | قائمة خدمات مرقمة؛ كل عنصر يفتح صفحة التفاصيل الخاصة به |
 | `FeaturedProjectsSection` | `sections/featured-projects-section.tsx` | `data/projects.ts` — 22 مشروعًا، منها **8** بـ `featured: true` | شبكة ثابتة متجاوبة؛ وكل بطاقة تفتح دراسة الحالة الخاصة بالمشروع |
 | `CoursesHighlightSection` | `sections/courses-highlight-section.tsx` (29) | `data/courses.ts` | `id="courses"` + `tone="surface"` + `<CoursesGrid courses={COURSES} />` — **بوابة الأكاديمية** |
-| `TechMarqueeSection` | `sections/tech-marquee-section.tsx` (43) | `data/tech.ts` | صفّان من `Marquee` (تقسيم نصف-نصف) |
+| `TechMarqueeSection` | `sections/tech-marquee-section.tsx` | `data/tech.ts` | مساران متعاكسا الحركة بالقائمة الكاملة |
 | `TestimonialsSection` | `sections/testimonials-section.tsx` | `data/testimonials.ts` | سلايدر بـ `AnimatePresence`؛ يعيد `null` إلى أن تضاف شهادات حقيقية ومصرح بها |
 | `CtaBanner` | `sections/cta-banner.tsx` | نصوص `t.cta` | خلفية كحلية هادئة مع `LogoMark` ثابت، بلا مشهد ثلاثي الأبعاد |
 
@@ -467,7 +467,7 @@ type CourseLevel = "beginner" | "intermediate" | "advanced";
 
 ### 10.5 `/contact` — النموذج بلا باك-إند
 `contact/page.tsx` و`ar/contact/page.tsx` = `ContactHead` + `ContactMain` + **`FaqSection` المعاد استخدامها من صفحة الخدمات**. يقرأ `ContactForm` قيمة `service` من query string على العميل ليبقى المسار قابلاً للتصدير الثابت، ويتحقق من أن القيمة تخص خدمة معروفة قبل تعبئتها.
-`ContactMain` (`contact-sections.tsx:30-139`) يعرض بطاقات: بريد (`mailto:`)، **كلا الرقمين كروابط `tel:`**، **كلا الرقمين كروابط `wa.me`** (من `CONTACT.whatsapp`)، العنوان، مواعيد العمل، ثم صندوق السوشيال (Facebook/Instagram فقط)، وشريط «خريطة» موكد (placeholder) معلّم بالتعليق `Map placeholder band` — استبدله بـ `<iframe>` من Google Maps عند الطلب.
+`ContactMain` يعرض البريد المؤكد (`mailto:`)، **كلا الرقمين كروابط `tel:`**، **كلا الرقمين كروابط `wa.me`**، وساعات العمل. لا يُعرض عنوان مكتبي، ولا تظهر روابط سوشيال قبل اعتماد الحسابات الرسمية؛ كما أزيلت الخريطة الوهمية.
 `ContactForm` (`contact-form.tsx`, 330 سطر) — العقد الكامل:
 - `useForm` بـ `mode: "onTouched"` + مخطط **zod يُعاد بناؤه لكل لغة** (`useMemo` على `t`) لتظهر رسائل التحقق بالعربي، مع `z.email()`, وتحقّق هاتف بالـ regex `/^[+]?[\d\s\-().]{7,20}$/`، و`message` ≥ 20 حرفًا، و`service` مطلوب.
 - الحالات: `idle | sending | sent | mailto | error`.
@@ -476,7 +476,7 @@ type CourseLevel = "beginner" | "intermediate" | "advanced";
 - `noValidate` على الفورم (التحقق عندنا لا المتصفح).
 
 ### 10.6 SEO
-`app/sitemap.ts` و`app/robots.ts` يحتاجان `export const dynamic = "force-static"` في التصدير الثابت (موجودان). يضيف sitemap صفحات الخدمات الست مع بدائل `en`/`ar`، وصفحات المشاريع والكورسات. بيانات كل خدمة تشمل Metadata وJSON-LD من نوع `WebPage` و`BreadcrumbList`. النطاق موحد في `src/lib/site-url.ts`؛ اضبط `NEXT_PUBLIC_SITE_URL` إلى origin الإنتاجي قبل النشر لتوليد canonical وOpen Graph وJSON-LD وsitemap وrobots بالنطاق الصحيح. إذا لم يُضبط، تُحذف الروابط المطلقة وخريطة الموقع بدل استخدام نطاق تجريبي.
+`app/sitemap.ts` و`app/robots.ts` ثابتان للبناء. خريطة الموقع تتضمن 41 صفحة أساسية مع روابط بديلة للصفحات العربية/الإنجليزية المتاحة. بيانات الخدمات تتضمن Metadata وJSON-LD من نوع `WebPage` و`BreadcrumbList`. النطاق الافتراضي هو `https://ehata-tech.vercel.app` ويمكن تغييره عبر `NEXT_PUBLIC_SITE_URL`؛ النطاق نفسه يغذي canonical وOpen Graph وJSON-LD وsitemap وrobots.
 
 ---
 
@@ -676,7 +676,7 @@ python -m http.server 4000 --directory out
 لا تحذفها بصمت: احذفها فقط بطلب، واحذف معها كل مرجع (grep أولًا).
 
 ### 15.7 اعتبارات النشر
-النطاق `https://ehata.example.com` **placeholder في 3 ملفات**؛ والبريد `hello@ehata.dev` والعنوان «Smart Village, Giza, Egypt» معلنان في الكود بتعليق `TODO` في `src/data/site.ts:25`. روابط `SOCIALS` (`facebook.com/ehata`, `instagram.com/ehata`) **غير موثّقة كحسابات فعلية**. `public/images/projects/` بلا صور (فقط `README.txt`). صورة OG معلنة `1200×630` بينما `public/logo.png` فعليًا **639×632** — اختلاف تجميلي في metadata فقط. لا يوجد مستودع git → **لا نقطة رجوع**: خذ نسخة من `src/` قبل أي تعديل واسع.
+النطاق الافتراضي `https://ehata-tech.vercel.app` في `src/lib/site-url.ts` ويُستخدم في canonical وJSON-LD وsitemap وrobots. البريد المؤكد هو `mnkq2000@gmail.com`؛ لا يُعرض عنوان مكتبي، وروابط الشبكات الاجتماعية مؤجلة حتى تأكيد الحسابات الرسمية. نموذج التواصل يستخدم `mailto:` حتى يوفّر المالك endpoint لاستقبال النماذج. أغلفة `public/images/projects/` رسومات توضيحية أصلية وليست لقطات شاشة للأنظمة. صورة `public/logo.png` أبعادها **639×632**؛ metadata لا تصرح بأبعاد مشاركة مختلفة. المستودع مربوط بـ GitHub؛ راجع حالة `git status` قبل أي تعديل.
 
 ---
 
@@ -685,7 +685,7 @@ python -m http.server 4000 --directory out
 **قبل أن تلمس شيئًا:**
 - [ ] قرأت §2 (القيود) ولن تكسرها — تحديدًا: لا Backend، لا API routes، لا تعديل Navbar/الأقسام، لا `tsc --noEmit`.
 - [ ] حددت أن الطلب **بيانات** أم **واجهة** أم **معمار** (انظر §0 وخريطة §4.2).
-- [ ] لا يوجد مستودع git → نسخت احتياطية قبل التعديل الواسع.
+- [ ] تحقق من حالة مستودع Git وتجنب تضمين مخرجات البناء أو ملفات البيئة.
 
 **أثناء التنفيذ:**
 - [ ] كل نص جديد في `src/data/` أو `src/messages/`، وفي `en` و`ar` معًا.

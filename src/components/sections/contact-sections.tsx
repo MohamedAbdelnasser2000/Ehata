@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, Phone } from "lucide-react";
 import { Kicker, Reveal, SplitHeading } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
@@ -32,7 +32,7 @@ export function ContactHead() {
 }
 
 export function ContactMain() {
-  const { t, tr } = useLocale();
+  const { t } = useLocale();
 
   return (
     <Section className="!pt-6 !pb-24">
@@ -75,11 +75,6 @@ export function ContactMain() {
                 ltr
               />
               <InfoCard
-                icon={<MapPin className="h-5 w-5" />}
-                label={t.contactPage.info.addressLabel}
-                value={tr(CONTACT.address)}
-              />
-              <InfoCard
                 icon={<Clock className="h-5 w-5" />}
                 label={t.contactPage.info.hoursLabel}
                 value={`${t.contactPage.info.hoursValue} — ${t.contactPage.info.hoursValue2}`}
@@ -87,64 +82,34 @@ export function ContactMain() {
             </div>
           </Reveal>
 
-          {/* Socials */}
-          <Reveal delay={0.1}>
-            <SpotlightCard
-              spotlightColor="rgba(46, 155, 255, 0.12)"
-              className="rounded-2xl border-line/80 bg-surface/85 p-6 backdrop-blur-sm"
-            >
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-muted">
-                {t.contactPage.info.followUs}
-              </h3>
-              <div className="flex gap-3">
-                {SOCIALS.map((s) => (
-                  <a
-                    key={s.id}
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={s.label}
-                    className="grid h-11 w-11 place-items-center rounded-full border border-line bg-surface text-muted transition-all hover:border-blue/50 hover:bg-blue hover:text-white hover:shadow-[0_0_12px_rgba(0,87,231,0.4)]"
-                  >
-                    <SocialIcon id={s.id} />
-                  </a>
-                ))}
-              </div>
-            </SpotlightCard>
-          </Reveal>
+          {SOCIALS.length > 0 && (
+            <Reveal delay={0.1}>
+              <SpotlightCard
+                spotlightColor="rgba(46, 155, 255, 0.12)"
+                className="rounded-2xl border-line/80 bg-surface/85 p-6 backdrop-blur-sm"
+              >
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-muted">
+                  {t.contactPage.info.followUs}
+                </h3>
+                <div className="flex gap-3">
+                  {SOCIALS.map((s) => (
+                    <a
+                      key={s.id}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      className="grid h-11 w-11 place-items-center rounded-full border border-line bg-surface text-muted transition-all hover:border-blue/50 hover:bg-blue hover:text-white hover:shadow-[0_0_12px_rgba(0,87,231,0.4)]"
+                    >
+                      <SocialIcon id={s.id} />
+                    </a>
+                  ))}
+                </div>
+              </SpotlightCard>
+            </Reveal>
+          )}
         </div>
       </div>
-
-      {/* Map placeholder band */}
-      <Reveal delay={0.1}>
-        <div
-          className="relative mt-10 flex h-64 items-center justify-center overflow-hidden rounded-3xl border border-line/80 bg-surface-2 sm:h-80"
-          aria-label={t.contactPage.info.mapTitle}
-          role="img"
-        >
-          {/* faux map grid so the slot is visually obvious */}
-          <div className="bg-grid absolute inset-0 opacity-60" aria-hidden />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(40% 60% at 50% 50%, rgba(0,87,231,.12), transparent)",
-            }}
-            aria-hidden
-          />
-          <div className="relative flex flex-col items-center gap-3 text-center">
-            <span className="bg-gradient-signature grid h-12 w-12 place-items-center rounded-full text-white shadow-[0_10px_28px_-10px_rgba(0,87,231,.8)] animate-float">
-              <MapPin className="h-6 w-6" aria-hidden />
-            </span>
-            <p className="text-sm font-semibold text-foreground">
-              {t.contactPage.info.mapTitle}
-            </p>
-            <p className="max-w-sm text-[13px] text-muted">
-              {t.contactPage.info.mapPlaceholder}
-            </p>
-          </div>
-        </div>
-      </Reveal>
     </Section>
   );
 }

@@ -175,13 +175,10 @@
       "emailLabel": "البريد",
       "phoneLabel": "الهاتف",
       "whatsappLabel": "واتساب",
-      "addressLabel": "المكتب",
       "hoursLabel": "ساعات العمل",
       "hoursValue": "الأحد – الخميس · 9:00 – 18:00",
       "hoursValue2": "السبت · 10:00 – 14:00 (دعم)",
-      "followUs": "تابعنا",
-      "mapTitle": "موقعنا",
-      "mapPlaceholder": "مكان الخريطة التفاعلية — ضمّن خرائط Google أو <iframe> هنا."
+      "followUs": "تابعنا"
     }
   },
   "academyPage": {

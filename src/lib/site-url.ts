@@ -15,4 +15,5 @@ function getSiteOrigin(): string | undefined {
   return url.origin;
 }
 
-export const SITE_URL = getSiteOrigin();
+export const SITE_URL =
+  getSiteOrigin() ?? "https://ehata-tech.vercel.app";

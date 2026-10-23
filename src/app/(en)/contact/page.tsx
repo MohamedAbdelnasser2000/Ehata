@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Contact EHATA – Digital Solutions for software projects, SaaS builds, ERP systems or programming courses. We reply within one business day.",
+  alternates: {
+    canonical: "/contact/",
+    languages: {
+      en: "/contact/",
+      ar: "/ar/contact/",
+      "x-default": "/contact/",
+    },
+  },
   openGraph: {
     title: "Contact | EHATA – Digital Solutions",
     description: "Start a conversation about your product or training goals.",

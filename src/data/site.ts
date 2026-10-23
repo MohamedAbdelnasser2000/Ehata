@@ -1,10 +1,7 @@
 /**
  * Global site configuration: navigation, contact details and socials.
- * Replace the placeholder email/address with real ones — nothing else in
- * the codebase needs to change.
+ * Update contact details and official social URLs here.
  */
-import type { LocalizedText } from "@/lib/i18n";
-
 export const NAV_LINKS = [
   { href: "/", labelKey: "home" },
   { href: "/about", labelKey: "about" },
@@ -19,18 +16,12 @@ export interface ContactInfo {
   phones: readonly string[];
   /** WhatsApp numbers; each row opens wa.me (digits only, country code kept). */
   whatsapp: readonly string[];
-  address: LocalizedText;
 }
 
-/* TODO: real email and address (phone/WhatsApp numbers are client-supplied). */
 export const CONTACT: ContactInfo = {
-  email: "hello@ehata.dev",
+  email: "mnkq2000@gmail.com",
   phones: ["+20 11 05180133", "+201001917782"],
   whatsapp: ["+20 11 05180133", "+201001917782"],
-  address: {
-    en: "Smart Village, Giza, Egypt",
-    ar: "سمارت فيليج، الجيزة، مصر",
-  },
 };
 
 /**
@@ -55,10 +46,11 @@ export function whatsappChatHref(message?: string): string {
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
 
-/** `id` is a key of the PATHS registry in src/components/layout/social-icons.tsx */
-export const SOCIALS = [
-  { id: "facebook", href: "https://facebook.com/ehata", label: "Facebook" },
-  { id: "instagram", href: "https://instagram.com/ehata", label: "Instagram" },
-] as const;
+/** Official social links can be added here once their URLs are confirmed. */
+export const SOCIALS: readonly {
+  id: "facebook" | "instagram";
+  href: string;
+  label: string;
+}[] = [];
 
 export type SocialId = (typeof SOCIALS)[number]["id"];

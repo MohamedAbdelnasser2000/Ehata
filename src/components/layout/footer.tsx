@@ -20,21 +20,23 @@ export function Footer() {
           <p className="max-w-xs text-[15px] leading-relaxed text-muted">
             {t.footer.tagline}
           </p>
-          <ul className="flex gap-3" aria-label={t.contactPage.info.followUs}>
-            {SOCIALS.map((s) => (
-              <li key={s.id}>
-                <a
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="grid h-10 w-10 place-items-center rounded-full border border-line text-muted transition-colors hover:border-blue/50 hover:text-blue"
-                >
-                  <SocialIcon id={s.id} />
-                </a>
-              </li>
-            ))}
-          </ul>
+          {SOCIALS.length > 0 && (
+            <ul className="flex gap-3" aria-label={t.contactPage.info.followUs}>
+              {SOCIALS.map((s) => (
+                <li key={s.id}>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="grid h-10 w-10 place-items-center rounded-full border border-line text-muted transition-colors hover:border-blue/50 hover:text-blue"
+                  >
+                    <SocialIcon id={s.id} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         {/* Quick links */}
@@ -93,7 +95,6 @@ export function Footer() {
                 </a>
               </li>
             ))}
-            <li>{tr(CONTACT.address)}</li>
           </ul>
         </div>
       </div>

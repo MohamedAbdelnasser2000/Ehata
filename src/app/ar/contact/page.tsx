@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: "تواصل معنا",
   description:
     "تواصل مع EHATA لمناقشة تطوير البرمجيات أو تطبيقات الويب وERP أو التدريب والاستشارات التقنية.",
+  alternates: {
+    canonical: "/ar/contact/",
+    languages: {
+      en: "/contact/",
+      ar: "/ar/contact/",
+      "x-default": "/contact/",
+    },
+  },
   openGraph: {
     title: "تواصل معنا | EHATA للحلول الرقمية",
     description: "أخبرنا عن احتياجك وسنناقش معك الخطوة المناسبة.",

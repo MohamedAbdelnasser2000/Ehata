@@ -24,12 +24,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ar/contact/",
     ...COURSES.map((course) => `/academy/${course.slug}/`),
   ];
-  const baseRoutes = routes.map((path) => ({
-    url: `${SITE_URL}${path}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: path === "/" ? 1 : path.startsWith("/academy/") ? 0.7 : 0.8,
-  }));
+  const baseRoutes = routes.map((path) => {
+    const alternatePath =
+      path === "/services/"
+        ? "/ar/services/"
+        : path === "/ar/services/"
+          ? "/services/"
+          : path === "/contact/"
+            ? "/ar/contact/"
+            : path === "/ar/contact/"
+              ? "/contact/"
+              : undefined;
+
+    return {
+      url: `${SITE_URL}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: path === "/" ? 1 : path.startsWith("/academy/") ? 0.7 : 0.8,
+      ...(alternatePath
+        ? {
+            alternates: {
+              languages: {
+                en: `${SITE_URL}${path.startsWith("/ar/") ? alternatePath : path}`,
+                ar: `${SITE_URL}${path.startsWith("/ar/") ? path : alternatePath}`,
+                "x-default": `${SITE_URL}${path.startsWith("/ar/") ? alternatePath : path}`,
+              },
+            },
+          }
+        : {}),
+    };
+  });
   const projectRoutes = PROJECTS.map((project) => ({
     url: `${SITE_URL}${getProjectPath(project.id)}`,
     changeFrequency: "monthly" as const,

@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Custom software, web & SaaS platforms, ERP systems, UI/UX design, programming courses and consulting — with fixed-price, dedicated-team and hourly engagement models.",
+  alternates: {
+    canonical: "/services/",
+    languages: {
+      en: "/services/",
+      ar: "/ar/services/",
+      "x-default": "/services/",
+    },
+  },
   openGraph: {
     title: "Services | EHATA – Digital Solutions",
     description:

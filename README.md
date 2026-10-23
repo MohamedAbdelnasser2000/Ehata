@@ -1,6 +1,6 @@
 # EHATA – Digital Solutions · Portfolio Website
 
-Premium bilingual (EN/AR + RTL) portfolio site for a software studio & programming academy.
+Premium bilingual (EN/AR + RTL) portfolio site for a software company & programming academy.
 Next.js 16 (App Router) · React 19 · TypeScript strict · Tailwind CSS 4 · Motion · GSAP +
 ScrollTrigger · Lenis · React Three Fiber + drei + postprocessing · Radix primitives ·
 react-hook-form + zod · static-export friendly (`output: "export"` — no server required).
@@ -10,20 +10,18 @@ react-hook-form + zod · static-export friendly (`output: "export"` — no serve
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run build      # type-checks, lints-clean compile → then exports static site to ./out
+npm run build      # type-checks and exports the static site to ./out
 npm run lint       # ESLint (React 19 rules included)
 ```
 
-The production build is a **fully static site** in `out/` — host it on Netlify, Vercel,
-S3, GitHub Pages or any plain file server. `next start` (Node server) also works.
-The current project portfolio build prerenders 75 pages, including 44 localized
+The production build is a **fully static site** in `out/` — host it on Vercel, Netlify,
+S3, GitHub Pages or any static file server. `next start` is not used with static export.
+The current project portfolio build prerenders 76 routes, including 44 localized
 project-detail pages (22 projects) and 12 localized service-detail pages (6 services).
 
-Before building for deployment, set `NEXT_PUBLIC_SITE_URL` to the canonical HTTPS
-origin (for example, `https://your-domain.com`). The same value is used by canonical
-metadata, JSON-LD, `sitemap.xml` and `robots.txt`; rebuild the static export if it changes.
-If it is unset, the build omits absolute canonical URLs and sitemap entries instead
-of publishing metadata under a placeholder domain.
+The canonical origin defaults to `https://ehata-tech.vercel.app`. Set
+`NEXT_PUBLIC_SITE_URL` to override it when building for a different production domain.
+The canonical origin is used by metadata, JSON-LD, `sitemap.xml` and `robots.txt`.
 
 > Note on `AGENTS.md`: this project uses **Next.js 16.4**, whose APIs differ from older
 > versions (global `LayoutProps`/`PageProps` helpers, `cacheComponents` semantics,
@@ -85,28 +83,23 @@ Bilingual fields are `{ en, ar }` objects resolved by `useLocale().tr()`.
   `--sky`, `--slate`, `--bg`, `--gradient-signature`, radii, glows). Change them once,
   the whole site follows. Dark-mode tokens live in the same file's `.dark` block.
 
-## Wiring the contact form (no backend)
+## Contact information and form (no backend)
 
-`src/components/sections/contact-form.tsx`:
+The confirmed customer contact email is `mnkq2000@gmail.com`. Phone and WhatsApp
+numbers are maintained in `src/data/site.ts`. The office address is intentionally
+not shown, and social links remain hidden until official profile URLs are provided.
 
-1. **Formspree / EmailJS / web3forms** — create `.env.local`:
-   `NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/yourid`
-   The form POSTs JSON there and shows the animated success state.
-2. **No endpoint set (default)** — submit opens the visitor's mail client
-   pre-filled (mailto fallback), and the success panel explains what happened.
+`src/components/sections/contact-form.tsx` supports a hosted Formspree-compatible
+endpoint via `NEXT_PUBLIC_FORMSPREE_ENDPOINT`. Until one is configured, submitting
+the form opens the visitor's email client with a pre-filled message addressed to
+the confirmed contact email.
 
 Rebuild after changing env values (`NEXT_PUBLIC_*` is inlined at build time).
 
-## Maps
-
-The contact page ships a styled map placeholder band. Replace the block in
-`src/components/sections/contact-sections.tsx` (marked `Map placeholder`) with a
-Google Maps `<iframe>` embed.
-
 ## SEO before launch
 
-- Set your real domain in `src/app/layout.tsx`, `src/app/sitemap.ts`, `src/app/robots.ts`
-  (search for `ehata.example.com`).
+- The canonical origin defaults to `https://ehata-tech.vercel.app`; override it with
+  `NEXT_PUBLIC_SITE_URL` if the production domain changes.
 - Metadata & Open Graph are defined per page; add `public/og.png` if you want a custom
   share image (currently `/logo.png` is used).
 
@@ -115,7 +108,7 @@ Google Maps `<iframe>` embed.
 - Reduced motion: `prefers-reduced-motion` disables Lenis, GSAP timelines, split-text,
   counters and other motion effects. The homepage uses a static brand mark rather than
   a WebGL hero; the 3D scene modules remain available but are not currently mounted.
-- The portfolio contains 14 selected, source-reviewed projects across web, SaaS,
+- The portfolio contains 22 selected, source-reviewed projects across web, SaaS,
   desktop, learning and interactive categories. Each project detail explains its
   problem, approach, implemented features, intended users and architecture.
 - Each project card opens a dedicated, statically generated case-study page in English

@@ -175,13 +175,10 @@
       "emailLabel": "Email",
       "phoneLabel": "Phone",
       "whatsappLabel": "WhatsApp",
-      "addressLabel": "Office",
       "hoursLabel": "Working hours",
       "hoursValue": "Sun – Thu · 9:00 – 18:00",
       "hoursValue2": "Sat · 10:00 – 14:00 (support)",
-      "followUs": "Follow us",
-      "mapTitle": "Find us",
-      "mapPlaceholder": "Interactive map placeholder — embed Google Maps or an <iframe> here."
+      "followUs": "Follow us"
     }
   },
   "academyPage": {
