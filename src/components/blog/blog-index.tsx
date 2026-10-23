@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpLeft, BookOpen, Clock3, ArrowUpRight } from "lucide-react";
+import { ArrowUpLeft, BookOpen, Clock3, ArrowUpRight } from "lucide-react";
 import type { Locale } from "@/lib/i18n";
 import { pick } from "@/lib/i18n";
 import { BLOG_POSTS } from "@/data/blog";

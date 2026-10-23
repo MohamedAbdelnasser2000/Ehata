@@ -7,7 +7,6 @@ import { Kicker, Reveal, SplitHeading } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import { BorderBeam } from "@/components/ui/border-beam";
 import { Icon } from "@/lib/icons";
 import { useLocale } from "@/components/providers/locale-provider";
 import { ABOUT } from "@/data/about";

@@ -1,5 +1,6 @@
 import type { LocalizedText } from "@/lib/i18n";
 import { ADDITIONAL_BLOG_POSTS } from "@/data/blog-additional";
+import { NEXT_TOPIC_BLOG_POSTS } from "@/data/blog-next-topics";
 
 export interface BlogSection {
   heading: LocalizedText;
@@ -450,6 +451,7 @@ const FOUNDATIONAL_BLOG_POSTS: BlogPost[] = [
 export const BLOG_POSTS: BlogPost[] = [
   ...FOUNDATIONAL_BLOG_POSTS,
   ...ADDITIONAL_BLOG_POSTS,
+  ...NEXT_TOPIC_BLOG_POSTS,
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
