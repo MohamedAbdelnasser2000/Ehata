@@ -16,7 +16,7 @@ const STORAGE_KEY = "ehata:theme";
 
 /** Inline, pre-hydration script — rendered as a string, no imports allowed. */
 export function ThemeScript() {
-  const src = `(function(){try{var s=localStorage.getItem("${STORAGE_KEY}");var d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;var c=document.documentElement.classList;if(d)c.add("dark");else c.remove("dark");}catch(e){}})();`;
+  const src = `(function(){try{var s=localStorage.getItem("${STORAGE_KEY}");var d=s==="dark";var c=document.documentElement.classList;if(d)c.add("dark");else c.remove("dark");}catch(e){}})();`;
   return <script dangerouslySetInnerHTML={{ __html: src }} />;
 }
 
