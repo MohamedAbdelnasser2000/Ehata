@@ -6,6 +6,6 @@ export function getProjectPath(slug: string, locale: Locale = "en") {
     : `/projects/${slug}/`;
 }
 
-export function getProjectsPath() {
-  return "/projects/";
+export function getProjectsPath(locale: Locale = "en") {
+  return locale === "ar" ? "/ar/projects/" : "/projects/";
 }

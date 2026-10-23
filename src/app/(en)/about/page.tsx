@@ -13,7 +13,14 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "EHATA is a software engineering company and development academy. Our story, mission, values, team and the five-stage process behind every launch.",
-  alternates: { canonical: "/about/" },
+  alternates: {
+    canonical: "/about/",
+    languages: {
+      en: "/about/",
+      ar: "/ar/about/",
+      "x-default": "/about/",
+    },
+  },
   openGraph: {
     title: "About EHATA – Digital Solutions",
     description:

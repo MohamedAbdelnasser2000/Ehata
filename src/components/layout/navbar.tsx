@@ -14,6 +14,7 @@ import { NAV_LINKS } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { MagneticButton } from "@/components/ui/magnetic-button";
 import { getBlogIndexPath } from "@/lib/blog-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
 export function Navbar() {
   const { t, locale } = useLocale();
@@ -37,20 +38,22 @@ export function Navbar() {
 
   const links = NAV_LINKS.flatMap((l) => {
     const link = {
-      href:
-        l.href === "/services" && pathname.startsWith("/ar/")
-          ? "/ar/services/"
-          : l.href === "/contact" && pathname.startsWith("/ar/")
-            ? "/ar/contact/"
-            : l.href,
+      href: getLocalizedSitePath(l.href, locale),
       label: t.nav[l.labelKey],
     };
 
     return l.href === "/projects"
-      ? [link, { href: getBlogIndexPath(locale), label: t.footer.blog }]
+      ? [
+          link,
+          {
+            href: getBlogIndexPath(locale),
+            label: t.footer.blog,
+          },
+        ]
       : [link];
   });
-  const contactHref = pathname.startsWith("/ar/") ? "/ar/contact/" : "/contact/";
+  const contactHref = getLocalizedSitePath("/contact/", locale);
+  const homeHref = getLocalizedSitePath("/", locale);
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -68,7 +71,7 @@ export function Navbar() {
         aria-label={t.footer.company}
         className="mx-auto flex h-[72px] w-full max-w-7xl items-center justify-between gap-4 px-5 md:px-8"
       >
-        <Link href="/" className="shrink-0" aria-label="EHATA — Home">
+        <Link href={homeHref} className="shrink-0" aria-label="EHATA — Home">
           <LogoLockup />
         </Link>
 

@@ -8,6 +8,7 @@ import { LogoLockup } from "@/components/layout/logo";
 import { useLocale } from "@/components/providers/locale-provider";
 import { SERVICES } from "@/data/services";
 import { getServicePath } from "@/lib/service-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 import { Icon } from "@/lib/icons";
 
 export function HeroSection() {
@@ -36,11 +37,11 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <MagneticButton href="/projects" size="lg">
+            <MagneticButton href={getLocalizedSitePath("/projects/", locale)} size="lg">
               {t.common.viewProjects}
               <ArrowUpRight className="h-[18px] w-[18px] rtl:-scale-x-100" />
             </MagneticButton>
-            <MagneticButton href="/#courses" variant="outline" size="lg">
+            <MagneticButton href={getLocalizedSitePath("/#courses", locale)} variant="outline" size="lg">
               {t.common.ourCourses}
             </MagneticButton>
           </div>

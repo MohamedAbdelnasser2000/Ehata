@@ -7,9 +7,10 @@ import { MagneticButton } from "@/components/ui/magnetic-button";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { useLocale } from "@/components/providers/locale-provider";
 import { LogoMark } from "@/components/layout/logo";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
 export function CtaBanner() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
   return (
     <section
@@ -49,12 +50,12 @@ export function CtaBanner() {
               </p>
 
               <div className="flex flex-wrap gap-4 pt-2">
-                <MagneticButton href="/contact" variant="onDark" size="lg">
+                <MagneticButton href={getLocalizedSitePath("/contact/", locale)} variant="onDark" size="lg">
                   {t.cta.primary}
                   <ArrowUpRight className="h-[18px] w-[18px] rtl:-scale-x-100" />
                 </MagneticButton>
                 <MagneticButton
-                  href="/services"
+                  href={getLocalizedSitePath("/services/", locale)}
                   size="lg"
                   className="border border-white/25 text-white hover:border-sky hover:bg-white/10"
                 >

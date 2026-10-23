@@ -11,7 +11,14 @@ export const metadata: Metadata = {
       "Pick a practice-led track and build a portfolio employers can open: .NET, PHP, mobile, AI and software engineering.",
     url: "/academy",
   },
-  alternates: { canonical: "/academy" },
+  alternates: {
+    canonical: "/academy/",
+    languages: {
+      en: "/academy/",
+      ar: "/ar/academy/",
+      "x-default": "/academy/",
+    },
+  },
 };
 
 export default function AcademyPage() {

@@ -6,6 +6,7 @@ import type { Project } from "@/data/types";
 import { PROJECTS } from "@/data/projects";
 import { getProjectClientGuide } from "@/data/project-client-guides";
 import { getProjectPath, getProjectsPath } from "@/lib/project-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 import { SITE_URL } from "@/lib/site-url";
 import { whatsappChatHref } from "@/data/site";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
@@ -19,6 +20,7 @@ const COPY = {
     projects: "Projects",
     caseStudy: "Project case study",
     illustration: "Illustrative cover — not an application screenshot",
+    statusNotProvided: "Project status not provided",
     overview: "Executive Overview",
     problem: "Operational Challenges Addressed",
     solution: "The Integrated Solution & Business Value",
@@ -48,6 +50,7 @@ const COPY = {
     projects: "المشاريع",
     caseStudy: "دراسة حالة المشروع",
     illustration: "غلاف توضيحي — وليس لقطة شاشة للتطبيق",
+    statusNotProvided: "حالة تنفيذ المشروع غير موضحة",
     overview: "نبذة تنفيذية شاملة عن المنظومة",
     problem: "التحديات التشغيلية التي يعالجها النظام",
     solution: "الحل المتكامل والقيمة التشغيلية المضافة",
@@ -119,7 +122,9 @@ export function ProjectDetailPage({
         "@type": "ListItem",
         position: 2,
         name: copy.projects,
-        ...(SITE_URL ? { item: `${SITE_URL}${getProjectsPath()}` } : {}),
+        ...(SITE_URL
+          ? { item: `${SITE_URL}${getProjectsPath(locale)}` }
+          : {}),
       },
       {
         "@type": "ListItem",
@@ -157,7 +162,10 @@ export function ProjectDetailPage({
         <nav aria-label={copy.breadcrumb} className="mb-9">
           <ol className="flex flex-wrap items-center gap-2 text-sm text-muted">
             <li>
-              <Link className="transition-colors hover:text-blue" href="/">
+              <Link
+                className="transition-colors hover:text-blue"
+                href={getLocalizedSitePath("/", locale)}
+              >
                 {copy.home}
               </Link>
             </li>
@@ -165,7 +173,7 @@ export function ProjectDetailPage({
             <li>
               <Link
                 className="transition-colors hover:text-blue"
-                href={getProjectsPath()}
+                href={getProjectsPath(locale)}
               >
                 {copy.projects}
               </Link>
@@ -185,11 +193,9 @@ export function ProjectDetailPage({
             <span className="rounded-full border border-line bg-surface/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur-sm">
               {CATEGORY_LABELS[project.category][locale]}
             </span>
-            {project.status && (
-              <span className="rounded-full border border-line bg-surface/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur-sm">
-                {project.status[locale]}
-              </span>
-            )}
+            <span className="rounded-full border border-line bg-surface/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur-sm">
+              {project.status?.[locale] ?? COPY[locale].statusNotProvided}
+            </span>
           </div>
           <h1 className="max-w-4xl text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl md:text-5xl">
             {title}
@@ -423,7 +429,7 @@ export function ProjectDetailPage({
                 <ArrowUpRight className="h-4 w-4 rtl:-scale-x-100" aria-hidden />
               </a>
               <Link
-                href="/contact/"
+                href={getLocalizedSitePath("/contact/", locale)}
                 className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-line bg-surface px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:border-blue/40 hover:text-blue"
               >
                 {copy.contactSecondary}
@@ -495,7 +501,7 @@ export function ProjectDetailPage({
               ))}
             </div>
             <Link
-              href={getProjectsPath()}
+              href={getProjectsPath(locale)}
               className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-blue hover:text-sky"
             >
               <ArrowLeft className="h-4 w-4 rtl:-scale-x-100" aria-hidden />

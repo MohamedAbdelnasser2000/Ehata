@@ -16,38 +16,57 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const routes = [
     "/",
+    "/ar/",
     "/about/",
+    "/ar/about/",
     "/projects/",
+    "/ar/projects/",
     "/services/",
     "/contact/",
     "/academy/",
+    "/ar/academy/",
     "/blog/",
     "/ar/blog/",
     "/ar/services/",
     "/ar/contact/",
     ...COURSES.map((course) => `/academy/${course.slug}/`),
+    ...COURSES.map((course) => `/ar/academy/${course.slug}/`),
   ];
+  const alternatePaths: Record<string, string> = {
+    "/": "/ar/",
+    "/ar/": "/",
+    "/about/": "/ar/about/",
+    "/ar/about/": "/about/",
+    "/projects/": "/ar/projects/",
+    "/ar/projects/": "/projects/",
+    "/services/": "/ar/services/",
+    "/ar/services/": "/services/",
+    "/contact/": "/ar/contact/",
+    "/ar/contact/": "/contact/",
+    "/academy/": "/ar/academy/",
+    "/ar/academy/": "/academy/",
+    "/blog/": "/ar/blog/",
+    "/ar/blog/": "/blog/",
+  };
+  for (const course of COURSES) {
+    alternatePaths[`/academy/${course.slug}/`] =
+      `/ar/academy/${course.slug}/`;
+    alternatePaths[`/ar/academy/${course.slug}/`] =
+      `/academy/${course.slug}/`;
+  }
   const baseRoutes = routes.map((path) => {
-    const alternatePath =
-      path === "/services/"
-        ? "/ar/services/"
-        : path === "/ar/services/"
-          ? "/services/"
-          : path === "/blog/"
-            ? "/ar/blog/"
-            : path === "/ar/blog/"
-              ? "/blog/"
-              : path === "/contact/"
-                ? "/ar/contact/"
-                : path === "/ar/contact/"
-                  ? "/contact/"
-                  : undefined;
+    const alternatePath = alternatePaths[path];
 
     return {
       url: `${SITE_URL}${path}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: path === "/" ? 1 : path.startsWith("/academy/") ? 0.7 : 0.8,
+      priority:
+        path === "/" || path === "/ar/"
+          ? 1
+          : path.includes("/academy/")
+            ? 0.7
+            : 0.8,
       ...(alternatePath
         ? {
             alternates: {

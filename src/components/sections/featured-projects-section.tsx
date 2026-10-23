@@ -9,6 +9,7 @@ import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { useLocale } from "@/components/providers/locale-provider";
 import { PROJECTS } from "@/data/projects";
 import { getProjectPath } from "@/lib/project-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
 export function FeaturedProjectsSection() {
   const { t, tr, locale } = useLocale();
@@ -84,7 +85,7 @@ export function FeaturedProjectsSection() {
 
         <div className="mt-10 flex justify-center md:mt-12">
           <Link
-            href="/projects/"
+            href={getLocalizedSitePath("/projects/", locale)}
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-signature px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_-14px_rgba(0,87,231,.65)] transition-[transform,opacity] duration-300 hover:-translate-y-0.5 hover:opacity-90 motion-reduce:transform-none motion-reduce:transition-none"
           >
             {t.common.viewProjects}

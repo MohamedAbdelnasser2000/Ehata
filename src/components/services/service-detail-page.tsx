@@ -11,6 +11,7 @@ import type { Service } from "@/data/types";
 import { COURSES } from "@/data/courses";
 import { getServiceDetail } from "@/data/service-details";
 import { getServicePath, getContactPath } from "@/lib/service-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 import { SITE_URL } from "@/lib/site-url";
 import { whatsappChatHref } from "@/data/site";
 import { Icon } from "@/lib/icons";
@@ -170,7 +171,10 @@ export function ServiceDetailPage({
         <nav aria-label={copy.breadcrumb} className="mb-10">
           <ol className="flex flex-wrap items-center gap-2 text-sm text-muted">
             <li>
-              <Link className="transition-colors hover:text-blue" href="/">
+              <Link
+                className="transition-colors hover:text-blue"
+                href={getLocalizedSitePath("/", locale)}
+              >
                 {copy.home}
               </Link>
             </li>

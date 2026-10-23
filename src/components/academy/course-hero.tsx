@@ -23,9 +23,10 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { Icon } from "@/lib/icons";
 import type { Course } from "@/data/types";
 import { cn } from "@/lib/utils";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
 export function CourseHero({ course }: { course: Course }) {
-  const { t, tr } = useLocale();
+  const { t, tr, locale } = useLocale();
 
   const facts: { label: string; value: string; icon: LucideIcon }[] = [
     {
@@ -71,7 +72,7 @@ export function CourseHero({ course }: { course: Course }) {
           className="flex flex-wrap items-center gap-1.5 text-xs font-medium text-muted"
         >
           <Link
-            href="/"
+            href={getLocalizedSitePath("/", locale)}
             className="transition-colors hover:text-blue"
           >
             {t.coursePage.breadcrumbHome}
@@ -81,7 +82,7 @@ export function CourseHero({ course }: { course: Course }) {
             aria-hidden
           />
           <Link
-            href="/academy"
+            href={getLocalizedSitePath("/academy/", locale)}
             className="transition-colors hover:text-blue"
           >
             {t.coursePage.breadcrumbAcademy}
@@ -127,7 +128,7 @@ export function CourseHero({ course }: { course: Course }) {
                 label={t.coursePage.enroll}
               />
               <Link
-                href="/academy"
+                href={getLocalizedSitePath("/academy/", locale)}
                 className="inline-flex h-12 items-center gap-2 rounded-full border border-line bg-surface/70 px-5 text-sm font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-blue/50 hover:text-blue"
               >
                 <ArrowLeft className="h-4 w-4 rtl:-scale-x-100" aria-hidden />

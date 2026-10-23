@@ -7,6 +7,7 @@ import { SocialIcon } from "./social-icons";
 import { CONTACT, NAV_LINKS, SOCIALS, telHref } from "@/data/site";
 import { SERVICES } from "@/data/services";
 import { getBlogIndexPath } from "@/lib/blog-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
 export function Footer() {
   const { t, tr, locale } = useLocale();
@@ -49,7 +50,7 @@ export function Footer() {
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
                 <Link
-                  href={l.href}
+                  href={getLocalizedSitePath(l.href, locale)}
                   className="text-[15px] text-muted transition-colors hover:text-blue"
                 >
                   {t.nav[l.labelKey]}
@@ -76,7 +77,7 @@ export function Footer() {
             {SERVICES.map((s) => (
               <li key={s.id}>
                 <Link
-                  href="/services"
+                  href={getLocalizedSitePath("/services/", locale)}
                   className="text-[15px] text-muted transition-colors hover:text-blue"
                 >
                   {tr(s.title)}

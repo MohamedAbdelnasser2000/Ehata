@@ -8,6 +8,7 @@ import { SERVICES } from "@/data/services";
 import { getBlogIndexPath, getBlogPostPath } from "@/lib/blog-routes";
 import { getProjectPath } from "@/lib/project-routes";
 import { getServicePath } from "@/lib/service-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 import { SITE_URL } from "@/lib/site-url";
 import { Section } from "@/components/ui/section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
@@ -161,7 +162,10 @@ export function BlogArticlePage({
         <article className="mx-auto max-w-3xl">
           {/* ── Breadcrumb ───────────────────────────── */}
           <nav aria-label={copy.breadcrumb} className="mb-8 text-sm text-muted">
-            <Link href="/" className="transition-colors hover:text-blue">
+            <Link
+              href={getLocalizedSitePath("/", locale)}
+              className="transition-colors hover:text-blue"
+            >
               {copy.home}
             </Link>
             <span className="px-2" aria-hidden="true">/</span>

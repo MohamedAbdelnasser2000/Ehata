@@ -122,6 +122,7 @@
       "architecture": "Architecture and scope",
       "tech": "Technology stack",
       "illustration": "Illustrative cover",
+      "statusNotProvided": "Project status not provided",
       "gallery": "Gallery"
     }
   },

@@ -34,7 +34,14 @@ export async function generateMetadata({
       url: `/academy/${course.slug}`,
       type: "website",
     },
-    alternates: { canonical: `/academy/${course.slug}` },
+    alternates: {
+      canonical: `/academy/${course.slug}/`,
+      languages: {
+        en: `/academy/${course.slug}/`,
+        ar: `/ar/academy/${course.slug}/`,
+        "x-default": `/academy/${course.slug}/`,
+      },
+    },
   };
 }
 

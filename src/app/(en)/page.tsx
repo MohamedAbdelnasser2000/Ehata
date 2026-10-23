@@ -9,7 +9,14 @@ import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      ar: "/ar/",
+      "x-default": "/",
+    },
+  },
 };
 
 export default function HomePage() {

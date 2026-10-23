@@ -19,11 +19,12 @@ export function ProjectCover({
   const { t, locale } = useLocale();
   const [imageMissing, setImageMissing] = useState(false);
   const title = project.title[locale];
+  const status = project.status?.[locale] ?? t.projectsPage.modal.statusNotProvided;
 
   return (
     <div
       role="img"
-      aria-label={`${title}: ${t.projectsPage.modal.illustration}`}
+      aria-label={`${title}: ${t.projectsPage.modal.illustration}. ${status}`}
       className={cn("relative grid place-items-center overflow-hidden bg-surface-2", className)}
     >
       {!imageMissing && (
@@ -51,6 +52,9 @@ export function ProjectCover({
       )}
       <span className="absolute end-3 top-3 rounded-full border border-white/20 bg-navy/75 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-sm">
         {t.projectsPage.modal.illustration}
+      </span>
+      <span className="absolute start-3 bottom-3 max-w-[calc(100%-1.5rem)] truncate rounded-full border border-white/20 bg-navy/75 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-sm">
+        {status}
       </span>
     </div>
   );

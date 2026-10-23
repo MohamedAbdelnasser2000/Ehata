@@ -20,6 +20,7 @@ import { SERVICES } from "@/data/services";
 import { getContactPath, getServicePath } from "@/lib/service-routes";
 import { FAQS, PRICING } from "@/data/pricing-faq";
 import { cn } from "@/lib/utils";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
 /** Animated "illustration": an orbiting icon plate unique per service. */
 function ServiceIllustration({ icon, index }: { icon: string; index: number }) {
@@ -136,7 +137,7 @@ export function ServicesDetailSection() {
 }
 
 export function PricingSection() {
-  const { t, tr } = useLocale();
+  const { t, tr, locale } = useLocale();
   return (
     <Section id="pricing" tone="surface">
       <SectionHeading
@@ -195,7 +196,7 @@ export function PricingSection() {
 
               <div className="mt-8 pt-4 border-t border-line/50">
                 <MagneticButton
-                  href="/contact"
+                  href={getLocalizedSitePath("/contact/", locale)}
                   variant={p.popular ? "primary" : "outline"}
                   className="w-full justify-center"
                 >

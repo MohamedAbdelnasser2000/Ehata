@@ -7,6 +7,7 @@ import { useLocale } from "@/components/providers/locale-provider";
 import { getProjectPath } from "@/lib/project-routes";
 import { getContactPath, getServicePath } from "@/lib/service-routes";
 import { getBlogIndexPath, getBlogPostPath } from "@/lib/blog-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 import { cn } from "@/lib/utils";
 
 export function LanguageToggle({ className }: { className?: string }) {
@@ -23,6 +24,9 @@ export function LanguageToggle({ className }: { className?: string }) {
         const serviceRoute = pathname.match(/^\/(?:ar\/)?services\/([^/]+)\/?$/);
         const isServiceIndex = /^\/(?:ar\/)?services\/?$/.test(pathname);
         const isContact = /^\/(?:ar\/)?contact\/?$/.test(pathname);
+        const isHome = /^\/(?:ar\/?)?$/.test(pathname);
+        const isAbout = /^\/(?:ar\/)?about\/?$/.test(pathname);
+        const academyRoute = pathname.match(/^\/(?:ar\/)?academy(?:\/([^/]+))?\/?$/);
         const blogRoute = pathname.match(/^\/(?:ar\/)?blog(?:\/([^/]+))?\/?$/);
         const serviceInquiry = isContact
           ? new URLSearchParams(window.location.search).get("service") ?? undefined
@@ -37,12 +41,16 @@ export function LanguageToggle({ className }: { className?: string }) {
           router.push(nextLocale === "ar" ? "/ar/services/" : "/services/");
         } else if (isContact) {
           router.push(getContactPath(nextLocale, serviceInquiry));
+        } else if (isHome || isAbout || academyRoute) {
+          router.push(getLocalizedSitePath(pathname, nextLocale));
         } else if (blogRoute) {
           router.push(
             blogRoute[1]
               ? getBlogPostPath(blogRoute[1], nextLocale)
               : getBlogIndexPath(nextLocale),
           );
+        } else {
+          router.push(getLocalizedSitePath("/", nextLocale));
         }
       }}
       aria-label={t.nav.toggleLanguage}

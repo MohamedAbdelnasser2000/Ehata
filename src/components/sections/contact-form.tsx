@@ -53,7 +53,7 @@ function FieldError({ message }: { message?: string }) {
 }
 
 export function ContactForm() {
-  const { t, tr } = useLocale();
+  const { t, tr, locale } = useLocale();
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "mailto" | "error">("idle");
 
   const {
@@ -114,7 +114,7 @@ export function ContactForm() {
         const res = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...parsed.data, locale: t.meta.siteName }),
+          body: JSON.stringify({ ...parsed.data, locale }),
         });
         if (!res.ok) throw new Error(String(res.status));
         setStatus("sent");
@@ -137,7 +137,8 @@ export function ContactForm() {
         window.location.assign(`mailto:${CONTACT.email}?subject=${subject}&body=${body}`);
         setStatus("mailto");
       }
-    } catch {
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
       setStatus("error");
     }
   }

@@ -4,6 +4,7 @@ import type { Locale } from "@/lib/i18n";
 import { pick } from "@/lib/i18n";
 import { BLOG_POSTS } from "@/data/blog";
 import { getBlogPostPath } from "@/lib/blog-routes";
+import { getLocalizedSitePath } from "@/lib/localized-site-path";
 import { Section } from "@/components/ui/section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
@@ -60,7 +61,10 @@ export function BlogIndex({ locale }: { locale: Locale }) {
         <AuroraBackground glowOpacity={0.35} />
 
         <nav aria-label={copy.blog} className="mb-8 text-sm text-muted">
-          <Link href="/" className="transition-colors hover:text-blue">
+          <Link
+            href={getLocalizedSitePath("/", locale)}
+            className="transition-colors hover:text-blue"
+          >
             {copy.home}
           </Link>
           <span className="px-2" aria-hidden="true">/</span>
