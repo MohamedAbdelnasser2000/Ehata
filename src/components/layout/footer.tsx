@@ -6,9 +6,10 @@ import { LogoLockup } from "./logo";
 import { SocialIcon } from "./social-icons";
 import { CONTACT, NAV_LINKS, SOCIALS, telHref } from "@/data/site";
 import { SERVICES } from "@/data/services";
+import { getBlogIndexPath } from "@/lib/blog-routes";
 
 export function Footer() {
-  const { t, tr } = useLocale();
+  const { t, tr, locale } = useLocale();
   const year = new Date().getFullYear();
 
   return (
@@ -55,6 +56,14 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href={getBlogIndexPath(locale)}
+                className="text-[15px] text-muted transition-colors hover:text-blue"
+              >
+                {t.footer.blog}
+              </Link>
+            </li>
           </ul>
         </nav>
 

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { COURSES } from "@/data/courses";
+import { BLOG_POSTS } from "@/data/blog";
 import { PROJECTS } from "@/data/projects";
 import { SERVICES } from "@/data/services";
 import { getProjectPath } from "@/lib/project-routes";
@@ -20,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/",
     "/contact/",
     "/academy/",
+    "/blog/",
+    "/ar/blog/",
     "/ar/services/",
     "/ar/contact/",
     ...COURSES.map((course) => `/academy/${course.slug}/`),
@@ -30,11 +33,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? "/ar/services/"
         : path === "/ar/services/"
           ? "/services/"
-          : path === "/contact/"
-            ? "/ar/contact/"
-            : path === "/ar/contact/"
-              ? "/contact/"
-              : undefined;
+          : path === "/blog/"
+            ? "/ar/blog/"
+            : path === "/ar/blog/"
+              ? "/blog/"
+              : path === "/contact/"
+                ? "/ar/contact/"
+                : path === "/ar/contact/"
+                  ? "/contact/"
+                  : undefined;
 
     return {
       url: `${SITE_URL}${path}`,
@@ -77,5 +84,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  return [...baseRoutes, ...projectRoutes, ...serviceRoutes];
+  const blogRoutes = BLOG_POSTS.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}/`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+    alternates: {
+      languages: {
+        en: `${SITE_URL}/blog/${post.slug}/`,
+        ar: `${SITE_URL}/ar/blog/${post.slug}/`,
+        "x-default": `${SITE_URL}/blog/${post.slug}/`,
+      },
+    },
+  }));
+
+  return [...baseRoutes, ...projectRoutes, ...serviceRoutes, ...blogRoutes];
 }

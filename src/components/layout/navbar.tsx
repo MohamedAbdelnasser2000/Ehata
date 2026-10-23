@@ -13,9 +13,10 @@ import { LogoLockup } from "./logo";
 import { NAV_LINKS } from "@/data/site";
 import { cn } from "@/lib/utils";
 import { MagneticButton } from "@/components/ui/magnetic-button";
+import { getBlogIndexPath } from "@/lib/blog-routes";
 
 export function Navbar() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -34,15 +35,21 @@ export function Navbar() {
   // The mobile sheet closes itself on navigation: every link is wrapped in
   // DialogPrimitive.Close, so no pathname-sync effect is needed.
 
-  const links = NAV_LINKS.map((l) => ({
-    href:
-      l.href === "/services" && pathname.startsWith("/ar/")
-        ? "/ar/services/"
-        : l.href === "/contact" && pathname.startsWith("/ar/")
-          ? "/ar/contact/"
-          : l.href,
-    label: t.nav[l.labelKey],
-  }));
+  const links = NAV_LINKS.flatMap((l) => {
+    const link = {
+      href:
+        l.href === "/services" && pathname.startsWith("/ar/")
+          ? "/ar/services/"
+          : l.href === "/contact" && pathname.startsWith("/ar/")
+            ? "/ar/contact/"
+            : l.href,
+      label: t.nav[l.labelKey],
+    };
+
+    return l.href === "/projects"
+      ? [link, { href: getBlogIndexPath(locale), label: t.footer.blog }]
+      : [link];
+  });
   const contactHref = pathname.startsWith("/ar/") ? "/ar/contact/" : "/contact/";
 
   const isActive = (href: string) =>
