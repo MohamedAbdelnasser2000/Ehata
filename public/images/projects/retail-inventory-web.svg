@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Retail inventory web application illustration</title>
+  <desc>Illustrative product, stock and sales dashboard; not an application screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#EEF1F7"/>
+  <circle cx="1020" cy="660" r="205" fill="#DDE4F3"/>
+  <text x="72" y="88" fill="#5C6680" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">RETAIL · INVENTORY · SALES</text>
+  <rect x="103" y="150" width="994" height="520" rx="26" fill="#fff"/>
+  <path d="M103 176a26 26 0 0 1 26-26h942a26 26 0 0 1 26 26v48H103z" fill="#202D4C"/>
+  <circle cx="140" cy="187" r="7" fill="#F2A368"/>
+  <circle cx="164" cy="187" r="7" fill="#E8C769"/>
+  <circle cx="188" cy="187" r="7" fill="#6DC5A6"/>
+  <rect x="236" y="180" width="232" height="14" rx="7" fill="#53617D"/>
+  <rect x="138" y="258" width="206" height="372" rx="18" fill="#F4F6FA"/>
+  <rect x="163" y="287" width="130" height="13" rx="6" fill="#334365"/>
+  <rect x="163" y="325" width="151" height="9" rx="4" fill="#CBD2E0"/>
+  <rect x="163" y="355" width="126" height="9" rx="4" fill="#CBD2E0"/>
+  <rect x="163" y="385" width="145" height="9" rx="4" fill="#CBD2E0"/>
+  <rect x="163" y="432" width="148" height="44" rx="12" fill="#E4EAF8"/>
+  <rect x="185" y="449" width="85" height="10" rx="5" fill="#617DBD"/>
+  <rect x="382" y="263" width="205" height="88" rx="16" fill="#F3F5F9"/>
+  <rect x="404" y="283" width="103" height="9" rx="4" fill="#919AAF"/>
+  <rect x="404" y="307" width="111" height="20" rx="7" fill="#344469"/>
+  <rect x="609" y="263" width="205" height="88" rx="16" fill="#F3F5F9"/>
+  <rect x="631" y="283" width="103" height="9" rx="4" fill="#919AAF"/>
+  <rect x="631" y="307" width="111" height="20" rx="7" fill="#344469"/>
+  <rect x="836" y="263" width="230" height="88" rx="16" fill="#EAF4F0"/>
+  <rect x="858" y="283" width="103" height="9" rx="4" fill="#82A499"/>
+  <rect x="858" y="307" width="111" height="20" rx="7" fill="#2B8B70"/>
+  <rect x="382" y="372" width="684" height="236" rx="18" fill="#FBFCFE" stroke="#E7EAF1" stroke-width="2"/>
+  <text x="409" y="407" fill="#52617E" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2">STOCK MOVEMENT</text>
+  <path d="M415 558h610M415 511h610M415 464h610" stroke="#E7EAF1" stroke-width="2"/>
+  <path d="m431 538 105-26 91 12 110-62 107 21 125-84" stroke="#6282CB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="869" cy="483" r="7" fill="#fff" stroke="#6282CB" stroke-width="4"/>
+  <circle cx="969" cy="399" r="7" fill="#fff" stroke="#6282CB" stroke-width="4"/>
+  <rect x="839" y="373" width="145" height="31" rx="15" fill="#E8ECF8"/>
+  <rect x="863" y="384" width="94" height="8" rx="4" fill="#6982BB"/>
+</svg>

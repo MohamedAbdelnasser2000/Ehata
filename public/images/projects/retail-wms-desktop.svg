@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Retail warehouse desktop system illustration</title>
+  <desc>Illustrative warehouse and point-of-sale desktop interface; not an application screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#EAF0EB"/>
+  <circle cx="1050" cy="665" r="210" fill="#D8E5DA"/>
+  <text x="72" y="88" fill="#5D7261" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">WAREHOUSE · POINT OF SALE</text>
+  <rect x="123" y="155" width="954" height="493" rx="28" fill="#fff"/>
+  <path d="M123 183a28 28 0 0 1 28-28h898a28 28 0 0 1 28 28v49H123z" fill="#283D32"/>
+  <circle cx="160" cy="196" r="7" fill="#E6A66F"/>
+  <circle cx="184" cy="196" r="7" fill="#DFC96D"/>
+  <circle cx="208" cy="196" r="7" fill="#78BB91"/>
+  <rect x="255" y="189" width="183" height="13" rx="6" fill="#82968A"/>
+  <rect x="151" y="267" width="180" height="351" rx="16" fill="#F1F5F1"/>
+  <rect x="174" y="292" width="116" height="12" rx="6" fill="#4B6754"/>
+  <rect x="174" y="336" width="132" height="8" rx="4" fill="#CBD7CD"/>
+  <rect x="174" y="366" width="115" height="8" rx="4" fill="#CBD7CD"/>
+  <rect x="174" y="396" width="133" height="8" rx="4" fill="#CBD7CD"/>
+  <rect x="171" y="440" width="139" height="44" rx="12" fill="#DDEBE0"/>
+  <rect x="191" y="457" width="93" height="10" rx="5" fill="#598365"/>
+  <rect x="355" y="269" width="422" height="172" rx="18" fill="#F7F9F5"/>
+  <text x="380" y="302" fill="#6B7E6F" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">INVENTORY OVERVIEW</text>
+  <path d="M389 397v-34h48v34zm87 0v-62h48v62zm87 0v-91h48v91zm87 0v-51h48v51" fill="#76A787" opacity=".83"/>
+  <path d="M378 407h360" stroke="#D9E3DA" stroke-width="3"/>
+  <rect x="801" y="269" width="251" height="172" rx="18" fill="#EDF4EF"/>
+  <circle cx="926" cy="337" r="39" stroke="#CBDCCF" stroke-width="13"/>
+  <path d="M926 298a39 39 0 0 1 38 47" stroke="#5D9B70" stroke-width="13" stroke-linecap="round"/>
+  <rect x="890" y="396" width="72" height="9" rx="4" fill="#78947D"/>
+  <rect x="355" y="462" width="697" height="156" rx="18" fill="#FCFDFC" stroke="#E9EEE9" stroke-width="2"/>
+  <text x="380" y="495" fill="#6B7E6F" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">RECENT ACTIVITY</text>
+  <path d="M380 519h645M380 553h645M380 587h645" stroke="#EDF1EC" stroke-width="2"/>
+  <rect x="386" y="532" width="148" height="9" rx="4" fill="#718273"/>
+  <rect x="386" y="566" width="170" height="9" rx="4" fill="#718273"/>
+  <rect x="386" y="600" width="136" height="9" rx="4" fill="#718273"/>
+  <rect x="890" y="528" width="92" height="18" rx="9" fill="#E1F0E3"/>
+  <rect x="890" y="562" width="92" height="18" rx="9" fill="#F5EBD5"/>
+  <rect x="890" y="596" width="92" height="18" rx="9" fill="#E1F0E3"/>
+</svg>

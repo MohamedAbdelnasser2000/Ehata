@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0057E7"/>
+      <stop offset="1" stop-color="#2E9BFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0A1033"/>
+  <!-- left bracket -->
+  <path d="M34 14 h-10 a6 6 0 0 0 -6 6 v24 a6 6 0 0 0 6 6 h10" fill="none" stroke="#F7F9FC" stroke-width="7" stroke-linecap="round"/>
+  <!-- right bracket -->
+  <path d="M38 20 h8 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-8" fill="none" stroke="#F7F9FC" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  <!-- signature gradient center bar -->
+  <rect x="20" y="28" width="24" height="8" rx="4" fill="url(#bar)"/>
+</svg>

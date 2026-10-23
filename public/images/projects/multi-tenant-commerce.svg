@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Multi-tenant commerce illustration</title>
+  <desc>Several storefronts connected to a shared commerce foundation, not a product screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#10243D"/>
+  <circle cx="1040" cy="140" r="220" fill="#183958"/>
+  <circle cx="135" cy="690" r="215" fill="#17324E"/>
+  <text x="76" y="94" fill="#B6C7D8" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION · IN PROGRESS</text>
+  <path d="M365 277 515 369M835 277 685 369M365 518l150-91m320 91-150-91" stroke="#6E9FC8" stroke-width="7" stroke-linecap="round" stroke-dasharray="3 19"/>
+  <rect x="134" y="192" width="300" height="178" rx="28" fill="#fff"/>
+  <path d="M174 247h220l-18 41H192z" fill="#F0B263"/>
+  <path d="M192 288h183v49H192z" fill="#EAF0F6"/>
+  <path d="M222 298v39m56-39v39m57-39v39" stroke="#94A8BB" stroke-width="5"/>
+  <rect x="770" y="192" width="300" height="178" rx="28" fill="#fff"/>
+  <path d="M810 247h220l-18 41H828z" fill="#58A48D"/>
+  <path d="M828 288h183v49H828z" fill="#EAF0F6"/>
+  <path d="M858 298v39m56-39v39m57-39v39" stroke="#94A8BB" stroke-width="5"/>
+  <rect x="134" y="431" width="300" height="178" rx="28" fill="#fff"/>
+  <path d="M174 486h220l-18 41H192z" fill="#6A9FD0"/>
+  <path d="M192 527h183v49H192z" fill="#EAF0F6"/>
+  <path d="M222 537v39m56-39v39m57-39v39" stroke="#94A8BB" stroke-width="5"/>
+  <rect x="770" y="431" width="300" height="178" rx="28" fill="#fff"/>
+  <path d="M810 486h220l-18 41H828z" fill="#DB8B65"/>
+  <path d="M828 527h183v49H828z" fill="#EAF0F6"/>
+  <path d="M858 537v39m56-39v39m57-39v39" stroke="#94A8BB" stroke-width="5"/>
+  <circle cx="600" cy="380" r="126" fill="#2879D7"/>
+  <circle cx="600" cy="380" r="79" fill="#10243D"/>
+  <path d="M558 354h84v65h-84zm-10 0 10-24h84l10 24m-71 0v65m38-65v65" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="692" text-anchor="middle" fill="#D3DFEB" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="3">ONE FOUNDATION · MANY STORES</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Biometric Gate Access System illustration</title>
+  <desc>An abstract biometric gate access control and sports evaluation system illustration.</desc>
+  <rect width="1200" height="760" rx="32" fill="#0F172A"/>
+  <circle cx="1060" cy="140" r="230" fill="#1E293B"/>
+  <circle cx="120" cy="670" r="210" fill="#1E293B"/>
+  <text x="76" y="94" fill="#38BDF8" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  
+  <!-- Left Panel: Gate Access Monitor (Desktop UI) -->
+  <rect x="90" y="150" width="540" height="420" rx="20" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  <rect x="90" y="150" width="540" height="56" rx="20" fill="#0F172A"/>
+  <path d="M90 186h540v20H90z" fill="#0F172A"/>
+  <circle cx="126" cy="178" r="8" fill="#EF4444"/>
+  <circle cx="152" cy="178" r="8" fill="#F59E0B"/>
+  <circle cx="178" cy="178" r="8" fill="#10B981"/>
+  <text x="210" y="184" fill="#94A3B8" font-family="Arial,sans-serif" font-size="16" font-weight="600">Gate System — Live Monitor</text>
+  
+  <!-- Camera Stream Box -->
+  <rect x="120" y="230" width="230" height="170" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+  <!-- Camera lens icon / crosshair -->
+  <circle cx="235" cy="315" r="45" fill="none" stroke="#38BDF8" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="235" cy="315" r="25" fill="#1E293B" stroke="#38BDF8" stroke-width="3"/>
+  <circle cx="235" cy="315" r="8" fill="#38BDF8"/>
+  <path d="M235 255v15M235 360v15M175 315h15M280 315h15" stroke="#38BDF8" stroke-width="3"/>
+  <rect x="135" y="245" width="70" height="20" rx="4" fill="#EF4444"/>
+  <text x="146" y="259" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700">REC • LIVE</text>
+  
+  <!-- Status & Biometrics Cards -->
+  <rect x="370" y="230" width="230" height="78" rx="10" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <circle cx="405" cy="269" r="20" fill="#064E3B"/>
+  <path d="M397 269l6 6 12-12" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="435" y="262" fill="#F1F5F9" font-family="Arial,sans-serif" font-size="14" font-weight="700">Access Granted</text>
+  <text x="435" y="280" fill="#94A3B8" font-family="Arial,sans-serif" font-size="12">ID #4092 — Athlete</text>
+  
+  <rect x="370" y="322" width="230" height="78" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+  <circle cx="405" cy="361" r="20" fill="#1E293B"/>
+  <path d="M398 355c2-3 8-3 10 0 2 3-2 6-4 8 2 2 5 1 7 4" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <text x="435" y="354" fill="#F1F5F9" font-family="Arial,sans-serif" font-size="14" font-weight="700">Fingerprint Matched</text>
+  <text x="435" y="372" fill="#10B981" font-family="Arial,sans-serif" font-size="12">Confidence: 98.4%</text>
+
+  <!-- Scheduled Tests Bar -->
+  <rect x="120" y="420" width="480" height="120" rx="12" fill="#0F172A"/>
+  <rect x="140" y="440" width="130" height="20" rx="4" fill="#334155"/>
+  <text x="148" y="455" fill="#38BDF8" font-family="Arial,sans-serif" font-size="12" font-weight="700">TEST SCHEDULE</text>
+  <rect x="140" y="475" width="210" height="14" rx="4" fill="#475569"/>
+  <rect x="140" y="500" width="160" height="14" rx="4" fill="#334155"/>
+  <rect x="420" y="450" width="160" height="65" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+  <text x="440" y="478" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="20" font-weight="800">42 / 50</text>
+  <text x="440" y="498" fill="#94A3B8" font-family="Arial,sans-serif" font-size="12">Attendees Checked In</text>
+  
+  <!-- Right Graphic: Large Fingerprint Scan Motif -->
+  <circle cx="880" cy="360" r="190" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  <circle cx="880" cy="360" r="140" fill="#0F172A" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4"/>
+  
+  <!-- Fingerprint concentric arcs -->
+  <path d="M840 380 c-10-30 0-70 40-70 s50 40 40 70" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M825 390 c-18-45 0-95 55-95 s70 50 55 95" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M855 370 c-5-15 0-35 25-35 s30 20 25 35" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M870 360 c0-5 5-10 10-10 s10 5 10 10 v30" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M810 410 c-25-60 5-120 70-120 s95 60 70 120" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" opacity="0.6" fill="none"/>
+  
+  <!-- Horizontal Scanning Laser Beam -->
+  <line x1="720" y1="350" x2="1040" y2="350" stroke="#10B981" stroke-width="4"/>
+  <circle cx="880" cy="350" r="6" fill="#10B981"/>
+  
+  <text x="880" y="640" text-anchor="middle" fill="#94A3B8" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">FINGERPRINT · CAMERA · RFID · SPORTS EVAL</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Keep Going Health Platform illustration</title>
+  <desc>An abstract health platform website layout, not a product screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#F0F6F2"/>
+  <circle cx="1060" cy="140" r="210" fill="#D9EEE2"/>
+  <circle cx="110" cy="680" r="195" fill="#D9EBF5"/>
+  <text x="76" y="94" fill="#3A6648" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  <!-- Browser frame -->
+  <rect x="96" y="156" width="530" height="410" rx="18" fill="#fff"/>
+  <rect x="96" y="156" width="530" height="50" rx="18" fill="#1B5E3A"/>
+  <path d="M96 186h530v20H96z" fill="#1B5E3A"/>
+  <circle cx="130" cy="181" r="8" fill="#E05252"/>
+  <circle cx="156" cy="181" r="8" fill="#E0B052"/>
+  <circle cx="182" cy="181" r="8" fill="#52C078"/>
+  <!-- Nav -->
+  <rect x="112" y="222" width="490" height="40" rx="6" fill="#E8F5ED"/>
+  <rect x="126" y="233" width="80" height="18" rx="4" fill="#1B5E3A"/>
+  <rect x="224" y="233" width="55" height="18" rx="4" fill="#A8CCBA"/>
+  <rect x="296" y="233" width="55" height="18" rx="4" fill="#A8CCBA"/>
+  <rect x="368" y="233" width="55" height="18" rx="4" fill="#A8CCBA"/>
+  <rect x="480" y="230" width="104" height="24" rx="8" fill="#1B5E3A"/>
+  <!-- Hero -->
+  <path d="M260 300 a80 60 0 0 1 160 0 a80 60 0 0 1 -80 90 a80 60 0 0 1 -80 -90z" fill="#D9EEE2" stroke="#1B5E3A" stroke-width="5"/>
+  <path d="M330 298 l20 22 40-42" stroke="#1B5E3A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="112" y="430" width="175" height="110" rx="12" fill="#E8F5ED"/>
+  <rect x="300" y="430" width="160" height="110" rx="12" fill="#FBF2E3"/>
+  <rect x="473" y="430" width="150" height="110" rx="12" fill="#E6F0FA"/>
+  <rect x="126" y="446" width="100" height="12" rx="4" fill="#1B5E3A"/>
+  <rect x="126" y="468" width="140" height="8" rx="4" fill="#A8CCBA"/>
+  <rect x="126" y="486" width="120" height="8" rx="4" fill="#A8CCBA"/>
+  <rect x="314" y="446" width="90" height="12" rx="4" fill="#C47A20"/>
+  <rect x="314" y="468" width="130" height="8" rx="4" fill="#E8C892"/>
+  <rect x="487" y="446" width="90" height="12" rx="4" fill="#3A78C4"/>
+  <rect x="487" y="468" width="118" height="8" rx="4" fill="#A8BFE8"/>
+  <!-- Right panel - Admin -->
+  <rect x="650" y="174" width="450" height="360" rx="18" fill="#1B5E3A"/>
+  <rect x="670" y="196" width="200" height="28" rx="6" fill="#2D7A52"/>
+  <rect x="670" y="240" width="408" height="55" rx="8" fill="#2D7A52"/>
+  <rect x="684" y="254" width="120" height="12" rx="4" fill="#A8D8BC"/>
+  <rect x="684" y="274" width="200" height="8" rx="4" fill="#5CA878"/>
+  <rect x="670" y="310" width="408" height="55" rx="8" fill="#2D7A52"/>
+  <rect x="684" y="324" width="90" height="12" rx="4" fill="#A8D8BC"/>
+  <rect x="684" y="344" width="160" height="8" rx="4" fill="#5CA878"/>
+  <rect x="670" y="380" width="408" height="55" rx="8" fill="#2D7A52"/>
+  <rect x="684" y="394" width="140" height="12" rx="4" fill="#A8D8BC"/>
+  <rect x="684" y="414" width="180" height="8" rx="4" fill="#5CA878"/>
+  <rect x="670" y="452" width="130" height="36" rx="8" fill="#4CAF50"/>
+  <text x="875" y="640" text-anchor="middle" fill="#3A6648" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">NEWS · SERVICES · ADMIN PANEL</text>
+</svg>

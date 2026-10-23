@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Pharmacy inventory system illustration</title>
+  <desc>An abstract medicine capsule and stock ledger, not a product screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#EEF4F1"/>
+  <circle cx="1030" cy="160" r="208" fill="#DCECE4"/>
+  <circle cx="95" cy="666" r="190" fill="#E2EAF0"/>
+  <text x="76" y="94" fill="#53657C" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  <rect x="110" y="190" width="550" height="405" rx="30" fill="#fff"/>
+  <rect x="110" y="190" width="550" height="86" rx="30" fill="#163B4C"/>
+  <path d="M110 246h550v30H110z" fill="#163B4C"/>
+  <text x="154" y="246" fill="#fff" font-family="Arial,sans-serif" font-size="21" font-weight="700">Stock overview</text>
+  <path d="M154 321h462M154 388h462M154 455h462M154 522h462" stroke="#E4EBEF" stroke-width="2"/>
+  <circle cx="177" cy="355" r="13" fill="#4F9878"/>
+  <circle cx="177" cy="422" r="13" fill="#E8A24E"/>
+  <circle cx="177" cy="489" r="13" fill="#4F9878"/>
+  <rect x="212" y="345" width="151" height="13" rx="6" fill="#8EA2B4"/>
+  <rect x="212" y="412" width="180" height="13" rx="6" fill="#8EA2B4"/>
+  <rect x="212" y="479" width="133" height="13" rx="6" fill="#8EA2B4"/>
+  <rect x="453" y="342" width="84" height="23" rx="11" fill="#E2F0E8"/>
+  <rect x="453" y="409" width="84" height="23" rx="11" fill="#FFF0D9"/>
+  <rect x="453" y="476" width="84" height="23" rx="11" fill="#E2F0E8"/>
+  <g transform="rotate(-35 874 390)">
+    <rect x="738" y="337" width="294" height="106" rx="53" fill="#fff" stroke="#2879D7" stroke-width="10"/>
+    <path d="M884 342v96" stroke="#2879D7" stroke-width="10"/>
+    <path d="M785 356h69a35 35 0 0 1 0 68h-69a35 35 0 0 1 0-68z" fill="#B9D8F1"/>
+    <path d="M904 356h78a35 35 0 0 1 0 68h-78z" fill="#F3C78F"/>
+  </g>
+  <path d="M834 515h210" stroke="#9EB5A9" stroke-width="7" stroke-linecap="round"/>
+  <path d="m1004 493 24 22-24 22" stroke="#4F9878" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="862" y="603" text-anchor="middle" fill="#53657C" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">STOCK · BRANCHES · EXPIRY</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Kinetic skyscraper visualizer illustration</title>
+  <desc>Illustrative architectural frame sequence that evokes a scroll-driven building visualization.</desc>
+  <rect width="1200" height="760" rx="32" fill="#E9EEF2"/>
+  <circle cx="979" cy="166" r="156" fill="#DCE6EC"/>
+  <text x="72" y="88" fill="#61717E" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">ARCHITECTURE · MOTION · CANVAS</text>
+  <path d="M0 616h1200" stroke="#C6D0D6" stroke-width="3"/>
+  <path d="M95 616v-146l126-57v203zm126 0V369l150-76v323zm150 0V330l155-92v378zm155 0V283l166-111v444zm166 0V362l136-55v309zm136 0V437l148-72v251z" fill="#CCD8DE"/>
+  <path d="M485 616V283l166-111v444z" fill="#213846"/>
+  <path d="m485 283 166-111v30L485 314zm0 77 166-111v14L485 374zm0 77 166-111v14L485 451zm0 77 166-111v14L485 528zm0 77 166-111v14L485 605z" fill="#5E7988"/>
+  <path d="M512 298v278m34-301v279m36-303v279m34-302v279" stroke="#B7D0D9" stroke-width="5" opacity=".82"/>
+  <path d="M391 616V330m31-19v305m31-325v325m236-269v269m31-281v281m31-294v294" stroke="#fff" stroke-width="5" opacity=".7"/>
+  <rect x="84" y="188" width="282" height="116" rx="20" fill="#fff"/>
+  <rect x="110" y="215" width="140" height="10" rx="5" fill="#A2AFB7"/>
+  <rect x="110" y="240" width="218" height="18" rx="7" fill="#344C5B"/>
+  <path d="M110 281h102" stroke="#7A99A9" stroke-width="5" stroke-linecap="round"/>
+  <rect x="777" y="447" width="319" height="100" rx="20" fill="#fff"/>
+  <text x="806" y="482" fill="#70818C" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">SCROLL PROGRESSION</text>
+  <path d="M811 511h249" stroke="#D8E0E4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M811 511h173" stroke="#537D91" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="984" cy="511" r="11" fill="#fff" stroke="#537D91" stroke-width="5"/>
+  <path d="M799 337h290" stroke="#89A6B3" stroke-width="3" stroke-dasharray="8 10"/>
+</svg>

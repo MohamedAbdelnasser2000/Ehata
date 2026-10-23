@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Warehouse and courier system illustration</title>
+  <desc>Illustrative warehouse inventory, order and delivery workflow; not an application screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#E8F0F2"/>
+  <circle cx="1032" cy="155" r="184" fill="#D6E8E5"/>
+  <text x="72" y="88" fill="#516B70" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">WAREHOUSE · FULFILMENT</text>
+  <rect x="92" y="178" width="606" height="462" rx="26" fill="#fff"/>
+  <rect x="92" y="178" width="606" height="74" rx="26" fill="#173B42"/>
+  <path d="M92 226h606v26H92z" fill="#173B42"/>
+  <rect x="125" y="205" width="18" height="18" rx="4" fill="#63C3AC"/>
+  <rect x="158" y="207" width="135" height="12" rx="6" fill="#D6E6E4"/>
+  <rect x="626" y="207" width="34" height="12" rx="6" fill="#86A9A7"/>
+  <text x="128" y="296" fill="#6A7F84" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2">STOCK BY WAREHOUSE</text>
+  <rect x="128" y="322" width="534" height="82" rx="14" fill="#F1F6F5"/>
+  <rect x="151" y="346" width="36" height="34" rx="8" fill="#D6EAE4"/>
+  <path d="m157 356 12-7 12 7v15h-24z" stroke="#388D79" stroke-width="3"/>
+  <rect x="207" y="345" width="138" height="12" rx="6" fill="#244B4E"/>
+  <rect x="207" y="368" width="204" height="8" rx="4" fill="#CCD9D8"/>
+  <rect x="550" y="349" width="70" height="24" rx="12" fill="#D8EFE7"/>
+  <rect x="128" y="420" width="534" height="82" rx="14" fill="#F1F6F5"/>
+  <rect x="151" y="444" width="36" height="34" rx="8" fill="#E2EBF3"/>
+  <path d="m157 454 12-7 12 7v15h-24z" stroke="#5482A8" stroke-width="3"/>
+  <rect x="207" y="443" width="138" height="12" rx="6" fill="#244B4E"/>
+  <rect x="207" y="466" width="174" height="8" rx="4" fill="#CCD9D8"/>
+  <rect x="550" y="447" width="70" height="24" rx="12" fill="#E7F0F8"/>
+  <rect x="128" y="530" width="534" height="74" rx="16" fill="#EAF4F1"/>
+  <path d="M159 570h38m-13-13 13 13-13 13" stroke="#378C79" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="220" y="553" width="142" height="12" rx="6" fill="#244B4E"/>
+  <rect x="220" y="575" width="210" height="8" rx="4" fill="#C6D9D3"/>
+  <path d="M735 390h100" stroke="#5E9E90" stroke-width="5" stroke-dasharray="10 11" stroke-linecap="round"/>
+  <rect x="842" y="232" width="270" height="310" rx="28" fill="#173B42"/>
+  <circle cx="976" cy="320" r="50" fill="#25565A"/>
+  <path d="M954 312h44l-4 26h-36zm7-14h30l5 14h-40z" stroke="#A4E2CF" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M950 359c7-12 18-18 27-18s20 6 27 18" stroke="#A4E2CF" stroke-width="4" stroke-linecap="round"/>
+  <rect x="891" y="414" width="171" height="11" rx="5.5" fill="#A8C2BE"/>
+  <rect x="918" y="438" width="118" height="8" rx="4" fill="#668B89"/>
+  <rect x="914" y="474" width="125" height="38" rx="19" fill="#61BEA6"/>
+  <path d="M953 493h45" stroke="#173B42" stroke-width="4" stroke-linecap="round"/>
+</svg>

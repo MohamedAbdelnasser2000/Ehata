@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Desktop inventory application illustration</title>
+  <desc>Illustrative desktop inventory and invoicing workspace; not an application screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#F2EEE6"/>
+  <circle cx="1040" cy="120" r="180" fill="#E8DFCE"/>
+  <text x="72" y="88" fill="#776D5D" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">DESKTOP · INVENTORY · INVOICES</text>
+  <rect x="134" y="156" width="932" height="480" rx="28" fill="#342D27"/>
+  <rect x="158" y="180" width="884" height="432" rx="16" fill="#FBFAF6"/>
+  <path d="M158 196a16 16 0 0 1 16-16h852a16 16 0 0 1 16 16v48H158z" fill="#443B31"/>
+  <circle cx="190" cy="205" r="6" fill="#E7A66C"/>
+  <circle cx="211" cy="205" r="6" fill="#E8CA73"/>
+  <circle cx="232" cy="205" r="6" fill="#82B79A"/>
+  <rect x="272" y="198" width="206" height="12" rx="6" fill="#A89D8E"/>
+  <rect x="185" y="273" width="208" height="309" rx="14" fill="#F2EFE8"/>
+  <rect x="207" y="297" width="127" height="11" rx="5" fill="#756A5B"/>
+  <rect x="207" y="334" width="153" height="35" rx="10" fill="#E5DED1"/>
+  <rect x="224" y="347" width="91" height="9" rx="4" fill="#948878"/>
+  <rect x="207" y="385" width="131" height="8" rx="4" fill="#D4CDC0"/>
+  <rect x="207" y="414" width="148" height="8" rx="4" fill="#D4CDC0"/>
+  <rect x="207" y="443" width="123" height="8" rx="4" fill="#D4CDC0"/>
+  <rect x="425" y="273" width="587" height="94" rx="16" fill="#F4F0E8"/>
+  <rect x="451" y="296" width="142" height="9" rx="4" fill="#A19888"/>
+  <rect x="451" y="320" width="177" height="21" rx="7" fill="#4B4135"/>
+  <rect x="663" y="296" width="142" height="9" rx="4" fill="#A19888"/>
+  <rect x="663" y="320" width="177" height="21" rx="7" fill="#4B4135"/>
+  <rect x="878" y="304" width="106" height="34" rx="17" fill="#53785B"/>
+  <rect x="425" y="390" width="587" height="192" rx="16" fill="#fff" stroke="#E9E4DB" stroke-width="2"/>
+  <path d="M449 433h538M449 476h538M449 519h538" stroke="#EEEAE2" stroke-width="2"/>
+  <rect x="454" y="408" width="116" height="9" rx="4" fill="#9B9285"/>
+  <rect x="454" y="449" width="156" height="10" rx="5" fill="#5B5043"/>
+  <rect x="454" y="492" width="136" height="10" rx="5" fill="#5B5043"/>
+  <rect x="454" y="535" width="173" height="10" rx="5" fill="#5B5043"/>
+  <rect x="871" y="447" width="98" height="20" rx="10" fill="#E2F0E6"/>
+  <rect x="871" y="490" width="98" height="20" rx="10" fill="#F7EBD7"/>
+  <rect x="871" y="533" width="98" height="20" rx="10" fill="#E2F0E6"/>
+  <path d="M422 651h356" stroke="#827668" stroke-width="12" stroke-linecap="round"/>
+  <path d="M510 640v24m180-24v24" stroke="#827668" stroke-width="8" stroke-linecap="round"/>
+</svg>

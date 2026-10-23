@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>NexaCore 3D Interactive Software Showcase illustration</title>
+  <desc>An abstract 3D scroll-driven interactive software website with WebGL and geometric meshes.</desc>
+  <rect width="1200" height="760" rx="32" fill="#05050A"/>
+  <circle cx="1060" cy="140" r="230" fill="#0D0D1E"/>
+  <circle cx="120" cy="670" r="210" fill="#0D0D1E"/>
+  <text x="76" y="94" fill="#6366F1" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  
+  <!-- Left Window: 3D Browser Experience -->
+  <rect x="90" y="150" width="540" height="420" rx="20" fill="#0D0D1A" stroke="#1E1E38" stroke-width="2"/>
+  <rect x="90" y="150" width="540" height="52" rx="20" fill="#070712"/>
+  <path d="M90 184h540v18H90z" fill="#070712"/>
+  <circle cx="124" cy="176" r="7" fill="#EF4444"/>
+  <circle cx="148" cy="176" r="7" fill="#F59E0B"/>
+  <circle cx="172" cy="176" r="7" fill="#10B981"/>
+  <text x="200" y="182" fill="#A5B4FC" font-family="Arial,sans-serif" font-size="15" font-weight="600">NexaCore — 3D Interactive ERP &amp; SaaS Experience</text>
+  
+  <!-- WebGL Scene Canvas -->
+  <rect x="110" y="220" width="500" height="325" rx="14" fill="#0A0A16" stroke="#4F46E5" stroke-width="1.5"/>
+  
+  <!-- 3D Wireframe Polyhedron in Center Canvas -->
+  <!-- Outer glowing wireframe rings -->
+  <circle cx="360" cy="360" r="95" fill="none" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5"/>
+  <circle cx="360" cy="360" r="120" fill="none" stroke="#818CF8" stroke-width="1" stroke-dasharray="3 3" opacity="0.3"/>
+  
+  <!-- 3D Polyhedron / Icosahedron lines -->
+  <polygon points="360,280 430,325 430,400 360,445 290,400 290,325" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <polygon points="360,305 405,335 405,385 360,415 315,385 315,335" fill="#312E81" stroke="#A5B4FC" stroke-width="1.5"/>
+  <line x1="360" y1="280" x2="360" y2="305" stroke="#C7D2FE" stroke-width="2"/>
+  <line x1="430" y1="325" x2="405" y2="335" stroke="#C7D2FE" stroke-width="2"/>
+  <line x1="430" y1="400" x2="405" y2="385" stroke="#C7D2FE" stroke-width="2"/>
+  <line x1="360" y1="445" x2="360" y2="415" stroke="#C7D2FE" stroke-width="2"/>
+  <line x1="290" y1="400" x2="315" y2="385" stroke="#C7D2FE" stroke-width="2"/>
+  <line x1="290" y1="325" x2="315" y2="335" stroke="#C7D2FE" stroke-width="2"/>
+  
+  <!-- Central Glowing Core -->
+  <circle cx="360" cy="360" r="16" fill="#C7D2FE"/>
+  <circle cx="360" cy="360" r="28" fill="#818CF8" fill-opacity="0.3"/>
+  
+  <!-- Floating UI pill: Scroll-Driven Motion -->
+  <rect x="135" y="240" width="165" height="32" rx="16" fill="#1E1B4B" stroke="#6366F1" stroke-width="1"/>
+  <text x="217" y="261" text-anchor="middle" fill="#E0E7FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">Lenis Smooth Scroll</text>
+  
+  <!-- Floating UI pill: Three.js WebGL -->
+  <rect x="420" y="240" width="165" height="32" rx="16" fill="#1E1B4B" stroke="#6366F1" stroke-width="1"/>
+  <text x="502" y="261" text-anchor="middle" fill="#E0E7FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">Three.js + Shaders</text>
+
+  <!-- Right Graphic: 3D Grid & Motion Wave Motif -->
+  <rect x="740" y="180" width="360" height="360" rx="24" fill="#0D0D1E" stroke="#1E1E38" stroke-width="2"/>
+  
+  <!-- Perspective 3D Grid Planes -->
+  <path d="M780 430 L920 330 L1060 430 L920 500 Z" fill="#181830" stroke="#4F46E5" stroke-width="1.5"/>
+  <line x1="850" y1="380" x2="990" y2="465" stroke="#6366F1" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="990" y1="380" x2="850" y2="465" stroke="#6366F1" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- Floating 3D Cubes over Grid -->
+  <polygon points="920,240 965,265 920,290 875,265" fill="#4F46E5" stroke="#818CF8" stroke-width="1.5"/>
+  <polygon points="875,265 920,290 920,340 875,315" fill="#312E81" stroke="#818CF8" stroke-width="1.5"/>
+  <polygon points="965,265 920,290 920,340 965,315" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.5"/>
+  
+  <text x="920" y="380" text-anchor="middle" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="18" font-weight="700">Immersive Digital SaaS</text>
+  <text x="920" y="405" text-anchor="middle" fill="#A5B4FC" font-family="Arial,sans-serif" font-size="13">GSAP ScrollTrigger + WebGL</text>
+
+  <text x="920" y="640" text-anchor="middle" fill="#6366F1" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">THREE.JS · GSAP · LENIS · 3D WEBGL</text>
+</svg>

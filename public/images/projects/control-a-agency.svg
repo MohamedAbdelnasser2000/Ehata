@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Control A Agency Website illustration</title>
+  <desc>An abstract software agency website layout, not a product screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#F1F0F4"/>
+  <circle cx="1050" cy="150" r="210" fill="#E3DEF0"/>
+  <circle cx="120" cy="680" r="200" fill="#DDE3F0"/>
+  <text x="76" y="94" fill="#5C537C" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  <!-- Browser window mockup -->
+  <rect x="100" y="160" width="520" height="390" rx="18" fill="#fff"/>
+  <rect x="100" y="160" width="520" height="52" rx="18" fill="#2A1F54"/>
+  <path d="M100 190h520v22H100z" fill="#2A1F54"/>
+  <circle cx="136" cy="186" r="9" fill="#E05252"/>
+  <circle cx="164" cy="186" r="9" fill="#E0B052"/>
+  <circle cx="192" cy="186" r="9" fill="#52C078"/>
+  <rect x="218" y="176" width="290" height="20" rx="8" fill="#3D2E6E"/>
+  <!-- Nav bar -->
+  <rect x="118" y="228" width="480" height="44" rx="8" fill="#F4F2FA"/>
+  <rect x="134" y="241" width="70" height="18" rx="4" fill="#2A1F54"/>
+  <rect x="224" y="241" width="50" height="18" rx="4" fill="#C4BEE0"/>
+  <rect x="290" y="241" width="50" height="18" rx="4" fill="#C4BEE0"/>
+  <rect x="356" y="241" width="50" height="18" rx="4" fill="#C4BEE0"/>
+  <rect x="470" y="238" width="100" height="24" rx="8" fill="#6C52D4"/>
+  <!-- Hero section -->
+  <rect x="118" y="288" width="225" height="20" rx="6" fill="#2A1F54"/>
+  <rect x="118" y="320" width="290" height="12" rx="4" fill="#C4BEE0"/>
+  <rect x="118" y="342" width="255" height="12" rx="4" fill="#C4BEE0"/>
+  <rect x="118" y="374" width="115" height="32" rx="8" fill="#6C52D4"/>
+  <!-- Cards row -->
+  <rect x="118" y="430" width="134" height="90" rx="10" fill="#F0EDFB"/>
+  <rect x="268" y="430" width="134" height="90" rx="10" fill="#EDF3FB"/>
+  <rect x="418" y="430" width="134" height="90" rx="10" fill="#F0FBEE"/>
+  <rect x="134" y="446" width="60" height="10" rx="3" fill="#6C52D4"/>
+  <rect x="134" y="466" width="90" height="8" rx="3" fill="#C4BEE0"/>
+  <rect x="134" y="482" width="75" height="8" rx="3" fill="#C4BEE0"/>
+  <rect x="284" y="446" width="60" height="10" rx="3" fill="#4278C4"/>
+  <rect x="284" y="466" width="90" height="8" rx="3" fill="#C4BEE0"/>
+  <rect x="434" y="446" width="60" height="10" rx="3" fill="#3CA85C"/>
+  <rect x="434" y="466" width="90" height="8" rx="3" fill="#C4BEE0"/>
+  <!-- Right panel -->
+  <rect x="650" y="188" width="440" height="340" rx="18" fill="#2A1F54"/>
+  <circle cx="850" cy="370" r="150" fill="#3D2E6E"/>
+  <!-- Globe / language icons -->
+  <circle cx="850" cy="370" r="100" fill="none" stroke="#6C52D4" stroke-width="6"/>
+  <ellipse cx="850" cy="370" rx="48" ry="100" fill="none" stroke="#6C52D4" stroke-width="4"/>
+  <path d="M750 370h200M850 270v200" stroke="#6C52D4" stroke-width="4"/>
+  <text x="810" y="344" fill="#A98EFF" font-family="Arial,sans-serif" font-size="22" font-weight="900">EN</text>
+  <text x="855" y="408" fill="#A98EFF" font-family="Arial,sans-serif" font-size="22" font-weight="900">AR</text>
+  <text x="850" y="640" text-anchor="middle" fill="#5C537C" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">SERVICES · PORTFOLIO · ADMIN CMS</text>
+</svg>

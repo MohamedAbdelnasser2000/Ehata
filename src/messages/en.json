@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "siteName": "EHATA – Digital Solutions",
+    "defaultTitle": "EHATA – Digital Solutions",
+    "description": "EHATA builds smart digital solutions and teaches the next generation of developers. Custom software, web platforms, ERP systems and professional programming courses."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "cta": "Contact Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle dark mode",
+    "toggleLanguage": "Switch to Arabic",
+    "skipToContent": "Skip to content"
+  },
+  "common": {
+    "viewProjects": "View Projects",
+    "ourCourses": "Our Courses",
+    "learnMore": "Learn more",
+    "getInTouch": "Get in touch",
+    "viewCaseStudy": "View case study",
+    "close": "Close",
+    "scrollDown": "Scroll to explore",
+    "required": "required",
+    "whatsapp": "Chat with us on WhatsApp"
+  },
+  "hero": {
+    "badge": "Software company & development academy",
+    "titleLine1": "We build smart",
+    "titleLine2": "digital solutions",
+    "subtitle": "EHATA engineers web platforms, SaaS products and enterprise systems — and trains the next generation of developers through professional programming courses.",
+    "fallbackAlt": "EHATA logo"
+  },
+  "stats": {
+    "heading": "Software built around real workflows",
+    "intro": "A selection of projects spanning delivery, enterprise operations, healthcare administration and commerce. The counts below describe this portfolio, not client outcomes.",
+    "selectedProjects": "Selected projects",
+    "projectCategories": "Project categories",
+    "technologies": "Technologies listed",
+    "siteLanguages": "Site languages"
+  },
+  "servicesPreview": {
+    "kicker": "What we do",
+    "title": "Services engineered end-to-end",
+    "subtitle": "Six practice areas, one standard: production-grade software with a design layer you can feel.",
+    "allServices": "All services"
+  },
+  "featured": {
+    "kicker": "Selected work",
+    "title": "Featured projects",
+    "subtitle": "A selection of software builds, with scope and technologies grounded in their source.",
+    "dragHint": "Scroll horizontally"
+  },
+  "courses": {
+    "kicker": "EHATA Academy",
+    "title": "Learn to build, not just to code",
+    "subtitle": "Cohort-based and self-paced tracks taught by engineers who ship real products.",
+    "duration": "Duration",
+    "level": "Level",
+    "enroll": "Course details",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    }
+  },
+  "tech": {
+    "title": "Our stack, battle-tested"
+  },
+  "testimonials": {
+    "kicker": "Client voices",
+    "title": "Trusted by teams and learners alike",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "goTo": "Go to testimonial {index}"
+  },
+  "cta": {
+    "title": "Have an idea? Let's engineer it.",
+    "subtitle": "Tell us about your product or your training goals — we reply within one business day.",
+    "primary": "Start a conversation",
+    "secondary": "See our services"
+  },
+  "about": {
+    "kicker": "About EHATA",
+    "title": "An engineering company with a teacher's patience",
+    "storyTitle": "Our story",
+    "missionTitle": "Mission",
+    "visionTitle": "Vision",
+    "valuesTitle": "Core values",
+    "valuesSubtitle": "The principles behind every commit, lesson and launch.",
+    "timelineTitle": "Milestones",
+    "timelineSubtitle": "How a small team grew into a company and an academy.",
+    "teamTitle": "The team",
+    "teamSubtitle": "Engineers, designers and instructors who work side by side.",
+    "processTitle": "How we work",
+    "processSubtitle": "One pipeline, five deliberate stages."
+  },
+  "projectsPage": {
+    "kicker": "Portfolio",
+    "title": "Every project tells a story",
+    "subtitle": "Browse source-verified applications and prototypes. Each case study outlines its problem, approach, features, audience and implementation scope.",
+    "filters": {
+      "all": "All",
+      "web-apps": "Web Apps",
+      "saas": "SaaS",
+      "mobile": "Mobile",
+      "training": "Training Platforms",
+      "desktop": "Desktop Apps",
+      "interactive": "Interactive"
+    },
+    "empty": "No projects in this category yet.",
+    "modal": {
+      "overview": "Overview",
+      "problem": "Problem addressed",
+      "solution": "Approach",
+      "features": "Features and modules",
+      "audience": "Intended users",
+      "architecture": "Architecture and scope",
+      "tech": "Technology stack",
+      "illustration": "Illustrative cover",
+      "gallery": "Gallery"
+    }
+  },
+  "servicesPage": {
+    "kicker": "Services",
+    "title": "Build, launch and grow — with one partner",
+    "subtitle": "Engage us for a single feature or a full product lifecycle. Every engagement includes documentation, testing and knowledge transfer.",
+    "features": "What's included",
+    "details": "Service details",
+    "pricingKicker": "Engagement models",
+    "pricingTitle": "Pick the way you work best",
+    "pricingSubtitle": "Transparent commercial models that scale from a fixed scope to a full squad.",
+    "mostPopular": "Most popular",
+    "talkAboutProject": "Discuss a project",
+    "faqKicker": "FAQ",
+    "faqTitle": "Questions, answered"
+  },
+  "contactPage": {
+    "kicker": "Contact",
+    "title": "Let's talk about your project",
+    "subtitle": "Send us the details — sales, support and academy inquiries all land in the same capable inbox.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "e.g. Sara Haddad",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+20 100 000 0000",
+      "phoneOptional": "optional",
+      "service": "Service you need",
+      "serviceSelect": "Select a service…",
+      "message": "Project details",
+      "messagePlaceholder": "Tell us about your product, timeline and goals…",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Message ready to send",
+      "successBody": "Your email client is opening with the message pre-filled. Prefer forms? Set NEXT_PUBLIC_FORMSPREE_ENDPOINT and it will submit automatically.",
+      "serverError": "The form service rejected the request. Please try again or email us directly.",
+      "sentTitle": "Message sent",
+      "sentBody": "Thanks! We usually reply within one business day.",
+      "sendAnother": "Send another",
+      "errors": {
+        "nameShort": "Please enter your full name (at least 2 characters).",
+        "emailInvalid": "Please enter a valid email address.",
+        "phoneInvalid": "Please enter a valid phone number (digits, spaces or +).",
+        "serviceRequired": "Please choose a service.",
+        "messageShort": "Please write at least 20 characters so we can help properly."
+      }
+    },
+    "info": {
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "whatsappLabel": "WhatsApp",
+      "addressLabel": "Office",
+      "hoursLabel": "Working hours",
+      "hoursValue": "Sun – Thu · 9:00 – 18:00",
+      "hoursValue2": "Sat · 10:00 – 14:00 (support)",
+      "followUs": "Follow us",
+      "mapTitle": "Find us",
+      "mapPlaceholder": "Interactive map placeholder — embed Google Maps or an <iframe> here."
+    }
+  },
+  "academyPage": {
+    "kicker": "EHATA Academy",
+    "title": "Choose the track that moves your career",
+    "subtitle": "Five practice-led programs taught by engineers who ship real products. Pick a track, meet your cohort and build a portfolio employers can open.",
+    "coursesCount": "five tracks"
+  },
+  "coursePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbAcademy": "Academy",
+    "backToAcademy": "Back to academy",
+    "enroll": "Enroll now",
+    "whatsappMessage": "Hello EHATA, I would like to enroll in the \"{course}\" course. Please share the fees, schedule and next steps.",
+    "quickInfo": {
+      "duration": "Duration",
+      "schedule": "Sessions",
+      "level": "Level",
+      "language": "Language",
+      "batch": "Next batch",
+      "price": "Price"
+    },
+    "outcomesKicker": "What you'll learn",
+    "outcomesTitle": "Skills you leave with",
+    "curriculumKicker": "Curriculum",
+    "curriculumTitle": "Module by module",
+    "curriculumSubtitle": "Each module pairs a short theory block with a hands-on milestone. Open any module to see its lessons.",
+    "toolsKicker": "Toolbox",
+    "toolsTitle": "Tools you'll use",
+    "projectsKicker": "Practice",
+    "projectsTitle": "Projects you'll ship",
+    "projectsSubtitle": "Portfolio pieces built under review, not follow-along tutorials.",
+    "requirementsTitle": "Requirements",
+    "audienceTitle": "Who it's for",
+    "faqKicker": "FAQ",
+    "faqTitle": "Questions, answered",
+    "sidebarTitle": "Course summary",
+    "sidebarNote": "Seats are limited. Message us and we'll confirm availability.",
+    "finalTitle": "Start your journey with EHATA",
+    "finalSubtitle": "Talk to an advisor about the next cohort, the schedule and how to reserve your seat.",
+    "finalCta": "Enroll via WhatsApp"
+  },
+  "footer": {
+    "tagline": "Software engineering company and development academy. We build digital products and teach the skills behind them.",
+    "company": "Company",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "madeWith": "Designed & engineered by EHATA"
+  }
+}

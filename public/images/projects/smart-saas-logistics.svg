@@ -1,0 +1,33 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Smart SaaS logistics showcase illustration</title>
+  <desc>Illustrative 3D logistics concept with connected route nodes; not a live tracking screenshot.</desc>
+  <rect width="1200" height="760" rx="32" fill="#101A27"/>
+  <circle cx="943" cy="305" r="273" fill="#152B3A"/>
+  <circle cx="943" cy="305" r="210" stroke="#274352" stroke-width="2"/>
+  <circle cx="943" cy="305" r="144" stroke="#2B4D58" stroke-width="2"/>
+  <path d="M750 380c69-172 281-215 384-60M752 236c122 164 278 201 412 141M809 487c73-130 224-194 373-181" stroke="#39717A" stroke-width="3" stroke-dasharray="9 12"/>
+  <path d="m751 380 193-75 111-126 98 141 65 90" stroke="#29B8AB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="751" cy="380" r="10" fill="#F1B667"/>
+  <circle cx="944" cy="305" r="12" fill="#26CAB8"/>
+  <circle cx="1055" cy="179" r="9" fill="#E8A55E"/>
+  <circle cx="1153" cy="320" r="9" fill="#5DBFD2"/>
+  <circle cx="1145" cy="410" r="8" fill="#26CAB8"/>
+  <path d="m748 384 196-79 111-126 90 131" stroke="#53D6C4" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".12"/>
+  <text x="72" y="88" fill="#7E9AA7" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">LOGISTICS / 3D CONCEPT</text>
+  <rect x="94" y="178" width="496" height="422" rx="26" fill="#182737" stroke="#2A3E4D" stroke-width="2"/>
+  <rect x="127" y="214" width="250" height="11" rx="5" fill="#6F8793"/>
+  <rect x="127" y="250" width="342" height="25" rx="8" fill="#E3EDF0"/>
+  <rect x="127" y="290" width="284" height="9" rx="4" fill="#4C6876"/>
+  <rect x="127" y="333" width="430" height="82" rx="15" fill="#203545"/>
+  <circle cx="164" cy="374" r="19" fill="#23564F"/>
+  <path d="M154 378h20l-2-11h-16zm4-15h12l3 4h-18z" stroke="#6DD9BE" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="199" y="362" width="152" height="9" rx="4" fill="#B6C8CD"/>
+  <rect x="199" y="383" width="221" height="7" rx="3" fill="#55717E"/>
+  <rect x="127" y="430" width="430" height="82" rx="15" fill="#203545"/>
+  <circle cx="164" cy="471" r="19" fill="#3A4E58"/>
+  <path d="M155 471h18m-9-9v18" stroke="#77BED0" stroke-width="3" stroke-linecap="round"/>
+  <rect x="199" y="459" width="152" height="9" rx="4" fill="#B6C8CD"/>
+  <rect x="199" y="480" width="221" height="7" rx="3" fill="#55717E"/>
+  <rect x="127" y="538" width="171" height="35" rx="17" fill="#174A48"/>
+  <rect x="150" y="552" width="111" height="8" rx="4" fill="#78D8C4"/>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>CogRehab Cognitive Rehabilitation Games illustration</title>
+  <desc>An abstract cognitive rehabilitation game interface with attention training and reaction metrics.</desc>
+  <rect width="1200" height="760" rx="32" fill="#FAF5FF"/>
+  <circle cx="1060" cy="140" r="210" fill="#F3E8FF"/>
+  <circle cx="130" cy="670" r="190" fill="#EDE9FE"/>
+  <text x="76" y="94" fill="#9333EA" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  
+  <!-- Left Window: Fruit Matching Attention Game (MonoGame/XNA) -->
+  <rect x="90" y="150" width="530" height="420" rx="20" fill="#2E1065" stroke="#581C87" stroke-width="2"/>
+  <rect x="90" y="150" width="530" height="52" rx="20" fill="#1E0745"/>
+  <path d="M90 184h530v18H90z" fill="#1E0745"/>
+  <circle cx="124" cy="176" r="7" fill="#EF4444"/>
+  <circle cx="148" cy="176" r="7" fill="#F59E0B"/>
+  <circle cx="172" cy="176" r="7" fill="#10B981"/>
+  <text x="200" y="182" fill="#C084FC" font-family="Arial,sans-serif" font-size="15" font-weight="600">CogRehab — Attention &amp; Concentration (XNA)</text>
+  
+  <!-- Game Canvas Area -->
+  <rect x="115" y="225" width="480" height="230" rx="14" fill="#3B0764" stroke="#7E22CE" stroke-width="1.5"/>
+  
+  <!-- Target Category Banner (Bilingual RTL) -->
+  <rect x="195" y="245" width="320" height="38" rx="8" fill="#581C87"/>
+  <text x="355" y="270" text-anchor="middle" fill="#F5D0FE" font-family="Arial,sans-serif" font-size="14" font-weight="700">مطابقة الفواكه الحمراء • Red Fruits</text>
+  
+  <!-- Interactive Fruit Target Cards -->
+  <!-- Card 1: Apple -->
+  <rect x="145" y="305" width="95" height="105" rx="12" fill="#4C1D95" stroke="#A855F7" stroke-width="2"/>
+  <circle cx="192" cy="345" r="24" fill="#EF4444"/>
+  <path d="M192 321 c0-6 4-10 10-10" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <text x="192" y="392" text-anchor="middle" fill="#F3E8FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">تفاح / Apple</text>
+  
+  <!-- Card 2: Orange (Distractor) -->
+  <rect x="260" y="305" width="95" height="105" rx="12" fill="#4C1D95" stroke="#7E22CE" stroke-width="1"/>
+  <circle cx="307" cy="345" r="24" fill="#F97316"/>
+  <text x="307" y="392" text-anchor="middle" fill="#D8B4FE" font-family="Arial,sans-serif" font-size="12">برتقال</text>
+  
+  <!-- Card 3: Strawberry (Match) -->
+  <rect x="375" y="305" width="95" height="105" rx="12" fill="#4C1D95" stroke="#A855F7" stroke-width="2"/>
+  <path d="M422 330 c-18 0 -22 25 -10 32 c10 8 10 12 10 12 s0-4 10-12 c12-7 8-32 -10-32 z" fill="#DC2626"/>
+  <circle cx="417" cy="345" r="1.5" fill="#FEF08A"/>
+  <circle cx="425" cy="342" r="1.5" fill="#FEF08A"/>
+  <circle cx="421" cy="355" r="1.5" fill="#FEF08A"/>
+  <text x="422" y="392" text-anchor="middle" fill="#F3E8FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">فراولة</text>
+  
+  <!-- Card 4: Banana (Distractor) -->
+  <rect x="490" y="305" width="90" height="105" rx="12" fill="#4C1D95" stroke="#7E22CE" stroke-width="1"/>
+  <path d="M525 330 c15 5 20 25 10 35 c-5 5-15 0-18-10 c-3-10 0-20 8-25 z" fill="#EAB308"/>
+  <text x="535" y="392" text-anchor="middle" fill="#D8B4FE" font-family="Arial,sans-serif" font-size="12">موز</text>
+  
+  <!-- Game Session Performance Bar -->
+  <rect x="115" y="475" width="480" height="70" rx="10" fill="#1E0745"/>
+  <text x="140" y="505" fill="#C084FC" font-family="Arial,sans-serif" font-size="11" font-weight="700">ACCURACY</text>
+  <text x="140" y="530" fill="#10B981" font-family="Arial,sans-serif" font-size="20" font-weight="800">94.2%</text>
+  
+  <text x="270" y="505" fill="#C084FC" font-family="Arial,sans-serif" font-size="11" font-weight="700">REACTION TIME</text>
+  <text x="270" y="530" fill="#38BDF8" font-family="Arial,sans-serif" font-size="20" font-weight="800">320 ms</text>
+  
+  <text x="420" y="505" fill="#C084FC" font-family="Arial,sans-serif" font-size="11" font-weight="700">SESSION TRIALS</text>
+  <text x="420" y="530" fill="#F5D0FE" font-family="Arial,sans-serif" font-size="20" font-weight="800">45 / 50</text>
+  
+  <!-- Right Graphic: Cognitive Brain & Reaction Reflex Radial -->
+  <rect x="740" y="180" width="360" height="360" rx="24" fill="#2E1065" stroke="#581C87" stroke-width="2"/>
+  <circle cx="920" cy="330" r="100" fill="#3B0764" stroke="#A855F7" stroke-width="2"/>
+  
+  <!-- Brain hemisphere stylized outline -->
+  <path d="M920 250 c-40 0 -70 30 -70 70 c0 15 5 30 15 40 c-10 10 -15 25 -10 40 c5 15 20 25 35 25 c10 0 20-5 30-10 v-165 z" fill="#581C87" stroke="#C084FC" stroke-width="3"/>
+  <path d="M920 250 c40 0 70 30 70 70 c0 15 -5 30 -15 40 c10 10 15 25 10 40 c-5 15 -20 25 -35 25 c-10 0 -20-5 -30-10 v-165 z" fill="#6B21A8" stroke="#C084FC" stroke-width="3"/>
+  
+  <!-- Reaction Pulse Rings -->
+  <circle cx="920" cy="330" r="125" fill="none" stroke="#A855F7" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+  
+  <!-- Target badge -->
+  <rect x="800" y="465" width="240" height="45" rx="10" fill="#1E0745" stroke="#7E22CE" stroke-width="1.5"/>
+  <text x="920" y="493" text-anchor="middle" fill="#F5D0FE" font-family="Arial,sans-serif" font-size="13" font-weight="700">Reaction Behaviour (WinForms &amp; XNA)</text>
+
+  <text x="920" y="640" text-anchor="middle" fill="#9333EA" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">MONOGAME · XNA · WINFORMS · ARABIC RTL</text>
+</svg>

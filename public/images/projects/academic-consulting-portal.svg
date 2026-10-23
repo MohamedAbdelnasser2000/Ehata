@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <title>Abeer Academic &amp; Educational Consulting Platform illustration</title>
+  <desc>An abstract bilingual academic and educational consulting platform with services and advisor profiles.</desc>
+  <rect width="1200" height="760" rx="32" fill="#F8F9FA"/>
+  <circle cx="1060" cy="140" r="210" fill="#E8EDF5"/>
+  <circle cx="130" cy="670" r="190" fill="#EDE9FE"/>
+  <text x="76" y="94" fill="#1E3A8A" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="4">PROJECT ILLUSTRATION</text>
+  
+  <!-- Browser Window mockup -->
+  <rect x="90" y="150" width="540" height="420" rx="18" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="90" y="150" width="540" height="52" rx="18" fill="#1E3A8A"/>
+  <path d="M90 184h540v18H90z" fill="#1E3A8A"/>
+  <circle cx="124" cy="176" r="7" fill="#EF4444"/>
+  <circle cx="148" cy="176" r="7" fill="#F59E0B"/>
+  <circle cx="172" cy="176" r="7" fill="#10B981"/>
+  <text x="200" y="182" fill="#93C5FD" font-family="Arial,sans-serif" font-size="15" font-weight="600">Abeer Consulting — Academic &amp; Healthcare Track</text>
+  
+  <!-- Navigation Header inside Browser -->
+  <rect x="110" y="218" width="500" height="42" rx="8" fill="#F1F5F9"/>
+  <rect x="125" y="228" width="90" height="22" rx="4" fill="#1E3A8A"/>
+  <rect x="235" y="231" width="55" height="16" rx="4" fill="#94A3B8"/>
+  <rect x="305" y="231" width="55" height="16" rx="4" fill="#94A3B8"/>
+  <rect x="375" y="231" width="55" height="16" rx="4" fill="#94A3B8"/>
+  <!-- Language Toggle Button: العربية | EN -->
+  <rect x="495" y="226" width="100" height="26" rx="6" fill="#2563EB"/>
+  <text x="545" y="244" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700">العربية | EN</text>
+  
+  <!-- Hero Banner inside Browser -->
+  <rect x="110" y="272" width="500" height="110" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="135" y="304" fill="#1E3A8A" font-family="Arial,sans-serif" font-size="17" font-weight="800">رفيقك المهني في القطاع الصحي</text>
+  <text x="135" y="328" fill="#475569" font-family="Arial,sans-serif" font-size="12">استشارات أكاديمية وتدريبية متخصصة للممارسين الصحيين بالمملكة</text>
+  <rect x="135" y="344" width="130" height="26" rx="6" fill="#1E3A8A"/>
+  <text x="200" y="361" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11" font-weight="700">احجز استشارتك الآن</text>
+  
+  <!-- Four Specialized Service Cards -->
+  <rect x="110" y="395" width="115" height="155" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="167" cy="425" r="16" fill="#DBEAFE"/>
+  <text x="167" y="430" text-anchor="middle" fill="#1D4ED8" font-size="14">🎓</text>
+  <text x="167" y="460" text-anchor="middle" fill="#1E293B" font-family="Arial,sans-serif" font-size="11" font-weight="700">الاستشارات المهنية</text>
+  <rect x="122" y="475" width="90" height="6" rx="3" fill="#CBD5E1"/>
+  <rect x="122" y="490" width="75" height="6" rx="3" fill="#CBD5E1"/>
+  
+  <rect x="238" y="395" width="115" height="155" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="295" cy="425" r="16" fill="#DCFCE7"/>
+  <text x="295" y="430" text-anchor="middle" fill="#15803D" font-size="14">📋</text>
+  <text x="295" y="460" text-anchor="middle" fill="#1E293B" font-family="Arial,sans-serif" font-size="11" font-weight="700">التصنيف المهني</text>
+  <rect x="250" y="475" width="90" height="6" rx="3" fill="#CBD5E1"/>
+  <rect x="250" y="490" width="75" height="6" rx="3" fill="#CBD5E1"/>
+
+  <rect x="366" y="395" width="115" height="155" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="423" cy="425" r="16" fill="#FEF3C7"/>
+  <text x="423" y="430" text-anchor="middle" fill="#B45309" font-size="14">📑</text>
+  <text x="423" y="460" text-anchor="middle" fill="#1E293B" font-family="Arial,sans-serif" font-size="11" font-weight="700">السيرة الذاتية</text>
+  <rect x="378" y="475" width="90" height="6" rx="3" fill="#CBD5E1"/>
+  <rect x="378" y="490" width="75" height="6" rx="3" fill="#CBD5E1"/>
+
+  <rect x="495" y="395" width="115" height="155" rx="10" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="552" cy="425" r="16" fill="#F3E8FF"/>
+  <text x="552" y="430" text-anchor="middle" fill="#7E22CE" font-size="14">🎯</text>
+  <text x="552" y="460" text-anchor="middle" fill="#1E293B" font-family="Arial,sans-serif" font-size="11" font-weight="700">المقابلات الشخصية</text>
+  <rect x="507" y="475" width="90" height="6" rx="3" fill="#CBD5E1"/>
+  <rect x="507" y="490" width="75" height="6" rx="3" fill="#CBD5E1"/>
+
+  <!-- Right Graphic: Academic Mortarboard & Shield Motif -->
+  <rect x="740" y="180" width="360" height="360" rx="24" fill="#1E3A8A"/>
+  
+  <!-- Graduation Cap / Mortarboard Outline -->
+  <path d="M920 250 l100 45 l-100 45 l-100 -45 z" fill="#3B82F6" stroke="#93C5FD" stroke-width="3"/>
+  <path d="M855 310 v35 c0 25 30 45 65 45 s65 -20 65 -45 v-35" fill="none" stroke="#93C5FD" stroke-width="3"/>
+  <!-- Tassel -->
+  <path d="M1000 290 v55" stroke="#FBBF24" stroke-width="4"/>
+  <circle cx="1000" cy="350" r="8" fill="#FBBF24"/>
+  
+  <text x="920" y="425" text-anchor="middle" fill="#F8FAFC" font-family="Arial,sans-serif" font-size="18" font-weight="700">Healthcare Education Portal</text>
+  <text x="920" y="450" text-anchor="middle" fill="#93C5FD" font-family="Arial,sans-serif" font-size="13">Bilingual Botble / Laravel Platform</text>
+  
+  <rect x="800" y="475" width="240" height="42" rx="10" fill="#172554"/>
+  <text x="920" y="501" text-anchor="middle" fill="#FBBF24" font-family="Arial,sans-serif" font-size="13" font-weight="700">Saudi Healthcare Specialization</text>
+
+  <text x="920" y="640" text-anchor="middle" fill="#1E3A8A" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">ACADEMIC CONSULTING · HEALTHCARE · LARAVEL</text>
+</svg>
