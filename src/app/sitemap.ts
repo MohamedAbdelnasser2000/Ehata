@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ar/academy/",
     "/blog/",
     "/ar/blog/",
+    "/privacy/",
+    "/ar/privacy/",
     "/ar/services/",
     "/ar/contact/",
     ...COURSES.map((course) => `/academy/${course.slug}/`),
@@ -47,6 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ar/academy/": "/academy/",
     "/blog/": "/ar/blog/",
     "/ar/blog/": "/blog/",
+    "/privacy/": "/ar/privacy/",
+    "/ar/privacy/": "/privacy/",
   };
   for (const course of COURSES) {
     alternatePaths[`/academy/${course.slug}/`] =
@@ -59,7 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return {
       url: `${SITE_URL}${path}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority:
         path === "/" || path === "/ar/"

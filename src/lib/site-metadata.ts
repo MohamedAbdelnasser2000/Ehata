@@ -46,6 +46,6 @@ export const siteMetadata: Metadata = {
       { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    apple: "/icon.svg",
+    apple: "/apple-touch-icon.png",
   },
 };

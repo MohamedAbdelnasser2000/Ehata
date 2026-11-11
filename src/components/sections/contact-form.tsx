@@ -33,7 +33,7 @@ const inputCls =
   "h-12 w-full rounded-2xl border border-line bg-surface px-4 text-[15px] text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-blue/60";
 const labelCls = "mb-1.5 block text-sm font-semibold text-foreground";
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ id, message }: { id: string; message?: string }) {
   return (
     <AnimatePresence>
       {message && (
@@ -43,6 +43,7 @@ function FieldError({ message }: { message?: string }) {
           exit={{ opacity: 0, height: 0 }}
           className="mt-1.5 flex items-center gap-1.5 text-sm text-red-500"
           role="alert"
+          id={id}
         >
           <CircleAlert className="h-4 w-4 shrink-0" aria-hidden />
           {message}
@@ -155,6 +156,7 @@ export function ContactForm() {
           showPanel && "pointer-events-none opacity-0",
         )}
         aria-hidden={showPanel || undefined}
+        inert={showPanel}
       >
         <div className="grid gap-5 sm:grid-cols-2">
           <div>
@@ -166,9 +168,12 @@ export function ContactForm() {
               autoComplete="name"
               placeholder={t.contactPage.form.namePlaceholder}
               className={cn(inputCls, errors.name && "border-red-400")}
+              aria-invalid={Boolean(errors.name)}
+              aria-describedby={errors.name ? "cf-name-error" : undefined}
+              required
               {...register("name")}
             />
-            <FieldError message={errors.name?.message} />
+            <FieldError id="cf-name-error" message={errors.name?.message} />
           </div>
           <div>
             <label htmlFor="cf-email" className={labelCls}>
@@ -181,9 +186,12 @@ export function ContactForm() {
               autoComplete="email"
               placeholder={t.contactPage.form.emailPlaceholder}
               className={cn(inputCls, errors.email && "border-red-400")}
+              aria-invalid={Boolean(errors.email)}
+              aria-describedby={errors.email ? "cf-email-error" : undefined}
+              required
               {...register("email")}
             />
-            <FieldError message={errors.email?.message} />
+            <FieldError id="cf-email-error" message={errors.email?.message} />
           </div>
         </div>
 
@@ -202,9 +210,11 @@ export function ContactForm() {
               autoComplete="tel"
               placeholder={t.contactPage.form.phonePlaceholder}
               className={cn(inputCls, errors.phone && "border-red-400")}
+              aria-invalid={Boolean(errors.phone)}
+              aria-describedby={errors.phone ? "cf-phone-error" : undefined}
               {...register("phone")}
             />
-            <FieldError message={errors.phone?.message} />
+            <FieldError id="cf-phone-error" message={errors.phone?.message} />
           </div>
           <div>
             <label htmlFor="cf-service" className={labelCls}>
@@ -213,6 +223,9 @@ export function ContactForm() {
             <select
               id="cf-service"
               className={cn(inputCls, "appearance-none", errors.service && "border-red-400")}
+              aria-invalid={Boolean(errors.service)}
+              aria-describedby={errors.service ? "cf-service-error" : undefined}
+              required
               {...register("service")}
             >
               <option value="" disabled>
@@ -224,7 +237,7 @@ export function ContactForm() {
                 </option>
               ))}
             </select>
-            <FieldError message={errors.service?.message} />
+            <FieldError id="cf-service-error" message={errors.service?.message} />
           </div>
         </div>
 
@@ -240,9 +253,12 @@ export function ContactForm() {
               "w-full rounded-2xl border border-line bg-surface p-4 text-[15px] leading-relaxed text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-blue/60",
               errors.message && "border-red-400",
             )}
+            aria-invalid={Boolean(errors.message)}
+            aria-describedby={errors.message ? "cf-message-error" : undefined}
+            required
             {...register("message")}
           />
-          <FieldError message={errors.message?.message} />
+          <FieldError id="cf-message-error" message={errors.message?.message} />
         </div>
 
         <button

@@ -65,6 +65,14 @@ export function Footer() {
                 {t.footer.blog}
               </Link>
             </li>
+            <li>
+              <Link
+                href={getLocalizedSitePath("/privacy/", locale)}
+                className="text-[15px] text-muted transition-colors hover:text-blue"
+              >
+                {t.footer.privacy}
+              </Link>
+            </li>
           </ul>
         </nav>
 

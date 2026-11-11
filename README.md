@@ -10,14 +10,14 @@ react-hook-form + zod · static-export friendly (`output: "export"` — no serve
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run build      # type-checks and exports the static site to ./out
+npm run build      # exports ./out and checks its local links/assets
 npm run lint       # ESLint (React 19 rules included)
+npm start          # preview ./out locally after building
 ```
 
 The production build is a **fully static site** in `out/` — host it on Vercel, Netlify,
-S3, GitHub Pages or any static file server. `next start` is not used with static export.
-The current project portfolio build prerenders 76 routes, including 44 localized
-project-detail pages (22 projects) and 12 localized service-detail pages (6 services).
+S3, GitHub Pages or any static file server. `npm start` serves the exported files locally;
+it does not run the Next.js server.
 
 The canonical origin defaults to `https://ehata-tech.vercel.app`. Set
 `NEXT_PUBLIC_SITE_URL` to override it when building for a different production domain.
@@ -108,6 +108,8 @@ Rebuild after changing env values (`NEXT_PUBLIC_*` is inlined at build time).
 - Reduced motion: `prefers-reduced-motion` disables Lenis, GSAP timelines, split-text,
   counters and other motion effects. The homepage uses a static brand mark rather than
   a WebGL hero; the 3D scene modules remain available but are not currently mounted.
+- Contact-form validation errors are linked to their controls for assistive technology,
+  and the form is removed from keyboard navigation while its result panel is shown.
 - The portfolio contains 22 selected, source-reviewed projects across web, SaaS,
   desktop, learning and interactive categories. Each project detail explains its
   problem, approach, implemented features, intended users and architecture.
@@ -127,4 +129,14 @@ Rebuild after changing env values (`NEXT_PUBLIC_*` is inlined at build time).
 - Verified at 360 / 768 / 1280 / 1920 with no horizontal scroll; Lighthouse scores were
   not executed as part of this build (run `npx lighthouse http://localhost:3000` on a
   production build for the official numbers).
+
+## Launch checklist
+
+- Confirm `NEXT_PUBLIC_SITE_URL` is the production origin before building.
+- Configure `NEXT_PUBLIC_FORMSPREE_ENDPOINT` if submissions should be sent directly
+  from the site; otherwise the form uses the visitor's email client.
+- Review the privacy notice against the actual hosting provider, mailbox retention,
+  and legal business details before launch.
+
+GitHub Actions runs ESLint and the static export/link check on pushes and pull requests.
 ```

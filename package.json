@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && npm run check:export",
+    "start": "node scripts/serve.mjs",
+    "check:export": "node scripts/check-static-export.mjs",
     "lint": "eslint"
   },
   "dependencies": {
