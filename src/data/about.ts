@@ -8,20 +8,20 @@ export const ABOUT: {
 } = {
   story: [
     {
-      en: "This portfolio brings together software projects across food delivery, enterprise operations, clinic administration, pharmacy inventory and online commerce.",
-      ar: "تجمع هذه المحفظة مشاريع برمجية في توصيل الطعام وعمليات المؤسسات وإدارة العيادات ومخزون الصيدليات والتجارة الإلكترونية.",
+      en: "EHATA is a Cairo-based software team and academy working with businesses in Egypt and Saudi Arabia. We build custom systems for logistics, healthcare, pharmacy, commerce and technology operations, alongside practical developer training.",
+      ar: "إحاطة فريق برمجيات وأكاديمية تدريب مقرّهما القاهرة، ونعمل مع شركات في مصر والسعودية. نبني أنظمة مخصصة لعمليات اللوجستيات والرعاية الصحية والصيدليات والتجارة والتقنية، إلى جانب تدريب عملي للمطورين.",
     },
     {
-      en: "Each project summary is grounded in the available source code. Work that is still in progress is identified clearly, and illustrative covers are not presented as product screenshots.",
-      ar: "يستند وصف كل مشروع إلى ملفات المصدر المتاحة. وتُوضّح المشاريع التي لا يزال العمل عليها جاريًا، كما لا تُعرض الأغلفة التوضيحية على أنها لقطات من المنتجات.",
+      en: "We start by understanding how your operation works and where a purpose-built system can help. Our portfolio includes more than 22 delivered projects; each case study describes its scope based on the available project information.",
+      ar: "نبدأ بفهم طريقة عمل نشاطك والمجالات التي قد يساعد فيها نظام مخصص. تضم محفظتنا أكثر من 22 مشروعًا تم تسليمها، وتعرض كل دراسة حالة نطاق العمل وفق المعلومات المتاحة عن المشروع.",
     },
   ],
   mission: {
-    en: "Combine thoughtful software engineering with practical, accessible technical education.",
-    ar: "الجمع بين هندسة البرمجيات المتقنة والتعليم التقني العملي والمتاح.",
+    en: "Build practical software that helps Egyptian businesses run their operations, and train the next generation of engineers to build it.",
+    ar: "بناء برمجيات عملية تساعد الشركات المصرية في إدارة عملياتها، وتدريب الجيل القادم من المهندسين على تطويرها.",
   },
   vision: {
-    en: "Make well-engineered digital products and practical learning more accessible to teams and developers.",
-    ar: "إتاحة المنتجات الرقمية المتقنة والتعلّم العملي لعدد أكبر من الفرق والمطورين.",
+    en: "Make purpose-built digital systems and practical technology education more accessible to businesses and developers in Egypt and the region.",
+    ar: "إتاحة الأنظمة الرقمية المصممة حسب الحاجة والتعليم التقني العملي للشركات والمطورين في مصر والمنطقة.",
   },
 };

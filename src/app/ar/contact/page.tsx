@@ -3,7 +3,7 @@ import { ContactHead, ContactMain } from "@/components/sections/contact-sections
 import { FaqSection } from "@/components/sections/services-sections";
 
 export const metadata: Metadata = {
-  title: "تواصل معنا",
+  title: { absolute: "تواصل مع EHATA — احجز جلسة تحديد نطاق مجانية" },
   description:
     "تواصل مع EHATA لمناقشة تطوير البرمجيات أو تطبيقات الويب وERP أو التدريب والاستشارات التقنية.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "تواصل معنا | EHATA للحلول الرقمية",
+    title: "تواصل مع EHATA — احجز جلسة تحديد نطاق مجانية",
     description: "أخبرنا عن احتياجك وسنناقش معك الخطوة المناسبة.",
     locale: "ar_EG",
   },

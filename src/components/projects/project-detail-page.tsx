@@ -20,6 +20,10 @@ const COPY = {
     projects: "Projects",
     caseStudy: "Project case study",
     illustration: "Illustrative cover — not an application screenshot",
+    sourceScreenshot: "Captured from the runnable source application.",
+    interfacePreviews: "Interface previews",
+    illustrativeScreen:
+      "Illustrative interface preview based on the described workflows; sample data only.",
     statusNotProvided: "Project status not provided",
     overview: "Executive Overview",
     problem: "Operational Challenges Addressed",
@@ -50,6 +54,10 @@ const COPY = {
     projects: "المشاريع",
     caseStudy: "دراسة حالة المشروع",
     illustration: "غلاف توضيحي — وليس لقطة شاشة للتطبيق",
+    sourceScreenshot: "لقطة فعلية من واجهة المشروع القابل للتشغيل.",
+    interfacePreviews: "معاينات الواجهة",
+    illustrativeScreen:
+      "معاينة توضيحية مبنية على مسارات العمل المذكورة؛ البيانات تجريبية فقط.",
     statusNotProvided: "حالة تنفيذ المشروع غير موضحة",
     overview: "نبذة تنفيذية شاملة عن المنظومة",
     problem: "التحديات التشغيلية التي يعالجها النظام",
@@ -220,9 +228,42 @@ export function ProjectDetailPage({
             />
           </div>
           <figcaption className="px-4 py-3 text-xs text-muted">
-            {copy.illustration}
+            {project.coverIsScreenshot ? copy.sourceScreenshot : copy.illustration}
           </figcaption>
         </figure>
+
+        {project.screenshots?.length ? (
+          <section aria-labelledby="project-interface-previews" className="mb-12">
+            <h2
+              id="project-interface-previews"
+              className="mb-4 text-2xl font-bold text-foreground"
+            >
+              {copy.interfacePreviews}
+            </h2>
+            <div className="grid gap-5 sm:grid-cols-2">
+              {project.screenshots.map((screenshot, index) => (
+                <figure
+                  key={screenshot}
+                  className="overflow-hidden rounded-card border border-line bg-surface card-shadow"
+                >
+                  <div className="relative aspect-[16/10] w-full">
+                    <Image
+                      src={screenshot}
+                      alt={`${title} — ${copy.interfacePreviews} ${index + 1}`}
+                      fill
+                      unoptimized
+                      sizes="(max-width: 640px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="px-4 py-3 text-xs text-muted">
+                    {copy.illustrativeScreen}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
           <div className="min-w-0 space-y-12">

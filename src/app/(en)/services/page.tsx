@@ -7,7 +7,7 @@ import {
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: { absolute: "Software Development Services Egypt — ERP, Web, Mobile | EHATA" },
   description:
     "Custom software, web & SaaS platforms, ERP systems, UI/UX design, programming courses and consulting — with fixed-price, dedicated-team and hourly engagement models.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Services | EHATA – Digital Solutions",
+    title: "Software Development Services Egypt — ERP, Web, Mobile | EHATA",
     description:
       "Six practice areas, three engagement models, one production-grade standard.",
     url: "/services",

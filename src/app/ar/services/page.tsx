@@ -6,7 +6,7 @@ import {
 } from "@/components/sections/services-sections";
 
 export const metadata: Metadata = {
-  title: "الخدمات",
+  title: { absolute: "خدمات تطوير البرمجيات والأنظمة في مصر — EHATA" },
   description:
     "استكشف خدمات EHATA في تطوير البرمجيات المخصصة وتطبيقات الويب وSaaS وأنظمة ERP والتصميم والتدريب والاستشارات التقنية.",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "الخدمات | EHATA للحلول الرقمية",
+    title: "خدمات تطوير البرمجيات والأنظمة في مصر — EHATA",
     description: "حلول برمجية وتدريب تقني مصممان وفق احتياجاتك.",
     locale: "ar_EG",
   },

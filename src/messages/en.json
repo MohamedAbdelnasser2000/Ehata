@@ -29,19 +29,33 @@
     "whatsapp": "Chat with us on WhatsApp"
   },
   "hero": {
-    "badge": "Software company & development academy",
-    "titleLine1": "We build smart",
-    "titleLine2": "digital solutions",
-    "subtitle": "EHATA engineers web platforms, SaaS products and enterprise systems — and trains the next generation of developers through professional programming courses.",
+    "badge": "Cairo-based Software Agency & Academy",
+    "titleLine1": "Your operations deserve",
+    "titleLine2": "a system — not a spreadsheet",
+    "subtitle": "EHATA builds custom software for businesses in Egypt, including delivery platforms, ERP systems, clinic and pharmacy operations, and digital products. We also provide practical developer training.",
     "fallbackAlt": "EHATA logo"
   },
   "stats": {
-    "heading": "Software built around real workflows",
-    "intro": "A selection of projects spanning delivery, enterprise operations, healthcare administration and commerce. The counts below describe this portfolio, not client outcomes.",
-    "selectedProjects": "Selected projects",
-    "projectCategories": "Project categories",
-    "technologies": "Technologies listed",
-    "siteLanguages": "Site languages"
+    "heading": "Built for the way businesses operate",
+    "intro": "Our work spans logistics, healthcare, pharmacy, commerce and technology. These figures reflect EHATA's experience, not promised business outcomes.",
+    "projectsDelivered": "Projects delivered",
+    "industriesServed": "Industries served",
+    "yearsBuilding": "Years in business",
+    "countriesReached": "Countries served"
+  },
+  "trustSignals": {
+    "ariaLabel": "EHATA at a glance",
+    "items": [
+      "22+ projects delivered",
+      "Cairo-based team",
+      "Arabic and English support",
+      "Serving Egypt and Saudi Arabia",
+      "Reply within one business day"
+    ]
+  },
+  "processSection": {
+    "kicker": "How we work",
+    "title": "A clear path from first conversation to handover"
   },
   "servicesPreview": {
     "kicker": "What we do",
@@ -69,6 +83,7 @@
     "duration": "Duration",
     "level": "Level",
     "enroll": "Course details",
+    "questionNote": "Questions? WhatsApp us — we reply within one business day.",
     "levels": {
       "beginner": "Beginner",
       "intermediate": "Intermediate",
@@ -86,9 +101,9 @@
     "goTo": "Go to testimonial {index}"
   },
   "cta": {
-    "title": "Have an idea? Let's engineer it.",
-    "subtitle": "Tell us about your product or your training goals — we reply within one business day.",
-    "primary": "Start a conversation",
+    "title": "Let's map your workflow — then plan the right system.",
+    "subtitle": "Start with a free scoping session. Tell us how your business works, and we'll help identify a practical next step.",
+    "primary": "Request a free scoping session",
     "secondary": "See our services"
   },
   "about": {
@@ -128,7 +143,7 @@
       "audience": "Intended users",
       "architecture": "Architecture and scope",
       "tech": "Technology stack",
-      "illustration": "Illustrative cover",
+      "illustration": "Project visual preview",
       "statusNotProvided": "Project status not provided",
       "gallery": "Gallery"
     }
@@ -148,28 +163,36 @@
     "faqTitle": "Questions, answered"
   },
   "contactPage": {
-    "kicker": "Contact",
-    "title": "Let's talk about your project",
-    "subtitle": "Send us the details — sales, support and academy inquiries all land in the same capable inbox.",
+    "kicker": "Get in touch",
+    "title": "Tell us about your operation",
+    "subtitle": "Describe what your team does and what you need help with. We reply within one business day. Prefer to talk first? Message us on WhatsApp.",
+    "nextSteps": {
+      "title": "What happens next",
+      "steps": [
+        "We review your message and reply within one business day.",
+        "We hold a free scoping session to understand your workflows and needs.",
+        "If we are a fit, we agree on the scope and next step together."
+      ]
+    },
     "form": {
-      "name": "Full name",
-      "namePlaceholder": "e.g. Sara Haddad",
-      "email": "Email",
+      "name": "Your name",
+      "namePlaceholder": "e.g. Sara",
+      "email": "Your email address",
       "emailPlaceholder": "you@company.com",
       "phone": "Phone",
       "phonePlaceholder": "+20 100 000 0000",
       "phoneOptional": "optional",
-      "service": "Service you need",
+      "service": "What do you need built?",
       "serviceSelect": "Select a service…",
-      "message": "Project details",
-      "messagePlaceholder": "Tell us about your product, timeline and goals…",
-      "submit": "Send message",
+      "message": "What is not working as it should?",
+      "messagePlaceholder": "Describe your operation and what you would like to improve…",
+      "submit": "Send — we'll reply within one business day",
       "sending": "Sending…",
       "successTitle": "Message ready to send",
       "successBody": "Your email client is opening with the message pre-filled. Prefer forms? Set NEXT_PUBLIC_FORMSPREE_ENDPOINT and it will submit automatically.",
       "serverError": "The form service rejected the request. Please try again or email us directly.",
       "sentTitle": "Message sent",
-      "sentBody": "Thanks! We usually reply within one business day.",
+      "sentBody": "Thanks! We'll reply within one business day.",
       "sendAnother": "Send another",
       "errors": {
         "nameShort": "Please enter your full name (at least 2 characters).",
@@ -191,8 +214,8 @@
   },
   "academyPage": {
     "kicker": "EHATA Academy",
-    "title": "Choose the track that moves your career",
-    "subtitle": "Five practice-led programs taught by engineers who ship real products. Pick a track, meet your cohort and build a portfolio employers can open.",
+    "title": "Learn to build. Learn by building.",
+    "subtitle": "Choose from practical, project-based tracks in backend, full-stack, mobile and more. Practice through code reviews and earn a certificate when you complete your track.",
     "coursesCount": "five tracks"
   },
   "coursePage": {

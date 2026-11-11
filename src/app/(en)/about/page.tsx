@@ -10,7 +10,7 @@ import {
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: { absolute: "About EHATA — Cairo Software Agency & Coding Academy" },
   description:
     "EHATA is a software engineering company and development academy. Our story, mission, values, team and the five-stage process behind every launch.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About EHATA – Digital Solutions",
+    title: "About EHATA — Cairo Software Agency & Coding Academy",
     description:
       "A company that works like an academy: engineers who ship, teachers who keep shipping.",
     url: "/about",

@@ -5,8 +5,10 @@
  */
 import Link from "next/link";
 import { ArrowUpRight, BarChart3, CalendarDays, Clock } from "lucide-react";
+import { WhatsAppIcon } from "@/components/layout/social-icons";
 import { useLocale } from "@/components/providers/locale-provider";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
+import { whatsappChatHref } from "@/data/site";
 import { Icon } from "@/lib/icons";
 import type { Course, CourseLevel } from "@/data/types";
 import { cn } from "@/lib/utils";
@@ -19,6 +21,10 @@ export const LEVEL_TONE: Record<CourseLevel, string> = {
 
 export function CourseCard({ course }: { course: Course }) {
   const { t, tr } = useLocale();
+  const whatsappMessage = t.coursePage.whatsappMessage.replace(
+    "{course}",
+    tr(course.title),
+  );
 
   return (
     <SpotlightCard
@@ -85,6 +91,15 @@ export function CourseCard({ course }: { course: Course }) {
             {t.courses.enroll}
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 rtl:-scale-x-100 rtl:group-hover/link:-translate-x-1" />
           </Link>
+          <a
+            href={whatsappChatHref(whatsappMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-start gap-1.5 text-xs leading-relaxed text-muted transition-colors hover:text-blue"
+          >
+            <WhatsAppIcon className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+            {t.courses.questionNote}
+          </a>
         </div>
       </article>
     </SpotlightCard>

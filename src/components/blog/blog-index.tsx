@@ -14,33 +14,33 @@ import { BorderBeam } from "@/components/ui/border-beam";
 const COPY = {
   en: {
     kicker: "EHATA Journal",
-    title: "Practical thinking for better digital decisions",
+    title: "Real answers for real operations questions",
     subtitle:
-      "Guides for teams planning business systems, warehouse workflows, and mobile products. Clear considerations, without inflated promises.",
+      "Practical guides for Egyptian business owners and operations managers deciding which software to buy, build or improve.",
     home: "Home",
     blog: "Blog",
     read: "Read article",
     published: "Published",
     readingTime: "{minutes} min read",
-    ctaTitle: "Have a project in mind?",
+    ctaTitle: "Have an operation you want to improve?",
     ctaDescription:
-      "Tell us about the workflow you want to improve. We will help you define a sensible next step.",
-    cta: "Talk to EHATA",
+      "Tell us how your business works. We'll help you identify a practical next step in a free scoping session.",
+    cta: "Request a free scoping session",
   },
   ar: {
     kicker: "مدونة EHATA",
-    title: "أفكار عملية لقرارات رقمية أفضل",
+    title: "إجابات عملية لأسئلة التشغيل",
     subtitle:
-      "أدلة للفرق التي تخطط لأنظمة الأعمال وإجراءات المخازن ومنتجات الموبايل، بتوضيح عملي بعيدًا عن الوعود المبالغ فيها.",
+      "أدلة عملية لأصحاب الأعمال ومديري العمليات في مصر عند اختيار برنامج جاهز أو بناء نظام أو تطوير الموجود.",
     home: "الرئيسية",
     blog: "المدونة",
     read: "اقرأ المقال",
     published: "تاريخ النشر",
     readingTime: "قراءة خلال {minutes} دقائق",
-    ctaTitle: "لديك مشروع تعمل عليه؟",
+    ctaTitle: "هل تريد تحسين طريقة سير العمل؟",
     ctaDescription:
-      "أخبرنا عن الإجراء الذي تريد تحسينه، وسنساعدك على تحديد الخطوة المناسبة.",
-    cta: "تواصل مع EHATA",
+      "احكِ لنا كيف تسير عملياتك، وسنساعدك في تحديد خطوة عملية خلال جلسة مجانية لتحديد النطاق.",
+    cta: "اطلب جلسة مجانية لتحديد النطاق",
   },
 } as const;
 

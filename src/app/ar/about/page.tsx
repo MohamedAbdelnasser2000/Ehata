@@ -10,7 +10,7 @@ import {
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "من نحن",
+  title: { absolute: "عن إحاطة — شركة برمجيات وأكاديمية تدريب بالقاهرة" },
   description:
     "تعرف على إحاطة، ورسالتنا وقيمنا وفريقنا ومنهجية العمل التي نتبعها في تطوير البرمجيات والتدريب التقني.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "من نحن | إحاطة للحلول الرقمية",
+    title: "عن إحاطة — شركة برمجيات وأكاديمية تدريب بالقاهرة",
     description: "قصتنا وفريقنا ومنهجية العمل في إحاطة للحلول الرقمية.",
     url: "/ar/about/",
     locale: "ar_EG",

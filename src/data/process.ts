@@ -49,37 +49,86 @@ export const PROCESS: ProcessStep[] = [
   },
 ];
 
+export const HOW_WE_WORK = [
+  {
+    id: "scoping",
+    step: "01",
+    icon: "MessageSquare",
+    title: { en: "Free scoping session", ar: "جلسة مجانية لتحديد النطاق" },
+    description: {
+      en: "We discuss how your operation runs, what is getting in the way and what you need the system to do.",
+      ar: "نتحدث عن طريقة سير عملياتك، وما يواجهك من تحديات، وما تحتاج أن يقدمه النظام.",
+    },
+  },
+  {
+    id: "scope",
+    step: "02",
+    icon: "FileText",
+    title: { en: "Define the right scope", ar: "تحديد نطاق العمل المناسب" },
+    description: {
+      en: "We clarify your priorities and agree on a practical direction before development starts.",
+      ar: "نحدد أولوياتك ونتفق على اتجاه عملي قبل بدء التطوير.",
+    },
+  },
+  {
+    id: "build",
+    step: "03",
+    icon: "Code2",
+    title: { en: "Build and review", ar: "التطوير والمراجعة" },
+    description: {
+      en: "We develop in clear stages and review progress together to keep the work connected to your needs.",
+      ar: "نطوّر على مراحل واضحة ونراجع التقدم معًا حتى يظل العمل مرتبطًا باحتياجاتك.",
+    },
+  },
+  {
+    id: "handover",
+    step: "04",
+    icon: "GraduationCap",
+    title: { en: "Handover and knowledge sharing", ar: "التسليم ونقل المعرفة" },
+    description: {
+      en: "We document the work and walk your team through using and maintaining the system.",
+      ar: "نوثّق العمل ونشرح لفريقك طريقة استخدام النظام وصيانته.",
+    },
+  },
+] as const;
+
 export const VALUES: ValueCard[] = [
   {
-    icon: "Zap",
-    title: { en: "Precision over hype", ar: "الدقة على الضجيج" },
+    icon: "MessageSquare",
+    title: { en: "Direct communication", ar: "تواصل مباشر" },
     description: {
-      en: "We pick boring, proven technology first — and reserve novelty for places it earns its keep.",
-      ar: "نختار التقنيات المجربة والمملة أولاً — ونحتفظ بالجديد للمواضع التي تستحقه.",
+      en: "You work directly with the engineers building your system — not a sales team relaying messages. Weekly updates, shared project board, honest status reports.",
+      ar: "تعمل مباشرة مع المهندسين الذين يبنون نظامك — لا فريق مبيعات ينقل الرسائل. تحديثات أسبوعية ولوحة مشاريع مشتركة وتقارير حالة صادقة.",
     },
   },
   {
     icon: "ShieldCheck",
-    title: { en: "Ship with a safety net", ar: "أطلق بشبكة أمان" },
+    title: {
+      en: "We only build what you'll actually use",
+      ar: "نبني فقط ما ستستخدمه فعلاً",
+    },
     description: {
-      en: "Tests, staging, dry runs and rollbacks. Confidence is engineered, not wished for.",
-      ar: "اختبارات وبيئات تجريبية وتجارب ترحيل وخطط تراجع. الثقة تُهندس لا تُمنى.",
+      en: "No scope inflation. If a feature won't earn its keep, we say so before it's on the invoice. Smaller, working software beats large, delayed software every time.",
+      ar: "لا توسيع غير مبرر للنطاق. إذا لم تكن الميزة ذات جدوى، نوضح ذلك مسبقاً. البرمجيات المحددة والعاملة تتفوق دائماً على البرمجيات المتأخرة.",
     },
   },
   {
-    icon: "Users",
-    title: { en: "Teach everything", ar: "علّم كل شيء" },
+    icon: "FileCode2",
+    title: { en: "You own everything we build", ar: "كل ما نبنيه ملك لك" },
     description: {
-      en: "Documentation, sessions and pairing — clients end engagements able to move without us.",
-      ar: "توثيق وجلسات وبرمجة ثنائية — يخرج العملاء من التعاقد وقادرون على التحرك بدوننا.",
+      en: "Source code, database schemas, and documentation are handed over at every milestone. We build with full client ownership in mind from day one.",
+      ar: "الكود المصدري وخطط قواعد البيانات والتوثيق يُسلَّم إليك عند كل مرحلة. نبني مع مراعاة الملكية الكاملة للعميل من اليوم الأول.",
     },
   },
   {
-    icon: "LineChart",
-    title: { en: "Measure what matters", ar: "قِس ما يهم" },
+    icon: "TrendingUp",
+    title: {
+      en: "Success measured by team adoption",
+      ar: "نقيس النجاح باعتماد فريقك للنظام",
+    },
     description: {
-      en: "Every project carries the metrics it promised on day one. We report against them for free.",
-      ar: "كل مشروع يحمل المقاييس التي وعد بها من يومه الأول. نقيسها ونبلغك مجاناً.",
+      en: "A system abandoned after launch is a failed investment. We include onboarding, team training, and post-launch follow-up in every engagement.",
+      ar: "النظام الذي لا يستخدمه فريقك هو استثمار لم يكتمل. ندرج تدريب الموظفين والتأهيل والدعم العملي بعد الإطلاق كجزء أساسي من كل مشروع.",
     },
   },
 ];

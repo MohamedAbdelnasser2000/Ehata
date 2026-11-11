@@ -3,7 +3,7 @@ import { ProjectsExplorer } from "@/components/sections/projects-explorer";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: { absolute: "Software Projects Portfolio — Delivery, ERP, Clinic Systems | EHATA" },
   description:
     "Case studies from EHATA – Digital Solutions: SaaS platforms, web apps, mobile products, ERP systems and training platforms.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Projects | EHATA – Digital Solutions",
+    title: "Software Projects Portfolio — Delivery, ERP, Clinic Systems | EHATA",
     description:
       "Filterable portfolio with full case studies: challenge, solution, technology and results.",
     url: "/projects",

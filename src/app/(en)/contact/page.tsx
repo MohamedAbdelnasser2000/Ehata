@@ -3,7 +3,7 @@ import { ContactHead, ContactMain } from "@/components/sections/contact-sections
 import { FaqSection } from "@/components/sections/services-sections";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: { absolute: "Contact EHATA — Free Project Scoping Session" },
   description:
     "Contact EHATA – Digital Solutions for software projects, SaaS builds, ERP systems or programming courses. We reply within one business day.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact | EHATA – Digital Solutions",
+    title: "Contact EHATA — Free Project Scoping Session",
     description: "Start a conversation about your product or training goals.",
     url: "/contact",
   },

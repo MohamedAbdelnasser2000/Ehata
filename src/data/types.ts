@@ -11,7 +11,7 @@ export interface Stat {
   value: number;
   suffix: string;
   /** Key inside t.stats for the label. */
-  labelKey: "selectedProjects" | "projectCategories" | "technologies" | "siteLanguages";
+  labelKey: "projectsDelivered" | "industriesServed" | "yearsBuilding" | "countriesReached";
 }
 
 export interface Service {
@@ -36,6 +36,8 @@ export interface Project {
   category: ProjectCategory;
   featured: boolean;
   coverImage: string;
+  coverIsScreenshot?: boolean;
+  screenshots?: string[];
   status?: LocalizedText;
   summary: LocalizedText;
   caseStudy: {

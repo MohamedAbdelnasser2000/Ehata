@@ -22,6 +22,14 @@ import { FAQS, PRICING } from "@/data/pricing-faq";
 import { cn } from "@/lib/utils";
 import { getLocalizedSitePath } from "@/lib/localized-site-path";
 
+const SERVICE_VERTICALS = [
+  { en: "Delivery & Logistics", ar: "الشحن واللوجستيات" },
+  { en: "Healthcare & Clinics", ar: "العيادات والرعاية الصحية" },
+  { en: "Pharmacy & Retail", ar: "الصيدليات والمتاجر" },
+  { en: "Trading & Distribution", ar: "التجارة والتوزيع" },
+  { en: "SaaS & Platforms", ar: "المنصات الرقمية" },
+] as const;
+
 /** Animated "illustration": an orbiting icon plate unique per service. */
 function ServiceIllustration({ icon, index }: { icon: string; index: number }) {
   return (
@@ -81,6 +89,22 @@ export function ServicesDetailSection() {
         <p className="max-w-2xl text-[17px] leading-relaxed text-muted">
           {t.servicesPage.subtitle}
         </p>
+        <ul
+          aria-label={tr({
+            en: "Industries served",
+            ar: "القطاعات التي نخدمها",
+          })}
+          className="flex max-w-4xl flex-wrap justify-center gap-2"
+        >
+          {SERVICE_VERTICALS.map((vertical) => (
+            <li
+              key={vertical.en}
+              className="rounded-full border border-line/80 bg-surface/80 px-3.5 py-2 text-sm font-medium text-foreground/85"
+            >
+              {tr(vertical)}
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="flex flex-col gap-20 md:gap-28">

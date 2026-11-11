@@ -6,7 +6,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Abo3mo Delivery Platform", "ar": "منصة أبو عمو للتوصيل" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/abo3mo.svg",
+    "coverImage": "/images/projects/abo3mo-delivery/cover.webp",
+    "screenshots": ["/images/projects/abo3mo-delivery/screen-1.webp"],
     "summary": {
       "en": "An all-in-one delivery and dispatch management platform that unifies merchant order intake, automated driver routing, real-time live map tracking, and automated cash-on-delivery (COD) financial reconciliation.",
       "ar": "منصة تشغيل لوجستية متكاملة لإدارة التوصيل والتوزيع تربط استقبال طلبات المتاجر، والتوزيع الذكي على المناديب، والتتبع المباشر للخرائط، والتحصيل المالي الدقيق لمدفوعات الدفع عند الاستلام."
@@ -134,7 +135,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Enterprise ERP Platform", "ar": "منصة تخطيط موارد المؤسسات" },
     "category": "web-apps",
     "featured": true,
-    "coverImage": "/images/projects/enterprise-erp.svg",
+    "coverImage": "/images/projects/enterprise-erp/cover.webp",
+    "screenshots": ["/images/projects/enterprise-erp/screen-1.webp"],
     "summary": {
       "en": "A unified enterprise resource planning platform that integrates human resources, general ledger accounting, procurement, multi-warehouse inventory, and executive dashboards into a centralized management system.",
       "ar": "منظومة تخطيط موارد المؤسسات الشاملة (ERP) التي توحد إدارة الموارد البشرية، والحسابات العامة، والمشتريات والموردين، والمخازن المتعددة، ولوحات القيادة التنفيذية في نظام مركزي متكامل."
@@ -261,7 +263,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Dental Clinic Management System", "ar": "نظام إدارة عيادة الأسنان" },
     "category": "web-apps",
     "featured": true,
-    "coverImage": "/images/projects/dental-clinic.svg",
+    "coverImage": "/images/projects/dental-clinic/cover.webp",
+    "screenshots": ["/images/projects/dental-clinic/screen-1.webp"],
     "summary": {
       "en": "A specialized clinical and administrative management platform for dental practices, featuring interactive tooth charts, smart appointment booking, electronic prescriptions, installment billing, and consumable inventory.",
       "ar": "نظام إداري وطبي متكامل لإدارة مراكز وعيادات الأسنان، يشمل مخطط الأسنان التفاعلي، وجدولة المواعيد الذكية، والوصفات الطبية الرقمية، والفوترة والأقساط، ومخزون المواد الطبية."
@@ -388,7 +391,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Pharmacy Inventory & POS System", "ar": "نظام إدارة مخزون الصيدلية ونقاط البيع" },
     "category": "web-apps",
     "featured": true,
-    "coverImage": "/images/projects/pharmacy-ims.svg",
+    "coverImage": "/images/projects/pharmacy-ims/cover.webp",
+    "screenshots": ["/images/projects/pharmacy-ims/screen-1.webp"],
     "summary": {
       "en": "A comprehensive pharmacy management and inventory control system with real-time multi-branch stock tracking, high-speed barcode POS checkout, automated expiry alerts, and supplier purchase orders.",
       "ar": "منظومة شاملة لإدارة الصيدليات ومستودعات الأدوية، تشمل نقاط البيع السريعة بالباركود، وتتبع المخزون متعدد الفروع، والإنذار المبكر لتواريخ الصلاحية، وأوامر الشراء للموردين."
@@ -515,7 +519,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Full Mark Education & E-Learning Platform", "ar": "منصة فول مارك للتعليم والتعلم الإلكتروني" },
     "category": "training",
     "featured": false,
-    "coverImage": "/images/projects/full-mark.svg",
+    "coverImage": "/images/projects/full-mark/cover.webp",
+    "screenshots": ["/images/projects/full-mark/screen-1.webp"],
     "summary": {
       "en": "A comprehensive digital learning management platform offering multimedia course delivery, automated quizzes, student progress tracking, promotional bundles, and integrated payment gateways.",
       "ar": "منصة تعليم إلكتروني وإدارة تدريب شاملة تقدم مساقات تعليمية متعددة الوسائط، واختبارات مؤتمتة، ومتابعة دقيقة لتقدم الطلاب، وباقات ترويجية، وبوابات دفع إلكترونية متكاملة."
@@ -642,7 +647,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Multi-Tenant E-Commerce SaaS Platform", "ar": "منصة تجارة إلكترونية سحابية متعددة المتاجر" },
     "category": "saas",
     "featured": false,
-    "coverImage": "/images/projects/multi-tenant-commerce.svg",
+    "coverImage": "/images/projects/multi-tenant-commerce/cover.webp",
+    "screenshots": ["/images/projects/multi-tenant-commerce/screen-1.webp"],
     "status": {
       "en": "Development snapshot",
       "ar": "نسخة قيد التطوير"
@@ -773,7 +779,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "High-Conversion E-Commerce Storefront", "ar": "واجهة متجر إلكتروني مصممة لزيادة المبيعات" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/ecommerce-storefront.svg",
+    "coverImage": "/images/projects/ecommerce-storefront/cover.webp",
+    "screenshots": ["/images/projects/ecommerce-storefront/screen-1.webp"],
     "summary": {
       "en": "A streamlined, customer-centric retail web storefront featuring lightning-fast faceted search, persistent shopping carts, seamless checkout, and customer order management.",
       "ar": "واجهة متجر إلكتروني سريعة وعالية التحويل للمستهلكين، تتميز بالبحث الفوري متعدد الفلاتر، وسلة تسوق ذكية، وتجربة إتمام طلب سلسة، وإدارة حسابات وطلبات العملاء."
@@ -896,7 +903,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Warehouse & Courier Fulfillment IMS", "ar": "نظام إدارة المخازن وتجهيز طلبات شركات التوصيل" },
     "category": "web-apps",
     "featured": true,
-    "coverImage": "/images/projects/warehouse-courier-ims.svg",
+    "coverImage": "/images/projects/warehouse-courier-ims/cover.webp",
+    "screenshots": ["/images/projects/warehouse-courier-ims/screen-1.webp"],
     "summary": {
       "en": "An integrated warehouse management and courier delivery execution system connecting multi-warehouse inventory, reserved allocations, order fulfillment pipelines, and driver delivery tracking.",
       "ar": "منظومة متكاملة لإدارة المستودعات وحركات التوزيع، تربط المخزون متعدد المستودعات، والأرصدة المحجوزة، وسير تجهيز الطلبات، وتوزيع ومتابعة المناديب."
@@ -1024,7 +1032,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Retail Inventory & Sales Management (Web)", "ar": "نظام ويب لإدارة مخزون ومبيعات التجزئة" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/retail-inventory-web.svg",
+    "coverImage": "/images/projects/retail-inventory-web/cover.webp",
+    "screenshots": ["/images/projects/retail-inventory-web/screen-1.webp"],
     "summary": {
       "en": "A web-based retail management application designed for stores and trading companies, integrating multi-location inventory, browser point-of-sale (POS), purchasing, and customer sales accounts.",
       "ar": "نظام ويب متكامل لإدارة مبيعات ومخازن التجزئة للأنشطة التجارية، يربط إدارة المخزون متعدد الفروع، ونقاط البيع السريعة، والمشتريات وحسابات العملاء والموردين."
@@ -1151,7 +1160,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Inventory & Branches Desktop IMS", "ar": "نظام مكتبي لإدارة المخزون والفروع" },
     "category": "desktop",
     "featured": false,
-    "coverImage": "/images/projects/inventory-desktop-ims.svg",
+    "coverImage": "/images/projects/inventory-desktop-ims/cover.webp",
+    "screenshots": ["/images/projects/inventory-desktop-ims/screen-1.webp"],
     "summary": {
       "en": "A robust, high-performance Windows desktop application for commercial inventory, barcode thermal printing, multi-branch stock control, sales invoices, and automated database backups.",
       "ar": "برنامج مكتبي فائق السرعة لنظام ويندوز لإدارة المخزون التجاري، وطباعة الباركود والفواتير الحرارية، والربط بين الفروع، وحسابات الموردين والنسخ الاحتياطي التلقائي."
@@ -1279,7 +1289,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Retail Warehouse Management System (WMS Desktop)", "ar": "نظام مكتبي لإدارة مستودعات البيع بالتجزئة" },
     "category": "desktop",
     "featured": false,
-    "coverImage": "/images/projects/retail-wms-desktop.svg",
+    "coverImage": "/images/projects/retail-wms-desktop/cover.webp",
+    "screenshots": ["/images/projects/retail-wms-desktop/screen-1.webp"],
     "summary": {
       "en": "A specialized warehouse management desktop system providing inbound goods receiving, bin space optimization, outbound pick-and-pack routing, cycle counting, and role-based operator security.",
       "ar": "نظام إدارة مستودعات متخصص (WMS) لسطح المكتب يدير استلام الشحنات الواردة، وتحسين مساحات الأرفف، ومسارات تجهيز الطلبات، والجرد الدوري، وصلاحيات عمال المستودع."
@@ -1405,7 +1416,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "EduMint Role-Based E-Learning Portal", "ar": "بوابة إيدومنت للتعلم الإلكتروني وإدارة الصلاحيات" },
     "category": "training",
     "featured": false,
-    "coverImage": "/images/projects/edumint-learning.svg",
+    "coverImage": "/images/projects/edumint-learning/cover.webp",
+    "screenshots": ["/images/projects/edumint-learning/screen-1.webp"],
     "summary": {
       "en": "A structured role-based e-learning platform with isolated portals for students, instructors, and administrators, featuring lecture scheduling, interactive video learning, and integrated tuition payments.",
       "ar": "منصة تعليم إلكتروني تفاعلية مبنية على تعدد الأدوار، توفر بوابات مخصصة ومستقلة للطلاب والمعلمين والإدارة، مع جدولة المحاضرات، والفيديو التفاعلي، وسداد الرسوم إلكترونياً."
@@ -1532,7 +1544,9 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Skyscraper Kinetic Architectural Visualizer", "ar": "عارض سكاي سكريبر الحركي للتصميم المعماري" },
     "category": "interactive",
     "featured": false,
-    "coverImage": "/images/projects/skyscraper-visualizer.svg",
+    "coverImage": "/images/projects/skyscraper-kinetic-visualizer/cover.webp",
+    "coverIsScreenshot": true,
+    "screenshots": ["/images/projects/skyscraper-kinetic-visualizer/screen-1.webp"],
     "status": {
       "en": "Interactive visual prototype",
       "ar": "نموذج بصري تفاعلي"
@@ -1664,7 +1678,9 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Smart SaaS Logistics 3D Showcase", "ar": "عرض تفاعلي ثلاثي الأبعاد لمنصة لوجستية سحابية" },
     "category": "interactive",
     "featured": false,
-    "coverImage": "/images/projects/smart-saas-logistics.svg",
+    "coverImage": "/images/projects/smart-saas-logistics-showcase/cover.webp",
+    "coverIsScreenshot": true,
+    "screenshots": ["/images/projects/smart-saas-logistics-showcase/screen-1.webp"],
     "status": {
       "en": "Interactive visual prototype",
       "ar": "نموذج بصري تفاعلي"
@@ -1791,7 +1807,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Control A Digital Agency Corporate Website", "ar": "الموقع الرسمي لشركة كنترول إيه للحلول الرقمية" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/control-a-agency.svg",
+    "coverImage": "/images/projects/control-a-agency/cover.webp",
+    "screenshots": ["/images/projects/control-a-agency/screen-1.webp"],
     "summary": {
       "en": "A bilingual (Arabic/English) corporate digital agency web platform featuring comprehensive services portfolios, dynamic case study showcases, consultation lead capture, and a protected admin CMS.",
       "ar": "منصة ويب مؤسسية متكاملة لشركة حلول برمجية تدعم اللغتين العربية والإنجليزية، تضم دليلاً شاملاً للخدمات، ومعرضاً لسوابق الأعمال، وحجز الاستشارات، مع لوحة تحكم CMS لإدارة المحتوى."
@@ -1915,7 +1932,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Keep Going Health & Medical Portal", "ar": "بوابة كيب جوينج للصحة والخدمات الطبية" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/keep-going-health.svg",
+    "coverImage": "/images/projects/keep-going-health/cover.webp",
+    "screenshots": ["/images/projects/keep-going-health/screen-1.webp"],
     "summary": {
       "en": "A bilingual health and medical advisory web platform featuring health services directories, a medical article and news publishing portal, client success transformations, and a secure admin CMS.",
       "ar": "منصة ويب صحية وطبية ثنائية اللغة تضم دليلاً للخدمات والاستشارات الصحية، وبوابة لنشر المقالات والأخبار الطبية، ومعرضاً لقصص التحول الصحي، ولوحة إدارة CMS محمية."
@@ -2038,7 +2056,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Biometric Gate Access & Sports Evaluation System", "ar": "نظام الدخول بالبصمة وتقييم الأداء الرياضي" },
     "category": "desktop",
     "featured": false,
-    "coverImage": "/images/projects/biometric-gate-system.svg",
+    "coverImage": "/images/projects/biometric-gate-system/cover.webp",
+    "screenshots": ["/images/projects/biometric-gate-system/screen-1.webp"],
     "summary": {
       "en": "An integrated access-control and physical testing platform combining hardware fingerprint verification, IP camera capture, RFID cards, and AI computer vision for automated sports exercise scoring.",
       "ar": "منظومة تحكم أمني واختبارات رياضية متكاملة تدمج التحقق البيومتري ببصمة الإصبع، وكاميرات المراقبة، وبطاقات RFID، والذكاء الاصطناعي لتقييم وعد التمارين الرياضية آلياً."
@@ -2163,7 +2182,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "ParentGuard — Child Safety & Monitoring Suite", "ar": "بارنت جارد — نظام حماية الأطفال ومتابعتهم" },
     "category": "mobile",
     "featured": false,
-    "coverImage": "/images/projects/parentguard-monitoring.svg",
+    "coverImage": "/images/projects/parentguard-monitoring/cover.webp",
+    "screenshots": ["/images/projects/parentguard-monitoring/screen-1.webp"],
     "summary": {
       "en": "A private, self-hosted parental monitoring ecosystem featuring a WPF desktop parent dashboard and an Android companion app, paired via QR code and secured with end-to-end AES-256-GCM encryption.",
       "ar": "منظومة متابعة وحماية أسرية خاصة ومستضافة ذاتياً، تضم لوحة تحكم WPF لسطح المكتب وتطبيق أندرويد مرافق، مقترنين برمز QR ومشفرين بالكامل بتقنية AES-256-GCM."
@@ -2288,7 +2308,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Enterprise Document Management & Versioning System", "ar": "نظام مؤسسي لإدارة المستندات والإصدارات" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/document-management-system.svg",
+    "coverImage": "/images/projects/document-management-system/cover.webp",
+    "screenshots": ["/images/projects/document-management-system/screen-1.webp"],
     "summary": {
       "en": "A full-stack enterprise document control and archiving platform featuring a Clean Architecture .NET REST API, Angular SPA client, multi-stage approval workflows, and hybrid cloud storage (AWS S3 & Azure Blob).",
       "ar": "منصة مؤسسية متقدمة لإدارة وأرشفة وضبط وثائق المشاريع والمؤسسات، مبنية ببنية نظيفة (Clean Architecture) مع واجهة برمجية بـ .NET وواجهة Angular، وسير عمل للاعتمادات، وتخزين سحابي هجين (AWS S3 وAzure Blob)."
@@ -2414,7 +2435,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "CogRehab — Cognitive Rehabilitation & Reflex Assessment", "ar": "كوج ريهاب — نظام التأهيل المعرفي وتقييم ردود الفعل" },
     "category": "desktop",
     "featured": false,
-    "coverImage": "/images/projects/cogreahb-rehab-games.svg",
+    "coverImage": "/images/projects/cogreahb-rehab-games/cover.webp",
+    "screenshots": ["/images/projects/cogreahb-rehab-games/screen-1.webp"],
     "summary": {
       "en": "A specialized suite of Windows desktop cognitive training games for attention exercises, mental focus, and stimulus-response reaction time measurement, featuring custom Arabic Right-to-Left (RTL) game text rendering.",
       "ar": "منظومة ألعاب ويندوز متخصصة لإعادة التأهيل المعرفي وتدريب الانتباه والتركيز الذهني، وقياس سرعة ردود الفعل بالمللي ثانية، مع محرك مخصص لعرض النصوص العربية من اليمين لليسار."
@@ -2538,7 +2560,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "Abeer Academic & Healthcare Advisory Platform", "ar": "منصة عبير للاستشارات الأكاديمية والرعاية الصحية" },
     "category": "web-apps",
     "featured": false,
-    "coverImage": "/images/projects/academic-consulting-portal.svg",
+    "coverImage": "/images/projects/academic-consulting-portal/cover.webp",
+    "screenshots": ["/images/projects/academic-consulting-portal/screen-1.webp"],
     "summary": {
       "en": "A comprehensive bilingual consultation platform for healthcare practitioners and medical students in Saudi Arabia, providing residency pathway coaching, SCFHS classification guidance, medical CV preparation, and mock interviews.",
       "ar": "منصة استشارات أكاديمية وتدريبية متخصصة للممارسين الصحيين في السعودية، تقدم الإرشاد لبرامج البورد والزمالة، والتوجيه لتصنيف هيئة التخصصات، وإعداد السير الذاتية، ومحاكاة المقابلات الشخصية."
@@ -2661,7 +2684,8 @@ export const PROJECTS: Project[] = [
     "title": { "en": "NexaCore 3D Interactive Software Showcase", "ar": "نيكسا كور — عرض تفاعلي ثلاثي الأبعاد للبرمجيات" },
     "category": "interactive",
     "featured": false,
-    "coverImage": "/images/projects/nexacore-3d-showcase.svg",
+    "coverImage": "/images/projects/nexacore-3d-showcase/cover.webp",
+    "screenshots": ["/images/projects/nexacore-3d-showcase/screen-1.webp"],
     "status": {
       "en": "Interactive 3D prototype",
       "ar": "نموذج ثلاثي الأبعاد تفاعلي"

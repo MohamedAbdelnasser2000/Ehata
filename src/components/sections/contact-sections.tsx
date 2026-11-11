@@ -37,13 +37,38 @@ export function ContactMain() {
   return (
     <Section className="!pt-6 !pb-24">
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-        {/* Form column with BorderBeam */}
-        <Reveal>
-          <div className="relative overflow-hidden rounded-3xl">
-            <BorderBeam size={200} duration={12} borderWidth={1.5} />
-            <ContactForm />
-          </div>
-        </Reveal>
+        <div className="space-y-6">
+          {/* Form column with BorderBeam */}
+          <Reveal>
+            <div className="relative overflow-hidden rounded-3xl">
+              <BorderBeam size={200} duration={12} borderWidth={1.5} />
+              <ContactForm />
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.05}>
+            <SpotlightCard
+              spotlightColor="rgba(0, 87, 231, 0.12)"
+              className="rounded-2xl border-line/80 bg-surface/85 p-6 backdrop-blur-sm"
+            >
+              <h2 className="text-lg font-bold text-foreground">
+                {t.contactPage.nextSteps.title}
+              </h2>
+              <ol className="mt-5 space-y-4">
+                {t.contactPage.nextSteps.steps.map((step, index) => (
+                  <li key={step} className="flex items-start gap-3">
+                    <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-blue/10 text-xs font-bold text-blue">
+                      {index + 1}
+                    </span>
+                    <span className="pt-0.5 text-sm leading-relaxed text-muted">
+                      {step}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </SpotlightCard>
+          </Reveal>
+        </div>
 
         {/* Info column with Skiper UI Spotlight Cards */}
         <div className="flex flex-col gap-5">

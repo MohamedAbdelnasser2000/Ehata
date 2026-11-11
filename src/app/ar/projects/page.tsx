@@ -3,7 +3,7 @@ import { ProjectsExplorer } from "@/components/sections/projects-explorer";
 import { CtaBanner } from "@/components/sections/cta-banner";
 
 export const metadata: Metadata = {
-  title: "المشاريع",
+  title: { absolute: "معرض المشاريع والأنظمة المنفذة — EHATA" },
   description:
     "استعرض نماذج ودراسات مشاريع إحاطة في تطبيقات الويب ومنصات SaaS والأنظمة الإدارية والتدريبية.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "المشاريع | إحاطة للحلول الرقمية",
+    title: "معرض المشاريع والأنظمة المنفذة — EHATA",
     description:
       "استعرض نماذج ودراسات المشاريع، مع توضيح نطاق كل مشروع وتقنياته.",
     url: "/ar/projects/",
