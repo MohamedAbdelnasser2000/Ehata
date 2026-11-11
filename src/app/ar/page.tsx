@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { organizationSchema } from "@/data/organization-schema";
 import { HeroSection } from "@/components/sections/hero-section";
-import { TrustSignalsRow } from "@/components/sections/trust-signals-row";
-import { IntroStatsSection } from "@/components/sections/intro-stats-section";
 import { ProcessStepsSection } from "@/components/sections/process-steps-section";
 import { ServicesPreviewSection } from "@/components/sections/services-preview-section";
 import { FeaturedProjectsSection } from "@/components/sections/featured-projects-section";
@@ -43,8 +41,6 @@ export default function ArabicHomePage() {
         }}
       />
       <HeroSection />
-      <TrustSignalsRow />
-      <IntroStatsSection />
       <ProcessStepsSection />
       <ServicesPreviewSection />
       <FeaturedProjectsSection />
