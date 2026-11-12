@@ -1267,4 +1267,313 @@ export const NEXT_TOPIC_BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dental-clinic-saas-roi-guide",
+    category: { en: "Dental Clinic SaaS", ar: "أنظمة عيادات الأسنان" },
+    title: {
+      en: "How Modern Dental Clinic SaaS Increases Revenue and Eliminates No-Shows",
+      ar: "كيف تزيد عيادات ومراكز الأسنان إيراداتها بنسبة 25% مع نظام إدارة ذكي؟",
+    },
+    excerpt: {
+      en: "Discover how interactive odontograms, two-way WhatsApp scheduling, laboratory tracking, and transparent installment billing help dental centers maximize clinic capacity and patient loyalty.",
+      ar: "دليل عملي يوضح كيف يساهم مخطط الأسنان التفاعلي وأتمتة مواعيد واتساب وتتبع المعامل والأقساط في زيادة أرباح المراكز الطبية ومنع نزيف التكاليف.",
+    },
+    publishedAt: "2026-11-11",
+    readingMinutes: 7,
+    serviceId: "dental-clinic",
+    relatedProjectId: "dental-clinic",
+    sections: [
+      {
+        heading: {
+          en: "The hidden operational drain in dental practices",
+          ar: "النزيف التشغيلي الخفي في مراكز وعيادات الأسنان",
+        },
+        paragraphs: [
+          {
+            en: "A dental clinic's profitability is dictated by chair utilization. When a patient misses an unconfirmed appointment, that operating hour is permanently lost along with the clinician's time and fixed clinic overhead. Across Egypt and the GCC, clinics without automated reminders lose between 15% and 25% of their potential monthly revenue to preventable no-shows.",
+            ar: "تعتمد ربحية عيادة الأسنان بشكل أساسي على معدل إشغال كراسي الكشف. فعندما يتخلف مريض عن موعد غير مؤكد، تضيع تلك الساعة التشغيلية نهائياً مع أجر الطبيب والتكاليف الثابتة للعيادة. في مصر والخليج العربي، تفقد العيادات التي تعتمد على التأكيدات اليدوية ما بين 15% إلى 25% من إيراداتها الشهرية المحتملة بسبب عدم الحضور (No-Shows).",
+          },
+          {
+            en: "Traditional phone calls place an exhausting burden on reception staff and are frequently unanswered. Automated two-way WhatsApp messaging reaches patients on their primary daily app, allowing them to confirm or reschedule with one tap and keeping chairs fully booked.",
+            ar: "الاتصالات الهاتفية التقليدية ترهق فريق الاستقبال وغالباً لا يرد عليها المريض. في المقابل، تضمن أتمتة رسائل واتساب التفاعلية وصول التذكير للمريض على تطبيقه اليومي المفضل، مع إمكانية تأكيد الحضور أو طلب التعديل بضغطة زر واحدة، مما يحافظ على امتلاء جدول الأطباء.",
+          },
+        ],
+        bullets: [
+          {
+            en: "Two-way automated WhatsApp confirmations scheduled 24 hours and 2 hours before the visit.",
+            ar: "رسائل تأكيد تفاعلية عبر واتساب قبل الموعد بـ 24 ساعة وساعتين تلقائياً.",
+          },
+          {
+            en: "Instant cancellation alerts triggering automatic waitlist offers to other patients.",
+            ar: "إشعارات إلغاء فورية تتيح شغل الوقت الشاغر تلقائياً من قائمة الانتظار.",
+          },
+          {
+            en: "Real-time calendar status updates visible to reception and attending doctors.",
+            ar: "تحديث لحظي لحالة الموعد في جدول العيادة أمام موظف الاستقبال والطبيب المعالج.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Visual 3D Odontograms: precision diagnosis and patient trust",
+          ar: "مخطط الأسنان التفاعلي (Odontogram): دقة التشخيص وبناء ثقة المريض",
+        },
+        paragraphs: [
+          {
+            en: "Paper treatment cards and vague text notes cause misunderstandings between clinicians and patients. An interactive odontogram provides a visual map of all 32 adult or 20 pediatric teeth, color-coding previous restorations, active caries, endodontic treatments, implants, and proposed procedures.",
+            ar: "الملفات الورقية والملاحظات النصية الغامضة تسبب سوء تفاهم مستمر بين الطبيب والمريض. يوفر مخطط الأسنان الرقمي خريطة بصرية تفاعلية لأسنان البالغين (32 سناً) والأطفال (20 سناً)، مع تمييز الحشوات السابقة والتسوس وعلاج الجذور والزراعة برموز لونية دقيقة.",
+          },
+          {
+            en: "When patients can clearly see their tooth conditions and the step-by-step treatment plan on a tablet screen, case acceptance rates rise dramatically. The plan automatically calculates procedure costs and estimates required sessions.",
+            ar: "عندما يرى المريض حالة أسنانه وخطة العلاج خطوة بخطوة على شاشة لوحية أمامه، تتضاعف نسبة موافقته على استكمال الخطة العلاجية المقترحة، مع حساب التكاليف وعدد الجلسات آلياً.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Governing dental lab orders and expensive clinical consumables",
+          ar: "حوكمة أوامر معامل الأسنان ومخزون المواد الاستهلاكية",
+        },
+        paragraphs: [
+          {
+            en: "Dental prosthetics, crowns, aligners, and implants involve significant external laboratory fees. Without digital tracking, clinics risk booking patients before lab deliveries arrive, or paying lab invoices that do not match completed cases.",
+            ar: "تمثل تركيبات الأسنان والتيجان ومقومات الأسنان الشفافة وزراعة الأسنان تكلفة خارجية ضخمة تسدد للمعامل. بدون نظام تتبع رقمي، تتعرض العيادة لمواقف حرجة كحضور المريض قبل وصول التركيبة من المعمل، أو سداد فواتير غير مطابقة لما تم تسليمه فعلياً.",
+          },
+          {
+            en: "EHATA Dental Clinic SaaS tracks every laboratory order through its lifecycle: sent, in progress, received, verified, and fitted. Simultaneously, high-value clinical materials (composite, bonding, implants) are deducted upon procedure logging with automated reorder thresholds.",
+            ar: "يتتبع نظام إحاطة لعيادات الأسنان كل أمر معمل عبر مراحله: تم الإرسال، قيد التنفيذ، تم الاستلام، تم الفحص، وتم التركيب للمريض. وفي الوقت ذاته، تُخصم المواد الطبية الثمينة من المخزون تلقائياً فور تسجيل الإجراء مع تنبيهات مسبقة عند اقتراب نفاد المخزون.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Transparent doctor revenue splits and installment financial plans",
+          ar: "الشفافية في نسب الأطباء وخطط التقسيط العلاجي",
+        },
+        paragraphs: [
+          {
+            en: "Multi-specialty dental centers often feature diverse compensation arrangements: fixed percentages, deduct-lab-first formulas, or tier-based incentives. Automating these calculations eliminates month-end accounting friction and motivates specialists.",
+            ar: "تضم مراكز الأسنان الكبرى أطباء واستشاريين بتعاقدات ونسب مالية متباينة: نسب ثابتة، نسب بعد خصم تكلفة المعمل، أو حوافز تصاعدية. أتمتة هذه الحسابات تنهي خلافات نهاية الشهر وتمنح كل طبيب لوحة كشف حساب شفافة.",
+          },
+          {
+            en: "For lengthy treatments like orthodontics or multi-unit implants, flexible installment plans let patients pay over monthly intervals, with automated WhatsApp payment links and full compliance with tax e-invoicing.",
+            ar: "وفي العلاجات الممتدة مثل تقويم الأسنان والزراعة المتعددة، تتيح خطط السداد بالأقساط للمريض الدفع بسهولة مع روابط سداد إلكترونية عبر واتساب وفواتير ضريبية معتمدة.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: {
+          en: "How does the system reduce patient no-shows?",
+          ar: "كيف يخفض النظام معدل تخلف المرضى عن الحضور؟",
+        },
+        answer: {
+          en: "By sending automated two-way WhatsApp confirmation messages with quick-action buttons. Patients easily confirm or request a new slot, allowing reception to fill canceled slots from a smart waitlist.",
+          ar: "عبر إرسال رسائل واتساب تفاعلية آلية تتيح للمريض تأكيد الحضور أو طلب موعد بديل بضغطة واحدة، مما يمكن الاستقبال من إعادة إشغال الأوقات الشاغرة فوراً.",
+        },
+      },
+      {
+        question: {
+          en: "Can dentists access patient charts on iPads or tablets?",
+          ar: "هل يمكن لأطباء الأسنان فتح المخطط وملف المريض على أجهزة iPad؟",
+        },
+        answer: {
+          en: "Yes. The platform is fully responsive and touchscreen-optimized, allowing clinicians to click teeth, draw annotations, and review X-ray attachments chairside.",
+          ar: "نعم. النظام مصمم بالكامل ليعمل بسلاسة على شاشات اللمس والأجهزة اللوحية بجوار كرسي الكشف لتسجيل الإجراءات واستعراض صور الأشعة بسهولة.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "ecommerce-scaling-and-operations-guide",
+    category: { en: "E-Commerce", ar: "التجارة الإلكترونية" },
+    title: {
+      en: "Building Scalable E-commerce Platforms in Egypt & the GCC: Payments, Logistics, and High Conversion",
+      ar: "بناء وتطوير منصات التجارة الإلكترونية في مصر والخليج: الدفع، الشحن، ومعدلات التحويل",
+    },
+    excerpt: {
+      en: "A technical guide to sub-second storefronts, localized payment gateways (Paymob, Tamara, Tabby), multi-branch inventory sync, and automated courier routing.",
+      ar: "دليل تقني لبناء متاجر فائقة السرعة، والربط مع بوابات الدفع والتقسيط، ومزامنة المخزون بين الفروع وأتمتة التوزيع اللوجستي.",
+    },
+    publishedAt: "2026-11-11",
+    readingMinutes: 8,
+    serviceId: "ecommerce",
+    relatedProjectId: "abo3mo-delivery",
+    sections: [
+      {
+        heading: {
+          en: "Sub-second page speeds: the foundation of mobile conversion",
+          ar: "سرعة التحميل اللحظية: الأساس لزيادة مبيعات الموبايل",
+        },
+        paragraphs: [
+          {
+            en: "Over 80% of e-commerce traffic in Egypt and the Gulf originates on mobile devices. Heavy monolithic templates and unoptimized plugins create 4-to-6 second load delays, resulting in over 50% bounce rates before the product even renders.",
+            ar: "أكثر من 80% من زيارات المتاجر الإلكترونية في مصر ودول الخليج تأتي عبر الهواتف الذكية. الاعتماد على القوالب الجاهزة الثقيلة والإضافات المكدسة يرفع زمن التحميل إلى 4-6 ثوانٍ، مما يؤدي إلى ارتداد ومغادرة أكثر من 50% من الزوار قبل رؤية تفاصيل المنتج.",
+          },
+          {
+            en: "By adopting a headless architecture built with Next.js and global edge caching, EHATA storefronts render product catalogs in under 600 milliseconds. Instant navigation directly correlates with higher add-to-cart velocity and maximized ROAS on paid social campaigns.",
+            ar: "من خلال معمارية Headless الحديثة المبنية بـ Next.js مع التخزين السحابي الفوري على أطراف الشبكة (Edge CDN)، تحقق متاجر إحاطة زمناً قياسياً يقل عن 600 مللي ثانية، مما ينعكس مباشرة في رفع معدل إتمام الشراء وتعظيم العائد من الحملات الإعلانية الممولة.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Localized payment infrastructure: Paymob, Mada, and Buy-Now-Pay-Later",
+          ar: "البنية التحتية للمدفوعات المحلية: Paymob ومدى والشراء الآن والدفع لاحقاً (BNPL)",
+        },
+        paragraphs: [
+          {
+            en: "Checkout friction is the number one cause of abandoned carts. Shoppers in Saudi Arabia demand Mada and Apple Pay; Egyptian buyers rely heavily on Mobile Wallets (Vodafone Cash, Instapay) and Cash-on-Delivery alongside cards; UAE consumers expect split-installment options via Tamara and Tabby.",
+            ar: "صعوبة وتعقيد شاشة الدفع هي السبب الأول لإلغاء عمليات الشراء. فالمتسوق السعودي يفضل مدى و Apple Pay، والمتسوق المصري يعتمد بشكل متزايد على المحافظ الإلكترونية (فودافون كاش، إنستاباي) والدفع عند الاستلام، بينما يشهد السوق الإماراتي طلباً هائلاً على التقسيط عبر تمارا وتابي.",
+          },
+          {
+            en: "Our commerce platforms unify all relevant local payment options in a streamlined one-page checkout, automatically handling payment retries, webhook reconciliations, and tax e-invoices.",
+            ar: "توفر منصاتنا كافة بوابات الدفع المحلية في صفحة دفع واحدة ومختصرة بنقرة واحدة، مع معالجة ذكية لأي محاولات دفع غير مكتملة، وإصدار الفواتير الضريبية المعتمدة تلقائياً.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Multi-branch inventory sync: preventing overselling and lost sales",
+          ar: "مزامنة المخزون بين الفروع والمستودعات لمنع البيع الوهمي",
+        },
+        paragraphs: [
+          {
+            en: "Retailers operating physical branches alongside an online store frequently suffer from inventory mismatch. A product sold in a showroom remains visible online, resulting in frustrated customers and costly refunds.",
+            ar: "تعاني الشركات التي تمتلك فروعاً فعلية ومتجراً إلكترونياً من تباين أرصدة المخزون. فبيع صنف في الفرع قد لا يُخصم فورياً من المتجر، مما يؤدي لبيع منتجات غير متوفرة وإحباط العملاء وتكاليف استرداد مالي.",
+          },
+          {
+            en: "EHATA platforms synchronize stock across all retail points-of-sale and fulfillment hubs in real time. Intelligent routing automatically fulfills the order from the warehouse or branch closest to the buyer's delivery address.",
+            ar: "تربط منصات إحاطة أرصدة المخزون بين كافة الفروع ونقاط البيع السحابية لحظة بلحظة، مع توجيه ذكي للشحنة لتخرج تلقائياً من أقرب فرع أو مستودع لعنوان العميل لتقليل زمن وتكلفة الشحن.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Automated courier dispatch and real-time shipment map tracking",
+          ar: "التوزيع اللوجستي الآلي وتتبع الشحنات عبر الخرائط",
+        },
+        paragraphs: [
+          {
+            en: "Shipping logistics can consume dozens of staff hours when manifests and air waybills are generated manually. Automated courier integration transmits ready orders directly to shipping partners, prints standardized barcodes, and tracks transit stages.",
+            ar: "تستهلك العمليات اللوجستية مئات الساعات عند إصدار بوالص الشحن وتنسيق مناديب التوصيل يدوياً. يوفر نظامنا ربطاً آلياً مع كبرى شركات الشحن لإصدار البوالص وتوزيع الطرود وتتبع مسارها حتى باب العميل.",
+          },
+          {
+            en: "Customers receive instant WhatsApp notifications with live tracking links, dramatically reducing 'Where is my order?' support inquiries and driving repeat purchases.",
+            ar: "يتلقى العميل إشعارات واتساب فورية برابط تتبع حي، مما يقلل استفسارات خدمة العملاء بنسبة 60% ويعزز ثقة المشتري وإعادة الشراء مستقبلاً.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: {
+          en: "How quickly can an enterprise store handle high-traffic flash sales?",
+          ar: "كيف يتحمل المتجر طفرات الزيارات الضخمة في مواسم العروض؟",
+        },
+        answer: {
+          en: "Thanks to headless edge architecture and isolated API microservices, our platforms scale horizontally to support tens of thousands of concurrent checkouts without lag.",
+          ar: "بفضل المعمارية السحابية المنفصلة (Headless) والتوسع الأفقي التلقائي للخوادم، يتحمل المتجر عشرات الآلاف من المتسوقين المتزامنين دون أي بطء أو توقف.",
+        },
+      },
+      {
+        question: {
+          en: "Can the platform connect to our existing ERP system?",
+          ar: "هل يمكن ربط المتجر الإلكتروني بنظام الـ ERP الحالي لدينا؟",
+        },
+        answer: {
+          en: "Yes. Bi-directional APIs keep product catalogs, pricing, customer orders, and accounting entries fully synchronized with your ERP.",
+          ar: "نعم. توفر المنصة واجهات برمجية ثنائية الاتجاه لتحديث المنتجات والأسعار والطلبات والقيود المحاسبية مع نظام الـ ERP الخاص بشركتك تلقائياً.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "elearning-lms-platform-architecture",
+    category: { en: "E-Learning", ar: "التعليم الإلكتروني" },
+    title: {
+      en: "Architecting Enterprise E-learning Platforms: Video DRM Protection, Interactive Classrooms, and Certification",
+      ar: "معمارية منصات التعليم الإلكتروني (LMS): حماية المحتوى، الفصول التفاعلية، والاختبارات الذكية",
+    },
+    excerpt: {
+      en: "How modern academies and corporate training centers build secure, scalable LMS platforms with DRM encryption, live video classrooms, and automated exam grading.",
+      ar: "كيف تبني الأكاديميات والشركات منصات تعليمية متقدمة مع تشفير الفيديو ضد القرصنة، وإدارة الفصول الحية، وتصحيح الاختبارات الآلي.",
+    },
+    publishedAt: "2026-11-11",
+    readingMinutes: 7,
+    serviceId: "courses-training",
+    sections: [
+      {
+        heading: {
+          en: "Protecting educational IP: DRM video encryption and dynamic watermarking",
+          ar: "حماية حقوق المحتوى التعليمي: تشفير DRM والعلامات المائية الديناميكية",
+        },
+        paragraphs: [
+          {
+            en: "For educational businesses and academy creators, content piracy is an existential threat. Standard video players and unencrypted streams are easily captured using browser extensions or screen recorders, undermining the institution's business model.",
+            ar: "تمثل قرصنة وتسريب الفيديوهات التعليمية التهديد الأكبر للأكاديميات والمنصات التعليمية. فالمشغلات العادية والروابط المباشرة يسهل تحميلها ببرامج التنزيل وتسجيل الشاشة، مما يهدر استثمارات المنشأة وجهود المحاضرين.",
+          },
+          {
+            en: "EHATA engineers enterprise LMS platforms with Widevine/FairPlay DRM encryption, multi-bitrate HLS streaming, and dynamic moving watermarks displaying the student's IP, phone number, and ID across the screen, making unauthorized sharing completely unviable.",
+            ar: "تبني إحاطة منصات تعليمية متقدمة مزودة بتشفير DRM عالي الأمان (Widevine و FairPlay) وبث HLS المتكيف، مع علامات مائية متحركة شفافة تظهر رقم هاتف الطالب وبريده وبياناته على الفيديو لمنع أي تصوير خارجي للشاشة.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Live cohort scheduling, virtual classrooms, and interactive engagement",
+          ar: "إدارة الدفعات التعليمية، الفصول التفاعلية، ومتابعة الطلاب",
+        },
+        paragraphs: [
+          {
+            en: "Modern online education requires more than passive video viewing. Students succeed when platforms offer structured cohort pacing, live webinar integrations (Zoom, Teams, native WebRTC), and discussion threads directly linked to lesson timestamps.",
+            ar: "لم يعد التعليم الرقمي مجرد مشاهدة فيديوهات مسجلة، بل يتطلب مسارات تفاعلية متكاملة تضم الفصول الافتراضية المباشرة (عبر Zoom أو WebRTC)، ومساحات للنقاش وأسئلة الطلاب مرتبطة بلحظات محددة في الدرس.",
+          },
+          {
+            en: "Automated student progress tracking notifies instructors of inactive learners, enabling targeted interventions that raise course completion rates above 85%.",
+            ar: "تتيح لوحات المتابعة للمعلمين رصد مستوى تقدم كل طالب، مع إرسال تنبيهات تلقائية للطلاب المتعثرين مما يرفع نسب إتمام المسارات التعليمية لأكثر من 85%.",
+          },
+        ],
+      },
+      {
+        heading: {
+          en: "Automated examination engines, question banks, and verified certificates",
+          ar: "محركات الاختبارات الذكية، بنوك الأسئلة، والشهادات الرقمية المعتمدة",
+        },
+        paragraphs: [
+          {
+            en: "Rigorous assessment is the hallmark of accredited training. Our platforms feature multi-format question banks (multiple choice, code evaluation, file submissions), randomized question pools, time-bound testing sessions, and anti-tab-switching controls.",
+            ar: "التقييم المنضبط هو ركيزة التدريب المعتمد. توفر منصاتنا بنوك أسئلة ذكية متنوعة (اختيار من متعدد، كتابة مقالية، تسليم مشاريع برمجية)، مع اختيار عشوائي للأسئلة لكل طالب وتحديد زمن الاختبار ومراقبة تبديل الشاشات.",
+          },
+          {
+            en: "Upon passing predefined passing grades, students instantly receive tamper-proof, QR-verifiable digital certificates that can be shared directly to LinkedIn and validated by prospective employers.",
+            ar: "وفور اجتياز المتدرب لدرجة النجاح، يُصدر النظام شهادة إتمام رقمية مشفرة برمز QR للتحقق السريع منها، يمكن مشاركتها بسهولة على لينكد إن والتحقق من صحتها من أي جهة توظيف.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: {
+          en: "Can students download protected lesson videos?",
+          ar: "هل يستطيع الطلاب تحميل الفيديوهات المحمية؟",
+        },
+        answer: {
+          en: "No. DRM encryption prevents standard video downloading tools and screen grabbers from intercepting video stream keys.",
+          ar: "لا. يمنع تشفير DRM وأدوات الحماية الحديثة برامج التحميل وتطبيقات تسجيل الشاشة من التقاط مفاتيح البث أو تحميل الملفات.",
+        },
+      },
+      {
+        question: {
+          en: "Does the LMS support corporate training portals for company teams?",
+          ar: "هل تدعم المنصة بوابات تدريب مخصصة لفرق الشركات؟",
+        },
+        answer: {
+          en: "Yes. Multi-organization support allows companies to have private branded sub-portals for their internal employees with dedicated reporting for HR managers.",
+          ar: "نعم. يدعم النظام بوابات فرعية خاصة بالشركات تتيح لمدراء الموارد البشرية متابعة تدريب موظفي كل شركة على حدة وبلوحات تقارير مخصصة.",
+        },
+      },
+    ],
+  },
 ];

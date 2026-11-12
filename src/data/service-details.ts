@@ -245,6 +245,88 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       { question: { en: "Does SLA-backed support come with every consultation?", ar: "هل يشمل كل استشاري دعم بعقد SLA؟" }, answer: { en: "No. Ongoing support and any SLA are separate engagement terms that must be explicitly agreed.", ar: "لا. الدعم المستمر وأي اتفاقية SLA شروط تعاقد مستقلة يجب الاتفاق عليها صراحة." } },
     ],
   },
+  "dental-clinic": {
+    introduction: {
+      en: "EHATA Dental Clinic SaaS is an all-in-one clinical and operational management platform engineered specifically for modern dental practices, specialized polyclinics, and dental hospital networks across Egypt and the GCC. It combines interactive 3D odontograms, smart multi-chair scheduling, automated WhatsApp notifications, dental laboratory order tracking, installment payment plans, and doctor revenue-sharing matrices into one seamless, enterprise-grade cloud system.",
+      ar: "نظام إحاطة لإدارة عيادات ومراكز الأسنان (Dental Clinic SaaS) هو منظومة سحابية متكاملة مصممة خصيصاً للمراكز الطبية التخصصية وعيادات الأسنان في مصر ودول الخليج. يربط النظام بين مخطط الأسنان التفاعلي (Odontogram)، وجدولة المواعيد الذكية، وتأكيدات واتساب الآلية، وتتبع معامل الأسنان، وخطط الأقساط العلاجية، وحساب نسب الأطباء في بيئة عمل سحابية فائقة الأمان وسهلة الاستخدام.",
+    },
+    bestFor: [
+      { en: "Dental clinic owners and medical directors in Egypt, KSA, and UAE", ar: "ملاك ومسؤولو المراكز والمجمعات الطبية للأسنان في مصر والسعودية والإمارات" },
+      { en: "Practices seeking to eliminate costly patient no-shows and scheduling confusion", ar: "العيادات الراغبة في القضاء على تخلف المرضى عن المواعيد (No-Shows) وفوضى الاستقبال" },
+      { en: "Clinicians who need visual tooth charting, treatment planning, and session history", ar: "أطباء الأسنان الذين يحتاجون لمخطط أسنان بصري ومتابعة جلسات العلاج والتركيبات" },
+      { en: "Managers governing dental lab costs, consumable materials, and doctor commissions", ar: "مديرو العيادات الراغبون في حوكمة مصاريف المعامل ومخزون المواد ونسب الأطباء" },
+    ],
+    challenges: [
+      { en: "Patient no-shows and unconfirmed bookings drain up to 25% of clinic operational capacity.", ar: "غياب المرضى عن المواعيد دون تأكيد يهدر حتى 25% من الطاقة الاستيعابية وأرباح العيادة." },
+      { en: "Paper charts and fragmented files cause treatment history loss and miscommunication.", ar: "الملفات الورقية تؤدي لضياع خطط علاج المرضى وصعوبة متابعة الجلسات بين الأطباء." },
+      { en: "Unmonitored dental laboratory orders lead to delayed cases and untracked costs.", ar: "غياب تتبع طلبات معامل الأسنان يسبب تأخر تسليم التركيبات وعدم وضوح التكاليف." },
+      { en: "Complex revenue split calculations and multi-visit installment tracking cause billing disputes.", ar: "تعقيد احتساب عمولات الأطباء ومتابعة أقساط الزراعة والتقويم يولد خلافات محاسبية." },
+    ],
+    approach: [
+      { en: "Deploy visual 32/20 interactive odontograms for fast diagnosis and phased treatment planning.", ar: "توفير مخطط أسنان تفاعلي ثلاثي الأبعاد للبالغين والأطفال لتسجيل التشخيص وخطط العلاج بضغطة زر." },
+      { en: "Automate two-way WhatsApp confirmations and reminders to cut no-show rates by over 40%.", ar: "أتمتة رسائل واتساب التفاعلية لتأكيد المواعيد والتذكير بها لتقليل التخلف بنسبة تتجاوز 40%." },
+      { en: "Link clinical actions directly to consumable stock deductions and laboratory orders.", ar: "ربط الإجراءات الطبية مباشرة بخصم مستلزمات العيادة المستهلكة وإصدار أوامر المعامل." },
+      { en: "Provide transparent installment tracking, electronic prescriptions, and automated doctor splits.", ar: "إدارة شفافة لخطط السداد بالأقساط والوصفات الرقمية وحساب نسب الأطباء آلياً." },
+    ],
+    deliverables: [
+      { en: "Tailored clinic cloud platform accessible across desktops, tablets, and mobile devices.", ar: "منصة سحابية متجاوبة تعمل بسلاسة على الحواسيب والأجهزة اللوحية داخل العيادة." },
+      { en: "Visual odontogram module with custom diagnostic symbols, pricing, and treatment phases.", ar: "موديول مخطط الأسنان التفاعلي مع رموز التشخيص والأسعار المعتمدة للعيادة." },
+      { en: "Official WhatsApp Business API integration for automated schedule alerts and receipts.", ar: "ربط معتمد مع واتساب للأعمال لإرسال تنبيهات المواعيد وتأكيداتها وإيصالات الدفع." },
+      { en: "Laboratory management, inventory tracking, and tax-compliant e-invoicing.", ar: "نظام إدارة أوامر المعامل ومخزون العيادة والفوترة المتوافقة مع متطلبات الضرائب." },
+    ],
+    process: [
+      { title: { en: "Clinic Discovery", ar: "دراسة احتياجات العيادة" }, description: { en: "Map treatment types, chairs, doctors, laboratory partners, and reception workflows.", ar: "حصر أنواع العلاجات وكراسي العيادة والأطباء والمعامل الشريكة ودورة عمل الاستقبال." } },
+      { title: { en: "System Setup", ar: "تهيئة النظام والأسعار" }, description: { en: "Configure clinic services, odontogram presets, staff permissions, and pricing tiers.", ar: "ضبط خدمات العيادة ومخطط الأسنان وصلاحيات الأطباء والتمريض وقوائم الأسعار." } },
+      { title: { en: "Data Migration", ar: "ترحيل بيانات المرضى" }, description: { en: "Safely import existing patient databases, outstanding balances, and active appointments.", ar: "ترحيل سجلات المرضى السابقة والأرصدة المعلقة والمواعيد القادمة بأمان تام." } },
+      { title: { en: "Training & Launch", ar: "التدريب والإطلاق الرسمي" }, description: { en: "Hands-on staff training for front-desk and doctors, followed by live clinic operations.", ar: "تدريب عملي لفريق الاستقبال والأطباء على المنظومة وبدء التشغيل الفعلي." } },
+    ],
+    faq: [
+      { question: { en: "Can we migrate our existing patient files into the system?", ar: "هل يمكن نقل ملفات وسجلات مرضانا الحالية إلى النظام؟" }, answer: { en: "Yes. We securely import patient profiles, treatment histories, and outstanding financial balances from spreadsheets or legacy systems.", ar: "نعم. نقوم بترحيل ملفات المرضى وتاريخهم الطبي وأرصدتهم المالية بدقة وسرية تامة." } },
+      { question: { en: "Does the system support ZATCA Phase 2 and Egyptian e-invoicing?", ar: "هل يدعم النظام الفاتورة الإلكترونية ومتطلبات ZATCA؟" }, answer: { en: "Yes. All invoices, receipts, and installment records comply fully with Egyptian ETA requirements and Saudi ZATCA Phase 2 mandates.", ar: "نعم. يدعم النظام الفواتير الإلكترونية المعتمدة والإيصالات الضريبية المتوافقة مع ZATCA ومنظومة الفاتورة المصرية." } },
+      { question: { en: "How does the WhatsApp appointment automation work?", ar: "كيف تعمل ميزة تأكيد المواعيد التلقائية عبر واتساب؟" }, answer: { en: "When an appointment is scheduled, the patient receives an interactive WhatsApp message to confirm or request rescheduling. The clinic calendar updates in real time.", ar: "عند حجز الموعد يتلقى المريض رسالة تفاعلية لتأكيد الحضور أو طلب تعديل، ويتم تحديث جدول العيادة فورياً." } },
+    ],
+  },
+  "ecommerce": {
+    introduction: {
+      en: "EHATA E-Commerce Solutions build high-conversion, lightning-fast digital storefronts and unified retail operations platforms for forward-thinking merchants in Egypt and the GCC. We combine headless, sub-second web experiences with local payment gateways (Paymob, Tamara, Tabby, Stripe), multi-branch inventory synchronization, automated courier logistics dispatch, and compliant electronic invoicing.",
+      ar: "تقدم إحاطة حلول ومنصات التجارة الإلكترونية عالية الأداء والمصممة خصيصاً للنمو السريع في أسواق مصر والخليج العربي. نبني متاجر سريعة للغاية تدمج بوابات الدفع المحلية والتقسيط، والمزامنة اللحظية للمخزون بين الفروع، والتوزيع اللوجستي الآلي مع شركات الشحن، والفوترة الإلكترونية الضريبية المعتمدة.",
+    },
+    bestFor: [
+      { en: "Retail brands expanding from physical stores into omni-channel digital sales", ar: "سلاسل المتاجر والماركات التجارية التي تتوسع من الفروع التقليدية إلى البيع المتعدد القنوات" },
+      { en: "High-volume D2C brands requiring custom checkout flows and sub-second page loads", ar: "العلامات التجارية الموجهة للمستهلك (D2C) التي تتطلب سرعة تحميل فائقة وتجربة دفع مرنة" },
+      { en: "Merchants needing unified stock control across physical outlets and online platforms", ar: "التجار الذين يحتاجون لتوحيد المخزون اللحظي بين الفروع ونقاط البيع والمتجر الإلكتروني" },
+      { en: "Businesses selling across borders between Egypt, Saudi Arabia, and the UAE", ar: "الشركات التي تبيع لأسواق متعددة عبر مصر والمملكة العربية السعودية والإمارات" },
+    ],
+    challenges: [
+      { en: "Slow template-based stores cause high cart abandonment rates during mobile checkout.", ar: "بطء قوالب المتاجر التقليدية يؤدي إلى انسحاب المشترين أثناء عملية الدفع على الموبايل." },
+      { en: "Inventory desynchronization between physical stores and website leads to overselling.", ar: "اختلاف أرصدة المخزون بين المستودعات والموقع يتسبب في بيع منتجات غير متوفرة." },
+      { en: "Manual courier dispatch and lack of live map tracking increase customer support overhead.", ar: "إسناد الشحنات يدوياً وغياب التتبع المباشر يزيد من ضغط اتصالات واستفسارات العملاء." },
+      { en: "Complex localized payment, installment, and tax compliance requirements.", ar: "صعوبة التكامل مع بوابات الدفع المحلية وخدمات التقسيط والاشتراطات الضريبية." },
+    ],
+    approach: [
+      { en: "Develop custom headless Next.js storefronts with instant edge caching and mobile-first UX.", ar: "بناء واجهات متاجر عصرية بتقنية Next.js وتخزين مؤقت سحابي يضمن سرعة تصفح فائقة." },
+      { en: "Integrate localized checkout with Paymob, Tamara, Tabby, and Apple Pay for maximum conversion.", ar: "دمج بوابات الدفع المعتمدة والدفع بالتقسيط (تمارا، تابي) و Apple Pay لتعظيم نسبة الشراء." },
+      { en: "Automate courier routing with automated label printing and real-time shipment status.", ar: "أتمتة إسناد الشحنات لأساطيل التوصيل مع طباعة بوالص الشحن وتحديث المسار لحظياً." },
+      { en: "Synchronize centralized multi-branch inventory with POS and ERP systems in real time.", ar: "ربط وتوحيد المخزون عبر الفروع ونقاط البيع ونظام الـ ERP تلقائياً دون أي تضارب." },
+    ],
+    deliverables: [
+      { en: "Tailored high-performance e-commerce web platform and progressive web application.", ar: "منصة تجارة إلكترونية سحابية فائقة السرعة بهوية بصرية مخصصة ومصممة للجوال." },
+      { en: "Unified merchant control panel for products, multi-currency pricing, orders, and coupons.", ar: "لوحة تحكم مركزية لإدارة المنتجات والعملات المتعددة والطلبات وقسائم التخفيض." },
+      { en: "Seamless integrations with shipping companies (courier APIs), payments, and ERP systems.", ar: "تكامل تقني مباشر مع شركات الشحن السريع وبوابات الدفع الإلكتروني وأنظمة ERP." },
+      { en: "Automated customer order tracking updates via WhatsApp and SMS.", ar: "نظام إشعارات تلقائي بحالة الشحنة وتتبع مسارها للعميل عبر واتساب والرسائل النصية." },
+    ],
+    process: [
+      { title: { en: "Architecture & Strategy", ar: "التخطيط واستراتيجية المتجر" }, description: { en: "Define product catalog structure, payment options, delivery zones, and customer journeys.", ar: "تحديد هيكل كتالوج المنتجات وبوابات الدفع ومناطق الشحن ومسار الشراء." } },
+      { title: { en: "Storefront Engineering", ar: "تطوير المتجر وواجهات المستخدم" }, description: { en: "Build the visual storefront with high-speed rendering, animations, and cart flows.", ar: "برمجة واجهات المتجر وتجربة التصفح والسلة وسرعة التحميل القياسية." } },
+      { title: { en: "Integrations & Logistics", ar: "التكاملات والربط اللوجستي" }, description: { en: "Connect payment gateways, courier dispatch APIs, and multi-warehouse sync.", ar: "ربط بوابات الدفع الرسمية وشركات الشحن ومزامنة أرصدة المستودعات." } },
+      { title: { en: "Stress Testing & Launch", ar: "اختبارات الضغط والإطلاق" }, description: { en: "Execute payment simulations, mobile checkout stress tests, and live production launch.", ar: "محاكاة عمليات الشراء واختبارات ضغط الزيارات العالية والإطلاق المباشر." } },
+    ],
+    faq: [
+      { question: { en: "Which payment gateways do you integrate for Egypt and the Gulf?", ar: "ما هي بوابات الدفع المدعومة في مصر والخليج؟" }, answer: { en: "We integrate Paymob, Fawry, Vodafone Cash, and Instapay in Egypt, as well as Mada, Tamara, Tabby, Apple Pay, and Stripe across KSA and UAE.", ar: "ندعم Paymob وفوري وفودافون كاش وإنستاباي في مصر، ومدى وتمارا وتابي و Apple Pay في السعودية والإمارات." } },
+      { question: { en: "Can the online store synchronize with our physical retail POS?", ar: "هل يمكن ربط المتجر مع نقاط البيع (POS) في فروعنا؟" }, answer: { en: "Yes. Stock levels, product prices, and completed sales reconcile automatically between physical stores and the digital storefront.", ar: "نعم. تتزامن أرصدة المخزون والأسعار والمبيعات تلقائياً بين الفروع الفعلية والمتجر الإلكتروني." } },
+      { question: { en: "How does the store handle high-traffic promotional campaigns?", ar: "كيف يتعامل المتجر مع مواسم العروض والزيارات الضخمة؟" }, answer: { en: "Built on serverless auto-scaling architecture and global edge caching, our stores handle thousands of concurrent shoppers without slowdowns or crashes.", ar: "بفضل بنيتنا السحابية المرنة القابلة للتوسع التلقائي، يتحمل المتجر آلاف الزوار المتزامنين في مواسم التخفيضات بسلاسة تامة." } },
+    ],
+  },
 };
 
 export function getServiceDetail(serviceId: string): ServiceDetail {
