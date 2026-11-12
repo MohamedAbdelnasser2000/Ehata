@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "عن إحاطة — شركة برمجيات وأكاديمية تدريب بالقاهرة",
     description: "قصتنا وفريقنا ومنهجية العمل في إحاطة للحلول الرقمية.",
     url: "/ar/about/",

@@ -5,11 +5,15 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const output = path.join(root, "out");
 const origin = "https://static-export.invalid";
+const siteOrigin = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://ehata-tech.vercel.app",
+).origin;
 const references = /\b(?:href|src|poster)=["']([^"'<>]+)["']/gi;
 const ignoredProtocols = /^(?:https?:|mailto:|tel:|data:|blob:|javascript:)/i;
 const htmlFiles = [];
 const errors = [];
 let checkedReferences = 0;
+let checkedSocialImages = 0;
 
 async function collectHtml(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
@@ -67,6 +71,53 @@ async function existsInExport(candidate) {
   return false;
 }
 
+function getMetaContent(html, attributeName, attributeValue) {
+  for (const match of html.matchAll(/<meta\b[^>]*>/gi)) {
+    const tag = match[0];
+    if (
+      new RegExp(`\\b${attributeName}=["']${attributeValue}["']`, "i").test(tag)
+    ) {
+      return tag.match(/\bcontent=["']([^"']*)["']/i)?.[1];
+    }
+  }
+  return undefined;
+}
+
+async function checkSocialImage(
+  html,
+  filePath,
+  baseUrl,
+  attributeName,
+  attributeValue,
+) {
+  const image = getMetaContent(html, attributeName, attributeValue);
+  const relativeFile = path.relative(root, filePath);
+  if (!image) {
+    errors.push(`${relativeFile}: missing ${attributeValue} metadata`);
+    return;
+  }
+
+  let url;
+  try {
+    url = new URL(image, siteOrigin);
+  } catch {
+    errors.push(`${relativeFile}: invalid ${attributeValue} URL: ${image}`);
+    return;
+  }
+
+  if (url.origin !== siteOrigin) {
+    errors.push(`${relativeFile}: ${attributeValue} must use the site origin`);
+    return;
+  }
+
+  const resolved = resolveReference(url.pathname, baseUrl);
+  if (!resolved || "error" in resolved || !(await existsInExport(resolved.path))) {
+    errors.push(`${relativeFile}: missing exported social image: ${image}`);
+    return;
+  }
+  checkedSocialImages += 1;
+}
+
 try {
   const info = await stat(output);
   if (!info.isDirectory()) throw new Error("Export path is not a directory.");
@@ -84,6 +135,21 @@ if (htmlFiles.length === 0) {
 for (const htmlFile of htmlFiles) {
   const html = await readFile(htmlFile, "utf8");
   const baseUrl = documentUrl(htmlFile);
+  const exportPath = path.relative(output, htmlFile).split(path.sep).join("/");
+  if (
+    exportPath === "404.html" ||
+    /^(?:404|_not-found)(?:\/|$)/.test(exportPath)
+  ) {
+    continue;
+  }
+
+  await checkSocialImage(html, htmlFile, baseUrl, "property", "og:image");
+  await checkSocialImage(html, htmlFile, baseUrl, "name", "twitter:image");
+  const relativeFile = path.relative(root, htmlFile);
+  if (getMetaContent(html, "name", "twitter:card") !== "summary_large_image") {
+    errors.push(`${relativeFile}: twitter:card must be summary_large_image`);
+  }
+
   for (const match of html.matchAll(references)) {
     const reference = match[1].trim();
     const resolved = resolveReference(reference, baseUrl);
@@ -100,13 +166,31 @@ for (const htmlFile of htmlFiles) {
   }
 }
 
+for (const [environmentVariable, attributeName, attributeValue] of [
+  ["GOOGLE_SITE_VERIFICATION", "name", "google-site-verification"],
+  ["BING_SITE_VERIFICATION", "name", "msvalidate.01"],
+]) {
+  if (process.env[environmentVariable]?.trim()) {
+    const configuredValue = process.env[environmentVariable].trim();
+    const matchingPages = await Promise.all(
+      htmlFiles.map(async (htmlFile) => {
+        const html = await readFile(htmlFile, "utf8");
+        return getMetaContent(html, attributeName, attributeValue) === configuredValue;
+      }),
+    );
+    if (!matchingPages.some(Boolean)) {
+      errors.push(`${environmentVariable} is configured but its verification tag is missing`);
+    }
+  }
+}
+
 if (errors.length > 0) {
-  console.error(`Static export check failed (${errors.length} broken reference(s)):`);
+  console.error(`Static export check failed (${errors.length} issue(s)):`);
   for (const error of errors.slice(0, 100)) console.error(`- ${error}`);
   if (errors.length > 100) console.error(`... and ${errors.length - 100} more`);
   process.exit(1);
 }
 
 console.log(
-  `Static export check passed: ${htmlFiles.length} HTML files and ${checkedReferences} local references.`,
+  `Static export check passed: ${htmlFiles.length} HTML files, ${checkedReferences} local references, and ${checkedSocialImages} social images.`,
 );

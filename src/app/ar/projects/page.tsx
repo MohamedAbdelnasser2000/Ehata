@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "معرض المشاريع والأنظمة المنفذة — EHATA",
     description:
       "استعرض نماذج ودراسات المشاريع، مع توضيح نطاق كل مشروع وتقنياته.",

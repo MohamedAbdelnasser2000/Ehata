@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "Software Projects Portfolio — Delivery, ERP, Clinic Systems | EHATA",
     description:
       "Filterable portfolio with full case studies: challenge, solution, technology and results.",

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "About EHATA — Cairo Software Agency & Coding Academy",
     description:
       "A company that works like an academy: engineers who ship, teachers who keep shipping.",

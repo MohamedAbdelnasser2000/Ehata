@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "تواصل مع EHATA — احجز جلسة تحديد نطاق مجانية",
     description: "أخبرنا عن احتياجك وسنناقش معك الخطوة المناسبة.",
     locale: "ar_EG",

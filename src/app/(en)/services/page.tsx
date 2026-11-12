@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "Software Development Services Egypt — ERP, Web, Mobile | EHATA",
     description:
       "Six practice areas, three engagement models, one production-grade standard.",

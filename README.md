@@ -77,8 +77,9 @@ Bilingual fields are `{ en, ar }` objects resolved by `useLocale().tr()`.
 - The on-page mark is inline SVG in `src/components/layout/logo.tsx` (+ `public/icon.svg`
   favicon). A 3D model approximation remains in `src/components/three/e-model.tsx`, but
   is not mounted on the current homepage.
-- To use your real files: replace `public/logo.png` (OG image) and the
-  favicon copies (`src/app/icon.svg`, `src/app/favicon.ico`, `public/icon.svg`).
+- To use your real files: replace `public/logo.png` (brand logo),
+  `public/og-image.png` (social preview), and the favicon copies
+  (`src/app/icon.svg`, `src/app/favicon.ico`, `public/icon.svg`).
 - Colors/typography are CSS variables in `src/app/globals.css` (`--navy`, `--blue`,
   `--sky`, `--slate`, `--bg`, `--gradient-signature`, radii, glows). Change them once,
   the whole site follows. Dark-mode tokens live in the same file's `.dark` block.
@@ -100,8 +101,17 @@ Rebuild after changing env values (`NEXT_PUBLIC_*` is inlined at build time).
 
 - The canonical origin defaults to `https://ehata-tech.vercel.app`; override it with
   `NEXT_PUBLIC_SITE_URL` if the production domain changes.
-- Metadata & Open Graph are defined per page; add `public/og.png` if you want a custom
-  share image (currently `/logo.png` is used).
+- `public/og-image.png` is the 1200×630 social-sharing image. Blog, service, and
+  general pages use it; project case studies use their own project cover.
+- Set `GOOGLE_SITE_VERIFICATION` and/or `BING_SITE_VERIFICATION` to the ownership
+  verification value provided by Google Search Console or Bing Webmaster Tools.
+  Add them to the production environment in Vercel and redeploy; the values are
+  emitted as verification metadata only when configured.
+- After deployment, verify the site in both webmaster tools and submit
+  `https://<your-domain>/sitemap.xml`. Verification metadata does not connect an
+  account or provide search-performance data by itself.
+- Blog posts are attributed to the EHATA Editorial Team rather than an invented
+  individual author. Add named authors and credentials only after they are confirmed.
 
 ## Accessibility & performance notes
 

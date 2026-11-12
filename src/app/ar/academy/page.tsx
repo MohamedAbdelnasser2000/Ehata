@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "دورات برمجة احترافية بالقاهرة — أكاديمية EHATA",
     description:
       "اختر مسارًا تدريبيًا عمليًا في تطوير البرمجيات وابنِ مشاريع تساعدك على تطبيق ما تتعلمه.",

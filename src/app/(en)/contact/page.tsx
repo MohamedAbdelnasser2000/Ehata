@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "Contact EHATA — Free Project Scoping Session",
     description: "Start a conversation about your product or training goals.",
     url: "/contact",

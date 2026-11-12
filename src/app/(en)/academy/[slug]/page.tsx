@@ -29,6 +29,7 @@ export async function generateMetadata({
     title: course.title.en,
     description: course.shortDescription.en,
     openGraph: {
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
       title: `${course.title.en} | EHATA Academy`,
       description: course.shortDescription.en,
       url: `/academy/${course.slug}`,

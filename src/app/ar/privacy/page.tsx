@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "إشعار الخصوصية | EHATA",
     description: "كيفية التعامل مع طلبات التواصل وتفضيلات المتصفح في الموقع.",
     locale: "ar_EG",

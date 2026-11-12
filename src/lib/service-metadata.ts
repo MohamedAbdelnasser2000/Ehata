@@ -37,6 +37,14 @@ export function createServiceMetadata(
       ...(SITE_URL ? { url: path } : {}),
       locale: locale === "ar" ? "ar_EG" : "en_US",
       alternateLocale: locale === "ar" ? "en_US" : "ar_EG",
+      images: [
+        {
+          url: `${SITE_URL}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "EHATA – Digital Solutions",
+        },
+      ],
     },
     robots: { index: true, follow: true },
   };

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { Locale } from "@/lib/i18n";
 import type { BlogPost } from "@/data/blog";
 import { getBlogPostPath } from "@/lib/blog-routes";
+import { SITE_URL } from "@/lib/site-url";
 
 export function createBlogMetadata(
   post: BlogPost,
@@ -33,13 +34,22 @@ export function createBlogMetadata(
       locale: locale === "ar" ? "ar_EG" : "en_US",
       alternateLocale: locale === "ar" ? "en_US" : "ar_EG",
       publishedTime: post.publishedAt,
-      authors: ["EHATA"],
+      authors: ["EHATA Editorial Team"],
       tags: [post.category[locale]],
+      images: [
+        {
+          url: `${SITE_URL}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: "EHATA – Digital Solutions",
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: `${title} | EHATA`,
       description,
+      images: [`${SITE_URL}/og-image.png`],
     },
   };
 }

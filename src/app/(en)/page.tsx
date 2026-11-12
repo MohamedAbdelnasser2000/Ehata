@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description:
     "EHATA builds custom business software for Egyptian companies: delivery platforms, ERP systems, clinic operations, and SaaS products. Cairo-based engineering team.",
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "Custom Business Software Egypt — EHATA",
     description:
       "EHATA builds custom business software for Egyptian companies: delivery platforms, ERP systems, clinic operations, and SaaS products. Cairo-based engineering team.",

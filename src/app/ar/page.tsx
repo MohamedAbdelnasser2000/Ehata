@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "برمجيات أعمال وأنظمة تشغيل مخصصة في مصر — EHATA",
     description:
       "تبني إحاطة برمجيات تشغيلية مخصصة للشركات المصرية: منصات توصيل، أنظمة ERP، إدارة عيادات وصيدليات، وتدريب احترافي للمطورين.",

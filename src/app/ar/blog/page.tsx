@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "مدونة EHATA | أدلة الأعمال الرقمية",
     description:
       "أدلة عملية للفرق التي تخطط لأنظمة الأعمال وإجراءات اللوجستيات ومنتجات الموبايل.",

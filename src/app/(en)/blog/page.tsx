@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "EHATA Blog | Digital Business Guides",
     description:
       "Practical guides for teams planning business systems, logistics workflows, and mobile products.",

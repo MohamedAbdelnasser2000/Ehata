@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EHATA – Digital Solutions" }],
     title: "خدمات تطوير البرمجيات والأنظمة في مصر — EHATA",
     description: "حلول برمجية وتدريب تقني مصممان وفق احتياجاتك.",
     locale: "ar_EG",
