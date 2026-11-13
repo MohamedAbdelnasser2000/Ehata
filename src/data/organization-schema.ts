@@ -10,6 +10,7 @@ export const organizationSchema = {
   name: "EHATA",
   alternateName: "إحاطة",
   url: SITE_URL,
+  sameAs: ["https://www.linkedin.com/company/ehata/"],
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-image.png`,
   email: CONTACT.email,
