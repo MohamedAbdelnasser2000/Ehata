@@ -1,5 +1,5 @@
 import { SITE_URL } from "@/lib/site-url";
-import { CONTACT } from "@/data/site";
+import { CONTACT, SOCIALS } from "@/data/site";
 
 const organizationId = `${SITE_URL}/#organization`;
 
@@ -10,7 +10,7 @@ export const organizationSchema = {
   name: "EHATA",
   alternateName: "إحاطة",
   url: SITE_URL,
-  sameAs: ["https://www.linkedin.com/company/ehata/"],
+  sameAs: SOCIALS.map(({ href }) => href),
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-image.png`,
   email: CONTACT.email,

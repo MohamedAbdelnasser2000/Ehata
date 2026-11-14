@@ -46,11 +46,23 @@ export function whatsappChatHref(message?: string): string {
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
 
-/** Official social links can be added here once their URLs are confirmed. */
-export const SOCIALS: readonly {
-  id: "facebook" | "instagram";
-  href: string;
-  label: string;
-}[] = [];
+/** Official social links, used in the footer, contact page, and organization schema. */
+export const SOCIALS = [
+  {
+    id: "facebook",
+    href: "https://www.facebook.com/share/1LjKyidMFe/",
+    label: "EHATA on Facebook",
+  },
+  {
+    id: "instagram",
+    href: "https://www.instagram.com/acc.ehata?cplk=OG1qOHhvbW1vc2N0",
+    label: "EHATA on Instagram",
+  },
+  {
+    id: "linkedin",
+    href: "https://www.linkedin.com/company/ehata/",
+    label: "EHATA on LinkedIn",
+  },
+] as const;
 
 export type SocialId = (typeof SOCIALS)[number]["id"];
