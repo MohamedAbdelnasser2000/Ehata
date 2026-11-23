@@ -97,15 +97,15 @@ export function DentalClinicLandingPage({
         screenshots: [
           {
             src: "/images/projects/dental-clinic/public-home.png",
-            height: 4081,
+            height: 4979,
             title: "الموقع العام للعيادة",
-            description: "واجهة ترحيبية تعرض الخدمات والأطباء وحالات النجاح ومعلومات التواصل.",
+            description: "واجهة تعرض الخدمات والأطباء ومعرضاً تجريبياً ومعلومات التواصل.",
           },
           {
             src: "/images/projects/dental-clinic/public-booking.png",
-            height: 4099,
+            height: 2335,
             title: "الحجز الإلكتروني أونلاين",
-            description: "اختيار الخدمة والطبيب والتاريخ والوقت وإرسال تفاصيل الموعد من صفحة عامة.",
+            description: "اختيار خدمة وطبيب تجريبي وإظهار المواعيد المتاحة قبل إرسال الحجز.",
           },
           {
             src: "/images/projects/dental-clinic/admin-patients.png",
