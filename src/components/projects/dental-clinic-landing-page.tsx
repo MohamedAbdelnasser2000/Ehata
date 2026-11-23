@@ -78,11 +78,35 @@ export function DentalClinicLandingPage({
         solutionEyebrow: "القيمة التشغيلية",
         solutionTitle: "رعاية أفضل، ومتابعة أسهل، وصورة مالية أوضح.",
         solution: project.caseStudy.solution.ar,
+        publicEyebrow: "موقع العيادة العام",
+        publicTitle: "واجهة عامة للمرضى والحجز الإلكتروني.",
+        publicText:
+          "إلى جانب لوحة الإدارة الداخلية، يوفر النظام موقعاً عاماً للعناية بالمرضى يعرض العيادة وخدماتها وأطبائها وجاليري حالات العمل، ويتيح حجز موعد أونلاين واختيار التخصص والطبيب والموعد المناسب.",
+        publicFeatures: [
+          "الصفحة الرئيسية والخدمات",
+          "معرض قبل وبعد",
+          "أطباء العيادة ومواعيدهم",
+          "حجز موعد أونلاين",
+          "الأسئلة واتصل بنا والتقييمات",
+          "دخول وربط فريق العيادة",
+        ],
         screenshotsEyebrow: "من داخل لوحة الإدارة",
         screenshotsTitle: "كل مسار تشغيلي موثّق بلقطة من التطبيق.",
         screenshotNote:
           "هذه لقطات فعلية من النسخة المحلية. جميع البيانات الظاهرة تجريبية ولا تمثل سجلات مرضى حقيقية.",
         screenshots: [
+          {
+            src: "/images/projects/dental-clinic/public-home.png",
+            height: 4081,
+            title: "الموقع العام للعيادة",
+            description: "واجهة ترحيبية تعرض الخدمات والأطباء وحالات النجاح ومعلومات التواصل.",
+          },
+          {
+            src: "/images/projects/dental-clinic/public-booking.png",
+            height: 4099,
+            title: "الحجز الإلكتروني أونلاين",
+            description: "اختيار الخدمة والطبيب والتاريخ والوقت وإرسال تفاصيل الموعد من صفحة عامة.",
+          },
           {
             src: "/images/projects/dental-clinic/admin-patients.png",
             height: 1100,
@@ -238,6 +262,18 @@ export function DentalClinicLandingPage({
         solutionEyebrow: "Operational value",
         solutionTitle: "Better care, easier follow-up, and clearer finances.",
         solution: project.caseStudy.solution.en,
+        publicEyebrow: "Public clinic website",
+        publicTitle: "A patient-facing website with online booking.",
+        publicText:
+          "Alongside the internal dashboard, the system includes a public-facing clinic website for services, dentist profiles and schedules, smile gallery content, contact details, patient reviews, and online appointment booking.",
+        publicFeatures: [
+          "Home page and clinical services",
+          "Before-and-after smile gallery",
+          "Dentist profiles and schedules",
+          "Online appointment booking",
+          "Contact, inquiries, and reviews",
+          "Staff portal access",
+        ],
         screenshotsEyebrow: "Inside the administration workspace",
         screenshotsTitle: "Real application screens for each workflow.",
         screenshotNote:
@@ -512,6 +548,49 @@ export function DentalClinicLandingPage({
             {copy.solutionTitle}
           </h2>
           <p className="mt-4 text-sm leading-8 text-muted md:text-base">{copy.solution}</p>
+        </div>
+      </section>
+
+      <section
+        aria-label={copy.publicTitle}
+        className="my-4 grid gap-6 rounded-3xl border border-blue/10 bg-gradient-to-br from-[#edf6ff] via-surface to-[#e8f5f2] p-6 md:p-8 lg:grid-cols-[0.85fr_1.15fr] dark:from-blue-950/20 dark:to-emerald-950/10"
+      >
+        <div>
+          <span className="text-xs font-bold uppercase tracking-[0.16em] text-blue">
+            {copy.publicEyebrow}
+          </span>
+          <h2 className="mt-3 text-2xl font-extrabold leading-snug text-foreground md:text-3xl">
+            {copy.publicTitle}
+          </h2>
+          <p className="mt-4 text-sm leading-8 text-muted md:text-base">
+            {copy.publicText}
+          </p>
+          <a
+            href="http://localhost:5098/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-blue px-5 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
+          >
+            {isArabic ? "زيارة الموقع العام" : "Visit public website"}
+            {isArabic ? (
+              <ArrowUpLeft className="h-4 w-4" aria-hidden />
+            ) : (
+              <ArrowUpRight className="h-4 w-4" aria-hidden />
+            )}
+          </a>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {copy.publicFeatures.map((feature) => (
+            <div
+              key={feature}
+              className="flex items-start gap-3 rounded-2xl border border-white/60 bg-white/75 p-4 text-sm font-semibold text-foreground shadow-[0_12px_28px_-22px_rgba(10,16,51,0.5)] dark:border-white/10 dark:bg-white/[0.05]"
+            >
+              <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300">
+                <Check className="h-3.5 w-3.5" aria-hidden />
+              </span>
+              {feature}
+            </div>
+          ))}
         </div>
       </section>
 
