@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    agentUpgrade: "security",
+  },
+
   // Static export: build produces plain HTML/CSS/JS in `out/` — no server needed.
   // Note: `cacheComponents`/`partialPrefetching` were intentionally removed because
   // they target a Node runtime with streaming and are not compatible with `output: "export"`.
