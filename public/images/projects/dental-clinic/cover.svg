@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">نظام إدارة عيادة الأسنان project illustration</title>
+  <desc id="description">Illustrative project cover for نظام إدارة عيادة الأسنان, not an application screenshot.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEF8FB"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="32" fill="url(#bg)"/>
+  <circle cx="1120" cy="100" r="180" fill="#1685A8" opacity=".07"/><circle cx="80" cy="720" r="240" fill="#1685A8" opacity=".06"/>
+  <text x="72" y="94" fill="#53657C" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">EHATA PROJECT</text>
+  <rect x="72" y="124" width="520" height="520" rx="34" fill="#10243D"/>
+  <rect x="112" y="178" width="440" height="62" rx="18" fill="#FFFFFF" opacity=".08"/><circle cx="144" cy="209" r="10" fill="#1685A8"/><rect x="172" y="198" width="210" height="12" rx="6" fill="#FFFFFF" opacity=".42"/>
+  <rect x="112" y="264" width="132" height="300" rx="18" fill="#FFFFFF" opacity=".07"/>
+  <rect x="268" y="264" width="284" height="300" rx="18" fill="#1685A8" opacity=".10" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="2"/>
+  <rect x="292" y="290" width="236" height="34" rx="10" fill="#FFFFFF" opacity=".10"/><rect x="292" y="350" width="86" height="86" rx="18" fill="#1685A8" opacity=".22"/><rect x="394" y="350" width="134" height="18" rx="9" fill="#FFFFFF" opacity=".24"/><rect x="394" y="382" width="92" height="12" rx="6" fill="#FFFFFF" opacity=".16"/><rect x="292" y="462" width="236" height="14" rx="7" fill="#FFFFFF" opacity=".12"/><rect x="292" y="492" width="168" height="14" rx="7" fill="#FFFFFF" opacity=".12"/>
+  <text x="112" y="608" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">نظام إدارة عيادة الأسنان</text>
+  <path d="M865 274c-86 0-124 72-96 156 18 54 42 104 70 104 35 0 20-105 58-105s23 105 58 105c28 0 52-50 70-104 28-84-10-156-96-156-23 0-41 12-64 12" fill="#fff" stroke="#1685A8" stroke-width="8"/>
+  <rect x="620" y="650" width="500" height="52" rx="26" fill="#FFFFFF" opacity=".82" stroke="#1685A8" stroke-opacity=".18"/>
+  <text x="870" y="684" text-anchor="middle" fill="#53657C" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">DENTAL</text>
+</svg>

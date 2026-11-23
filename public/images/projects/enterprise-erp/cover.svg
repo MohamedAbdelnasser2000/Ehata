@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">منصة تخطيط موارد المؤسسات project illustration</title>
+  <desc id="description">Illustrative project cover for منصة تخطيط موارد المؤسسات, not an application screenshot.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EDF7F3"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="32" fill="url(#bg)"/>
+  <circle cx="1120" cy="100" r="180" fill="#16856B" opacity=".07"/><circle cx="80" cy="720" r="240" fill="#16856B" opacity=".06"/>
+  <text x="72" y="94" fill="#53657C" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">EHATA PROJECT</text>
+  <rect x="72" y="124" width="520" height="520" rx="34" fill="#10243D"/>
+  <rect x="112" y="178" width="440" height="62" rx="18" fill="#FFFFFF" opacity=".08"/><circle cx="144" cy="209" r="10" fill="#16856B"/><rect x="172" y="198" width="210" height="12" rx="6" fill="#FFFFFF" opacity=".42"/>
+  <rect x="112" y="264" width="132" height="300" rx="18" fill="#FFFFFF" opacity=".07"/>
+  <rect x="268" y="264" width="284" height="300" rx="18" fill="#16856B" opacity=".10" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="2"/>
+  <rect x="292" y="290" width="236" height="34" rx="10" fill="#FFFFFF" opacity=".10"/><rect x="292" y="350" width="86" height="86" rx="18" fill="#16856B" opacity=".22"/><rect x="394" y="350" width="134" height="18" rx="9" fill="#FFFFFF" opacity=".24"/><rect x="394" y="382" width="92" height="12" rx="6" fill="#FFFFFF" opacity=".16"/><rect x="292" y="462" width="236" height="14" rx="7" fill="#FFFFFF" opacity=".12"/><rect x="292" y="492" width="168" height="14" rx="7" fill="#FFFFFF" opacity=".12"/>
+  <text x="112" y="608" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">منصة تخطيط موارد المؤسسات</text>
+  <rect x="760" y="300" width="280" height="210" rx="28" fill="#fff" stroke="#16856B" stroke-width="8"/><path d="M812 448v-82M872 448v-132M932 448v-56M992 448V274" stroke="#16856B" stroke-width="8"/><rect x="608" y="340" width="132" height="170" rx="24" fill="#fff" stroke="#16856B" stroke-width="8"/>
+  <rect x="620" y="650" width="500" height="52" rx="26" fill="#FFFFFF" opacity=".82" stroke="#16856B" stroke-opacity=".18"/>
+  <text x="870" y="684" text-anchor="middle" fill="#53657C" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">ERP</text>
+</svg>
