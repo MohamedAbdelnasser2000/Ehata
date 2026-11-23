@@ -1,7 +1,12 @@
 import { IBM_Plex_Sans_Arabic, Sora } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import {
+  DentalClinicFooter,
+  DentalClinicHeader,
+} from "@/components/layout/dental-clinic-chrome";
 import { ScrollProgress } from "@/components/layout/scroll-progress";
+import { SiteRouteChrome } from "@/components/layout/site-route-chrome";
 import { WhatsAppButton } from "@/components/layout/whatsapp-button";
 import { PageTransition } from "@/components/providers/page-transition";
 import { SkipLink } from "@/components/providers/skip-link";
@@ -37,11 +42,17 @@ export function SiteShell({
       <SmoothScroll>
         <SkipLink />
         <ScrollProgress />
-        <Navbar />
-        <main id="main-content" className="flex-1">
-          <PageTransition>{children}</PageTransition>
-        </main>
-        <Footer />
+        <SiteRouteChrome
+          locale={locale}
+          siteHeader={<Navbar />}
+          siteFooter={<Footer />}
+          dentalClinicHeader={<DentalClinicHeader locale={locale} />}
+          dentalClinicFooter={<DentalClinicFooter locale={locale} />}
+        >
+          <main id="main-content" className="flex-1">
+            <PageTransition>{children}</PageTransition>
+          </main>
+        </SiteRouteChrome>
         <WhatsAppButton />
       </SmoothScroll>
     </LocaleProvider>

@@ -12,6 +12,7 @@ import { whatsappChatHref } from "@/data/site";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { DentalClinicLandingPage } from "@/components/projects/dental-clinic-landing-page";
 
 const COPY = {
   en: {
@@ -100,6 +101,10 @@ export function ProjectDetailPage({
   project: Project;
   locale: Locale;
 }) {
+  if (project.id === "dental-clinic") {
+    return <DentalClinicLandingPage project={project} locale={locale} />;
+  }
+
   const copy = COPY[locale];
   const title = project.title[locale];
   const summary = project.summary[locale];
